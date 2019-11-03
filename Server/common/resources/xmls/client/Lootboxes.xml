@@ -1,25 +1,130 @@
 <Lootboxes>
-  <Lootbox type="0x0001" id="Bronze Lootbox">
-            <CrateLoot chance="1.00">
-            <Loot name="Legendary Sor Crystal">Item</Loot>
-            <Loot name="Ultimate Onrane Cache">Item</Loot>
-            <Loot name="The Realmtracer">Item</Loot>
-            <Loot name="Words of Wisdom">Item</Loot>
-            <Loot name="Page of Zaragon">Item</Loot>
-            <Loot name="Scepter of the Other">Item</Loot>
-            <Loot name="Wand of the Magma Lands">Item</Loot>
-            <Loot name="Vulcanstriker">Item</Loot>
-            <Loot name="The 2-K">Item</Loot>
-            <Loot name="Vardon's Resilience">Item</Loot>
-            <Loot name="Dagger of Tindailius">Item</Loot>
-            <Loot name="Bracelet of Tranquility">Item</Loot>
-            <Loot name="Waraxe of Judgement">Item</Loot>
-            <Loot name="The Atium">Item</Loot>
-            <Loot name="Living Corrupted Ambition">Item</Loot>
-            <Loot name="Force Between Avex">Item</Loot>
-            <Loot name="Tundracian Frozen Armor">Item</Loot>
-            <Loot name="Never Before Seen">Item</Loot>
-            <Loot name="Solace and Calamity">Item</Loot>
+  <Lootcase type="0x0001" id="Bronze Lootbox">
+    	<CrateLoot chance="0.01">
+			<Loot name="Marble Tablet">Item</Loot>
         </CrateLoot>
-  </Lootbox>
+  		<CrateLoot chance="0.19">
+			<Loot name="Greater Potion of Attack">Item</Loot>
+			<Loot name="Greater Potion of Speed">Item</Loot>
+			<Loot name="Greater Potion of Defense">Item</Loot>
+			<Loot name="Greater Potion of Vitality">Item</Loot>
+			<Loot name="Greater Potion of Wisdom">Item</Loot>
+			<Loot name="Greater Potion of Dexterity">Item</Loot>
+			<Loot name="Greater Potion of Might">Item</Loot>
+			<Loot name="Greater Potion of Luck">Item</Loot>
+			<Loot name="Greater Potion of Protection">Item</Loot>
+			<Loot name="Greater Potion of Restoration">Item</Loot>
+			<Loot name="Greater Potion of Life">Item</Loot>
+			<Loot name="Greater Potion of Mana">Item</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.80">
+			<Loot name="Potion of Attack">Item</Loot>
+			<Loot name="Potion of Speed">Item</Loot>
+			<Loot name="Potion of Defense">Item</Loot>
+			<Loot name="Potion of Vitality">Item</Loot>
+			<Loot name="Potion of Wisdom">Item</Loot>
+			<Loot name="Potion of Dexterity">Item</Loot>
+			<Loot name="Potion of Might">Item</Loot>
+			<Loot name="Potion of Luck">Item</Loot>
+			<Loot name="Potion of Protection">Item</Loot>
+			<Loot name="Potion of Restoration">Item</Loot>
+			<Loot name="Potion of Life">Item</Loot>
+			<Loot name="Potion of Mana">Item</Loot>
+        </CrateLoot>
+  </Lootcase>
+  <Lootcase type="0x0002" id="Silver Lootbox">
+        <CrateLoot chance="0.01">
+			<Loot name="10000 Gold">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.35">
+			<Loot name="Demon Blade">Item</Loot>
+			<Loot name="Doom Bow">Item</Loot>
+			<Loot name="Plague Poison">Item</Loot>
+			<Loot name="Candy-Coated Armor">Item</Loot>
+			<Loot name="Helm of the Juggernaut">Item</Loot>
+			<Loot name="Staff of Extreme Prejudice">Item</Loot>
+			<Loot name="Cloak of the Planewalker">Item</Loot>
+			<Loot name="Orb of Conflict">Item</Loot>
+			<Loot name="Dirk of Cronus">Item</Loot>
+			<Loot name="Prism of Dancing Swords">Item</Loot>
+			<Loot name="Coral Bow">Item</Loot>
+			<Loot name="Doku No Ken">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.64">
+			<Loot name="Greater Potion of Attack">Item</Loot>
+			<Loot name="Greater Potion of Speed">Item</Loot>
+			<Loot name="Greater Potion of Defense">Item</Loot>
+			<Loot name="Greater Potion of Vitality">Item</Loot>
+			<Loot name="Greater Potion of Wisdom">Item</Loot>
+			<Loot name="Greater Potion of Dexterity">Item</Loot>
+			<Loot name="Greater Potion of Might">Item</Loot>
+			<Loot name="Greater Potion of Luck">Item</Loot>
+			<Loot name="Greater Potion of Protection">Item</Loot>
+			<Loot name="Greater Potion of Restoration">Item</Loot>
+			<Loot name="Greater Potion of Life">Item</Loot>
+			<Loot name="Greater Potion of Mana">Item</Loot>
+        </CrateLoot>
+  </Lootcase>
+  <Lootcase type="0x0003" id="Gold Lootbox">
+  		<CrateLoot chance="0.005">
+			<Loot name="Ultimate Onrane Cache">Item</Loot>
+			<Loot name="Medium Sor Fragment">Item</Loot>
+			<Loot name="Shard of Cosmic Collapse">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.05">
+			<Loot name="Onrane Cache">Item</Loot>
+			<Loot name="Small Sor Fragment">Item</Loot>
+			<Loot name="Shard of Zol Corruption">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.35">
+			<Loot name="Staff of Dark Malediction">Item</Loot>
+			<Loot name="Marble Tablet">Item</Loot>
+			<Loot name="Ivory Ring">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.645">
+			<Loot name="Greater Potion of Attack">Item</Loot>
+			<Loot name="Greater Potion of Speed">Item</Loot>
+			<Loot name="Greater Potion of Defense">Item</Loot>
+			<Loot name="Greater Potion of Vitality">Item</Loot>
+			<Loot name="Greater Potion of Wisdom">Item</Loot>
+			<Loot name="Greater Potion of Dexterity">Item</Loot>
+			<Loot name="Greater Potion of Might">Item</Loot>
+			<Loot name="Greater Potion of Luck">Item</Loot>
+			<Loot name="Greater Potion of Protection">Item</Loot>
+			<Loot name="Greater Potion of Restoration">Item</Loot>
+			<Loot name="Greater Potion of Life">Item</Loot>
+			<Loot name="Greater Potion of Mana">Item</Loot>
+        </CrateLoot>
+  </Lootcase>
+    <Lootcase type="0x0004" id="Elite Lootbox">
+	    <CrateLoot chance="0.001">
+			<Loot name="Master Eon">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.01">
+			<Loot name="Legendary Sor Crystal">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.05">
+			<Loot name="Shard of Cosmic Collapse">Item</Loot>
+			<Loot name="Shard of Zol Corruption">Item</Loot>
+			<Loot name="Shard of Eternal Fury">Item</Loot>
+			<Loot name="Ultimate Onrane Cache">Item</Loot>
+			<Loot name="Sor Fragment Cache">Item</Loot>
+			<Loot name="Lost Scripture">Item</Loot>
+			<Loot name="Lost Scripture #2">Item</Loot>
+			<Loot name="Insignia of Valor">Item</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.19">
+			<Loot name="1000 Gold">Item</Loot>
+			<Loot name="10000 Gold">Item</Loot>
+        </CrateLoot>
+		<CrateLoot chance="0.749">
+			<Loot name="Onrane Cache">Item</Loot>
+			<Loot name="Gold Cache">Item</Loot>
+        </CrateLoot>
+  </Lootcase>
+  <Lootcase type="0x0005" id="Premium Lootbox">
+        <CrateLoot chance="1.00">
+			<Loot name="Random Effect Chip">Item</Loot>
+        </CrateLoot>
+  </Lootcase>
 </Lootboxes>

@@ -93,7 +93,9 @@ namespace common.resources
         Vengeance = (ulong)1 << 59,
         ManaRecovery = (ulong)1 << 60,
         Alliance = (ulong)1 << 61,
-        HealthRecovery = (ulong)1 << 62
+        HealthRecovery = (ulong)1 << 62,
+        ShieldRecovery = (ulong)1 << 63,
+        ShieldFortification = (ulong)1 << 64
     }
 
     public enum ConditionEffectIndex
@@ -159,7 +161,9 @@ namespace common.resources
         Vengeance = 59,
         ManaRecovery = 60,
         Alliance = 61,
-        HealthRecovery = 62
+        HealthRecovery = 62,
+        ShieldRecovery = 63,
+        ShieldFortification = 64
     }
 
     public class ConditionEffect
@@ -659,6 +663,7 @@ namespace common.resources
         public bool SUndead { get; }
         public float Cooldown { get; }
         public bool Resurrects { get; }
+        public bool Zombificates { get; }
         public int Texture1 { get; }
         public int Texture2 { get; }
         public bool Secret { get; }
@@ -771,6 +776,8 @@ namespace common.resources
             Cooldown = (n = elem.Element("Cooldown")) != null ? float.Parse(n.Value) : 0;
 
             Resurrects = elem.Element("Resurrects") != null;
+
+            Zombificates = elem.Element("Zombificates") != null;
 
             Texture1 = (n = elem.Element("Tex1")) != null ? Convert.ToInt32(n.Value, 16) : 0;
 
