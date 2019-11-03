@@ -89,13 +89,12 @@ namespace common.resources
         GraspofZol = (ulong)1 << 54,
         SamuraiBerserk = (ulong)1 << 55,
         DrakzixCharging = (ulong)1 << 56,
-        Relentless = (ulong)1 << 58,
-        Vengeance = (ulong)1 << 59,
-        ManaRecovery = (ulong)1 << 60,
-        Alliance = (ulong)1 << 61,
-        HealthRecovery = (ulong)1 << 62,
-        ShieldRecovery = (ulong)1 << 63,
-        ShieldFortification = (ulong)1 << 64
+        Relentless = (ulong)1 << 57,
+        Vengeance = (ulong)1 << 58,
+        ManaRecovery = (ulong)1 << 59,
+        Alliance = (ulong)1 << 60,
+        HealthRecovery = (ulong)1 << 61,
+        ShieldRecovery = (ulong)1 << 62
     }
 
     public enum ConditionEffectIndex
@@ -157,13 +156,12 @@ namespace common.resources
         GraspofZol = 54,
         SamuraiBerserk = 55,
         DrakzixCharging = 56,
-        Relentless = 58,
-        Vengeance = 59,
-        ManaRecovery = 60,
-        Alliance = 61,
-        HealthRecovery = 62,
-        ShieldRecovery = 63,
-        ShieldFortification = 64
+        Relentless = 57,
+        Vengeance = 58,
+        ManaRecovery = 59,
+        Alliance = 60,
+        HealthRecovery = 61,
+        ShieldRecovery = 62
     }
 
     public class ConditionEffect

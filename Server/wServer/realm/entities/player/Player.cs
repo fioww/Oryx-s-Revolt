@@ -1483,6 +1483,23 @@ namespace wServer.realm.entities
             }
             return false;
         }
+        public bool Zombification()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                var item = Inventory[i];
+
+                if (item == null || !item.Zombificates)
+                    continue;
+
+                Inventory[i] = null;
+                foreach (var player in Owner.Players.Values)
+                    player.SendInfo($"{Name} has lost their lives and became a zombie!");
+
+                return true;
+            }
+            return false;
+        }
 
         bool SecondChance()
         {

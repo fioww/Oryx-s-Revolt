@@ -889,7 +889,7 @@ public class GameObject extends BasicObject {
     public function showDamageText2(damageDealt:int, isCriticalHit:Boolean):void {
         var critMultValX:Number = map_.player_.criticalMultiplier_;
         var _local_3:String = ("-" + damageDealt * critMultValX);
-        var _local_4:CharacterStatusText = new CharacterStatusText(this, ((isCriticalHit) ? 0xFF4500 : 0xFFFF00), 1000);
+        var _local_4:CharacterStatusText = new CharacterStatusText(this, ((isCriticalHit) ? 0xFF4500 : 0xFFFF00), 800);
         _local_4.setStringBuilder(new StaticStringBuilder(_local_3));
         map_.mapOverlay_.addStatusText(_local_4);
     }
@@ -1057,9 +1057,12 @@ public class GameObject extends BasicObject {
         }
         if (_arg2 > 0) {
             _local15 = ((((this.isArmorBroken()) || (((!((_arg5 == null))) && (_arg5.projProps_.armorPiercing_))))) || (_local6));
-            if(this is Player && (this as Player).protectionPoints_ > 0){
+            if(this is Player && (this as Player).protectionPoints_ > 0)
+            {
                 this.showDamageText3(_arg2, _local15);
-            }else{
+            }
+            else
+            {
                 this.showDamageText(_arg2, _local15);
             }
         }
@@ -1079,14 +1082,14 @@ public class GameObject extends BasicObject {
 
     public function showDamageText(_arg1:int, _arg2:Boolean):void {
         var _local3:String = ("-" + _arg1);
-        var _local4:CharacterStatusText = new CharacterStatusText(this, ((_arg2) ? 0x9000FF : 0xFF0000), 1000);
+        var _local4:CharacterStatusText = new CharacterStatusText(this, ((_arg2) ? 0x9000FF : 0xFF0000), 800);
         _local4.setStringBuilder(new StaticStringBuilder(_local3));
         map_.mapOverlay_.addStatusText(_local4);
     }
 
     public function showDamageText3(_arg1:int, _arg2:Boolean):void {
         var _local3:String = ("-" + _arg1);
-        var _local4:CharacterStatusText = new CharacterStatusText(this, ((_arg2) ? 0xFFFFFF : 0xFFFFFF), 1000);
+        var _local4:CharacterStatusText = new CharacterStatusText(this, ((_arg2) ? 0x8BA5E8 : 0x8BA5E8), 800);
         _local4.setStringBuilder(new StaticStringBuilder(_local3));
         map_.mapOverlay_.addStatusText(_local4);
     }
@@ -1259,7 +1262,7 @@ public class GameObject extends BasicObject {
             this.backPath_ = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS, new Vector.<Number>());
             this.barFill_ = new GraphicsSolidFill(0x10FF00);
             this.barFillPath_ = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS, new Vector.<Number>());
-			this.protBarFill_ = new GraphicsSolidFill(0xFFFFFF);
+			this.protBarFill_ = new GraphicsSolidFill(0x8ba5e8);
             this.protBarFillPath_ = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS, new Vector.<Number>());
         }
         if (this.hp_ > this.maxHP_) {

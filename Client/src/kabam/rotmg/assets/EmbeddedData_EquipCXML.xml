@@ -3681,9 +3681,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Attack stat by 2.</Description>
+        <Description>A potion that permanently increases your Attack stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="20" amount="2">IncrementStat</Activate>
+        <Activate stat="20" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3699,9 +3699,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Defense stat by 2.</Description>
+        <Description>A potion that permanently increases your Defense stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="21" amount="2">IncrementStat</Activate>
+        <Activate stat="21" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3717,9 +3717,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Speed stat by 2.</Description>
+        <Description>A potion that permanently increases your Speed stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="22" amount="2">IncrementStat</Activate>
+        <Activate stat="22" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3735,9 +3735,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Vitality stat by 2.</Description>
+        <Description>A potion that permanently increases your Vitality stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="26" amount="2">IncrementStat</Activate>
+        <Activate stat="26" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3753,9 +3753,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Wisdom stat by 2.</Description>
+        <Description>A potion that permanently increases your Wisdom stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="27" amount="2">IncrementStat</Activate>
+        <Activate stat="27" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3771,9 +3771,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Dexterity stat by 2.</Description>
+        <Description>A potion that permanently increases your Dexterity stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="28" amount="2">IncrementStat</Activate>
+        <Activate stat="28" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3788,9 +3788,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <Index>0x26</Index>
         </Texture>
         <SlotType>10</SlotType>
-        <Description>A potion that permanently increases your Health stat by 2.</Description>
+        <Description>A potion that permanently increases your Health stat by 5.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="0" amount="10">IncrementStat</Activate>
+        <Activate stat="0" amount="5">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -3805,9 +3805,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <Index>0x27</Index>
         </Texture>
         <SlotType>10</SlotType>
-        <Description>A potion that permanently increases your Magic stat by 2.</Description>
+        <Description>A potion that permanently increases your Magic stat by 5.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="3" amount="10">IncrementStat</Activate>
+        <Activate stat="3" amount="5">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13266,9 +13266,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Attack stat by 4.</Description>
+        <Description>A potion that permanently increases your Attack stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="20" amount="4">IncrementStat</Activate>
+        <Activate stat="20" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13284,9 +13284,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Defense stat by 4.</Description>
+        <Description>A potion that permanently increases your Defense stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="21" amount="4">IncrementStat</Activate>
+        <Activate stat="21" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13302,9 +13302,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Speed stat by 4.</Description>
+        <Description>A potion that permanently increases your Speed stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="22" amount="4">IncrementStat</Activate>
+        <Activate stat="22" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13320,9 +13320,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Vitality stat by 4.</Description>
+        <Description>A potion that permanently increases your Vitality stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="26" amount="4">IncrementStat</Activate>
+        <Activate stat="26" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13338,9 +13338,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Wisdom stat by 4.</Description>
+        <Description>A potion that permanently increases your Wisdom stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="27" amount="4">IncrementStat</Activate>
+        <Activate stat="27" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13356,9 +13356,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>4</Tier>
-        <Description>A potion that permanently increases your Dexterity stat by 4.</Description>
+        <Description>A potion that permanently increases your Dexterity stat by 2.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="28" amount="4">IncrementStat</Activate>
+        <Activate stat="28" amount="2">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13373,9 +13373,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <Index>0x13</Index>
         </Texture>
         <SlotType>10</SlotType>
-        <Description>A potion that permanently increases your Health stat by 4.</Description>
+        <Description>A potion that permanently increases your Health stat by 10.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="0" amount="20">IncrementStat</Activate>
+        <Activate stat="0" amount="10">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -13390,9 +13390,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <Index>0x14</Index>
         </Texture>
         <SlotType>10</SlotType>
-        <Description>A potion that permanently increases your Magic stat by 4.</Description>
+        <Description>A potion that permanently increases your Magic stat by 10.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="3" amount="20">IncrementStat</Activate>
+        <Activate stat="3" amount="10">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -26962,9 +26962,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Might by 2.</Description>
+        <Description>A potion that permanently increases your Might by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="112" amount="2">IncrementStat</Activate>
+        <Activate stat="112" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -26980,9 +26980,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Luck by 2.</Description>
+        <Description>A potion that permanently increases your Luck by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="114" amount="2">IncrementStat</Activate>
+        <Activate stat="114" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -28505,9 +28505,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Restoration stat by 2.</Description>
+        <Description>A potion that permanently increases your restoration stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="121" amount="2">IncrementStat</Activate>
+        <Activate stat="121" amount="1">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -28523,9 +28523,9 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>10</SlotType>
         <Tier>2</Tier>
-        <Description>A potion that permanently increases your Protection stat by 2.</Description>
+        <Description>A potion that permanently improves the power of your shield by 4.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="122" amount="2">IncrementStat</Activate>
+        <Activate stat="122" amount="4">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -30430,76 +30430,76 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
     <BagType>5</BagType>
   </Object>
     <Object type="0x61c9" id="Greater Potion of Might">
-      <Class>Equipment</Class>
-      <Item/>
-		<Texture>
-		  <File>d3LofiObjEmbed</File>
-		  <Index>0x444</Index>
-		</Texture>
-      <SlotType>10</SlotType>
-      <Tier>4</Tier>
-      <Description>A potion that permanently increases Might by 4.</Description>
-      <Sound>use_potion</Sound>
-      <Activate stat="112" amount="4">IncrementStat</Activate>
-      <Consumable/>
-      <Potion/>
-      <BagType>5</BagType>
-      <feedPower>200</feedPower>
-      <DisplayId>Greater Potion of Might</DisplayId>
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x444</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>4</Tier>
+        <Description>A potion that permanently increases might by 2.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="112" amount="2">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>5</BagType>
+        <feedPower>200</feedPower>
+        <DisplayId>Greater Potion of Might</DisplayId>
     </Object>
-	<Object type="0x61ca" id="Greater Potion of Restoration">
-      <Class>Equipment</Class>
-      <Item/>
-		<Texture>
-		  <File>d3LofiObjEmbed</File>
-		  <Index>0x445</Index>
-		</Texture>
-      <SlotType>10</SlotType>
-      <Tier>4</Tier>
-      <Description>A potion that permanently increases Restoration by 4.</Description>
-      <Sound>use_potion</Sound>
-      <Activate stat="121" amount="4">IncrementStat</Activate>
-      <Consumable/>
-      <Potion/>
-      <BagType>5</BagType>
-      <feedPower>200</feedPower>
-      <DisplayId>Greater Potion of Restoration</DisplayId>
+    <Object type="0x61ca" id="Greater Potion of Restoration">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x445</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>4</Tier>
+        <Description>A potion that permanently increases restoration by 2.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="121" amount="2">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>5</BagType>
+        <feedPower>200</feedPower>
+        <DisplayId>Greater Potion of Restoration</DisplayId>
     </Object>
-	<Object type="0x61cb" id="Greater Potion of Luck">
-      <Class>Equipment</Class>
-      <Item/>
-		<Texture>
-		  <File>d3LofiObjEmbed</File>
-		  <Index>0x446</Index>
-		</Texture>
-      <SlotType>10</SlotType>
-      <Tier>4</Tier>
-      <Description>A potion that permanently increases Luck by 4.</Description>
-      <Sound>use_potion</Sound>
-      <Activate stat="114" amount="4">IncrementStat</Activate>
-      <Consumable/>
-      <Potion/>
-      <BagType>5</BagType>
-      <feedPower>200</feedPower>
-      <DisplayId>Greater Potion of Luck</DisplayId>
+    <Object type="0x61cb" id="Greater Potion of Luck">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x446</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>4</Tier>
+        <Description>A potion that permanently increases Luck by 2.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="114" amount="2">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>5</BagType>
+        <feedPower>200</feedPower>
+        <DisplayId>Greater Potion of Luck</DisplayId>
     </Object>
-	<Object type="0x61cc" id="Greater Potion of Protection">
-      <Class>Equipment</Class>
-      <Item/>
-		<Texture>
-		  <File>d3LofiObjEmbed</File>
-		  <Index>0x447</Index>
-		</Texture>
-      <SlotType>10</SlotType>
-      <Tier>4</Tier>
-      <Description>A potion that permanently increases Protection by 4.</Description>
-      <Sound>use_potion</Sound>
-      <Activate stat="122" amount="4">IncrementStat</Activate>
-      <Consumable/>
-      <Potion/>
-      <BagType>5</BagType>
-      <feedPower>200</feedPower>
-      <DisplayId>Greater Potion of Protection</DisplayId>
+    <Object type="0x61cc" id="Greater Potion of Protection">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x447</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>4</Tier>
+        <Description>A potion that permanently improves the power of your shield by 8.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="122" amount="8">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>5</BagType>
+        <feedPower>200</feedPower>
+        <DisplayId>Greater Potion of Protection</DisplayId>
     </Object>
     <Object type="0x61cd" id="Kunai">
         <Class>Equipment</Class>

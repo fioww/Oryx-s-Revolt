@@ -26,7 +26,7 @@ public class StatMetersView extends Sprite {
         this.hpBar_ = new StatusBar(176, barSize, 14693428, 0x545454, TextKey.STATUS_BAR_HEALTH_POINTS);
         this.mpBar_ = new StatusBar(176, barSize, 6325472, 0x545454, TextKey.STATUS_BAR_MANA_POINTS);
         this.surgeBar_ = new StatusBar(176 / 2 - 2, barSize, 0xFFFF66, 0x545454, "SG");
-        this.protectionBar = new StatusBar(176 / 2 - 2, barSize, 0xFFFFFF, 0x545454, "PT");
+        this.protectionBar = new StatusBar(176 / 2 - 2, barSize, 0x8ba5e8, 0x545454, "SD");
 
         this.hpBar_.y = 12 + 6;
         this.mpBar_.y = 24 + 12;

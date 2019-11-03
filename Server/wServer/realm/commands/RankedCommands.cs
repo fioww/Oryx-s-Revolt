@@ -252,8 +252,11 @@ namespace wServer.realm.commands
             {
                 NotifySpawn(player, props.notif);
             }
-
-
+            var rng = new Random();
+            if (player.Zombification())
+            {
+                QueueSpawnEvent(player, rng.Next(1, 3), 200);
+            }
             return true;
         }
 

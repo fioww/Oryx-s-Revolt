@@ -53,7 +53,7 @@ public class NodeDisplay1 extends Sprite implements TooltipAble {
         }
         if(player.node1_== 5){
             this.nodeTexture = TextureRedrawer.redraw(AssetLibrary.getImageFromSet("marks10x10", 4), 46, true, 0);
-            this.tooltip = new TextToolTip(0x363636, 0x660000, "Node of Faith", "Raises your OVERALL protection by 5%.", 200);
+            this.tooltip = new TextToolTip(0x363636, 0x660000, "Node of Faith", "Raises your OVERALL shield points by 5%.", 200);
         }
         if(player.node1_== 6){
             this.nodeTexture = TextureRedrawer.redraw(AssetLibrary.getImageFromSet("marks10x10", 5), 46, true, 0);

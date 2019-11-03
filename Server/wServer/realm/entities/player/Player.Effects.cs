@@ -139,6 +139,37 @@ namespace wServer.realm.entities
                     _healing -= (int)_healing;
                 }
                 _healing += 28 * (time.ElapsedMsDelta / 1000f);
+
+            }
+
+            float protHealing = ((Stats[3] / 4) + (Stats[7] / 3) + (Stats[8] / 6)) * (time.ElapsedMsDelta / 2200f);
+            if (Stats[3] > 50 || Stats[7] > 55 || Stats[8] > 40) //lazy way of scaling
+                protHealing = ((Stats[3] / 6) + (Stats[7] / 5) + (Stats[8] / 8)) * (time.ElapsedMsDelta / 2400f);
+
+            if (HasConditionEffect(ConditionEffects.ShieldRecovery))
+            {
+                protHealing *= 2;
+            }
+
+            /*if (HasConditionEffect(ConditionEffects.MagicShield))
+            {
+                protHealing *= 3;
+            }*/
+
+            if (Protection < ProtectionMax)
+            {
+                if (Protection < ProtectionMax / 5)
+                {
+                    ProtectionDamage -= (int)protHealing / 5;
+                }
+                if (Protection < ProtectionMax / 2)
+                {
+                    ProtectionDamage -= (int)protHealing / 2;
+                }
+                if (Protection < ProtectionMax)
+                {
+                    ProtectionDamage -= (int)protHealing;
+                }
             }
 
             if (Mark == 4 && Surge >= 25)

@@ -889,8 +889,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
                         if (baseStat + int(itemXML.Activate.@amount) == stats[2] + postMaxOffset) {
                             consumeResult = "You are now fully ascended in this stat."
-                        } else consumeResult = (stats[2] + postMaxOffset - (baseStat + int(itemXML.Activate.@amount)))
-                                + " left to fully ascend this stat.";
+                        } else consumeResult = itemXML.attribute("id") + " Consumed; " + Math.max((stats[2] - (baseStat + (int(itemXML.Activate.@amount)))) / int(itemXML.Activate.@amount))
+                               + " " + itemXML.attribute("id") + " left to fully ascend this stat.";
 
                         this.addTextLine.dispatch(ChatMessage.make("", "'" + itemXML.attribute("id") + "' consumed. " + consumeResult));
                     } else {
@@ -910,10 +910,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
                     if (baseStat + int(itemXML.Activate.@amount) >= stats[2]) {
                         consumeResult = "You are now maxed in this stat."
-                    } else consumeResult = (stats[2] - (baseStat + int(itemXML.Activate.@amount)))
-                            + " left to max this stat.";
+                    } else consumeResult = itemXML.attribute("id") + " Consumed; " + Math.max((stats[2] - (baseStat + (int(itemXML.Activate.@amount)))) / int(itemXML.Activate.@amount))
+                            + " "  + itemXML.attribute("id") + " left to max this stat.";
 
-                    this.addTextLine.dispatch(ChatMessage.make("", "'" + itemXML.attribute("id") + "' consumed. " + consumeResult));
+                    this.addTextLine.dispatch(ChatMessage.make("", consumeResult));
                 }
                 this.applyUseItem(go, slot, itemId, itemXML);
                 SoundEffectLibrary.play("use_potion");

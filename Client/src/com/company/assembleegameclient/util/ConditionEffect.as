@@ -70,11 +70,12 @@ public class ConditionEffect {
     public static const GRASPOFZOL:int = 55;
     public static const SAMURAIBERSERK:int = 56;
     public static const DRAKZIXCHARGING:int = 57;
-    public static const RELENTLESS:int = 59;
-    public static const VENGEANCE:int = 60;
-    public static const MANARECOVERY:int = 61;
-    public static const ALLIANCE:int = 62;
-    public static const HEALTHRECOVERY:int = 63;
+    public static const RELENTLESS:int = 58;
+    public static const VENGEANCE:int = 59;
+    public static const MANARECOVERY:int = 60;
+    public static const ALLIANCE:int = 61;
+    public static const HEALTHRECOVERY:int = 62;
+    public static const SHIELDRECOVERY:int = 63;
     public static const GROUND_DAMAGE:uint = 99;
     public static const DEAD_BIT:uint = (1 << (DEAD - 1));
     public static const QUIET_BIT:uint = (1 << (QUIET - 1));
@@ -138,6 +139,7 @@ public class ConditionEffect {
     public static const MANARECOVERY_BIT:uint = (1 << (MANARECOVERY - NEW_CON_THREASHOLD));
     public static const ALLIANCE_BIT:uint = (1 << (ALLIANCE - NEW_CON_THREASHOLD));
     public static const HEALTHRECOVERY_BIT:uint = (1 << (HEALTHRECOVERY - NEW_CON_THREASHOLD));
+    public static const SHIELDRECOVERY_BIT:uint = (1 << (SHIELDRECOVERY - NEW_CON_THREASHOLD));
     public static const MAP_FILTER_BITMASK:uint = DRUNK_BIT | BLIND_BIT | PAUSED_BIT;
     public static const PROJ_NOHIT_BITMASK:uint = INVINCIBLE_BIT | STASIS_BIT | PAUSED_BIT;
     public static const CE_FIRST_BATCH:uint = 0;
@@ -210,7 +212,8 @@ public class ConditionEffect {
                 new ConditionEffect("Vengeance", VENGEANCE_BIT, [68], "Vengeance"),
                 new ConditionEffect("ManaRecovery", MANARECOVERY_BIT, [69], "ManaRecovery"),
                 new ConditionEffect("Alliance", ALLIANCE_BIT, [70], "Alliance"),
-                new ConditionEffect("HealthRecovery", HEALTHRECOVERY_BIT, [71], "HealthRecovery")
+                new ConditionEffect("HealthRecovery", HEALTHRECOVERY_BIT, [71], "HealthRecovery"),
+                new ConditionEffect("Shield Recovery", SHIELDRECOVERY_BIT, [18], "Shield Recovery")
             ];
     
     private static var conditionEffectFromName_:Object = null;

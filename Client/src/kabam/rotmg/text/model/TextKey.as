@@ -650,8 +650,8 @@ public class TextKey {
     public static const STAT_MODEL_RESTORATION_SHORT:String = "RES";
     public static const STAT_MODEL_RESTORATION_LONG:String = "Restoration";
     public static const STAT_MODEL_RESTORATION_DESCRIPTION:String = "This stat governs the amount of health and mana potions you get upon entering the Nexus and the amount they restore.";
-    public static const STAT_MODEL_PROTECTION_SHORT:String = "PRT";
-    public static const STAT_MODEL_PROTECTION_LONG:String = "Protection";
+    public static const STAT_MODEL_PROTECTION_SHORT:String = "SDP";
+    public static const STAT_MODEL_PROTECTION_LONG:String = "Shield Points";
     public static const STAT_MODEL_PROTECTION_DESCRIPTION:String = "This stat increases your PT bar, which allows to soak shots and ignore certain debuffs as long as it's up.";
 
     public static function wrapForTokenResolution(_arg1:String):String {
