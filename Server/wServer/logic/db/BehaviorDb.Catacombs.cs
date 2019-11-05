@@ -558,7 +558,6 @@ namespace wServer.logic
                     new ItemLoot("Staff of the Withering", 0.002),
                     new ItemLoot("Gold Cache", 0.8),
                     new ItemLoot("Daring Windrage Robe", 0.002),
-                    new ItemLoot("Necromantic Charm", 0.002),
                     new ItemLoot("Skull of Glowing Plagues", 0.002),
                     new ItemLoot("Ring of Pestilence", 0.002)
 

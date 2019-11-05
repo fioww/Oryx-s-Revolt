@@ -20,10 +20,6 @@ namespace wServer.realm.entities
             return Inventory[1] != null && Inventory[1].ObjectId == "The Sun & Moon Expansion" && Surge >= 50;
         }
 
-        public bool CheckCrescent() {
-            return Inventory[0] != null && Inventory[0].ObjectId == "Moon Crescent Halberd" && MP >= Stats[1] / 2;
-        }
-
         public bool CheckGHelm() {
             return Inventory[1] != null && Inventory[1].ObjectId == "The Gilded Helm";
         }

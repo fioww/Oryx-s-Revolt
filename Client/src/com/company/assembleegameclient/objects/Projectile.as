@@ -261,14 +261,6 @@ public class Projectile extends BasicObject {
                         doneAction(map_.gs_, Tutorial.KILL_ACTION);
                     }
                 }
-                if(go.pvp_ && player.pvp_){
-                    map_.gs_.gsc_.playerHit(this.bulletId_, go.objectId_);
-                    if(go is Player && (go as Player).protectionPoints_ > 0){
-                        go.damage(this.containerType_, dmg2, this.projProps_.effects_, false, this);
-                    }else{
-                        go.damage(this.containerType_, dmg, this.projProps_.effects_, false, this);
-                    }
-                }
                 if (go == player) {
                     map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_);
                     if(go is Player && (go as Player).protectionPoints_ > 0){
@@ -318,17 +310,13 @@ public class Projectile extends BasicObject {
                     map_.goDict_[go.objectId_] == null) {
                 continue;
             }
-            if ((this.damagesEnemies_ && go.objectId_ != this.ownerId_ && ((go.pvp_ && go.props_.isPlayer_) || go.props_.isEnemy_)) || (this.damagesPlayers_ && go.props_.isPlayer_)) {
+            if ((this.damagesEnemies_ && go.objectId_ != this.ownerId_ && ((go.props_.isPlayer_) || go.props_.isEnemy_)) || (this.damagesPlayers_ && go.props_.isPlayer_)) {
                 if (!projProps_.multiHit_ || multiHitDict_[go] == null) {
                     if (go == map_.player_ || go.props_.isPlayer_) {
                         var _owner:GameObject = map_.goDict_[this.ownerId_];
                         if (_owner is Player) {
                             if (_owner != null) {
-                                if (go.canBeHitBy(_owner)) {
-                                    return (go);
-                                } else {
                                     continue;
-                                }
                             } else {
                                 return (go);
                             }

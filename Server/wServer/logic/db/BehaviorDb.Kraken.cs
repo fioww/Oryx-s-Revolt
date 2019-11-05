@@ -249,7 +249,6 @@ namespace wServer.logic
                     new ItemLoot("Onrane Cache", 0.75),
                     new ItemLoot("Onrane", 1.00),
                     new ItemLoot("Large Sor Fragment", 0.33),
-                    new ItemLoot("Banner of the Furious Kraken", 0.50),
                     new TierLoot(6, ItemType.Ability, 0.7),
                     new TierLoot(12, ItemType.Armor, 0.07),
                     new TierLoot(12, ItemType.Weapon, 0.07),

@@ -272,24 +272,8 @@ namespace wServer.realm.entities
                 case "Moonlight" when MP >= Stats[1]:
                     ProtectionDamage = 0;
                     break;
-                case "Iok's Relief" when Surge >= 5:
-                    ApplyConditionEffect(NegativeEffs);
-                    BroadcastSync(new ShowEffect
-                    {
-                        EffectType = EffectType.AreaBlast,
-                        TargetObjectId = Id,
-                        Color = new ARGB(0xffffffff),
-                        Pos1 = new Position { X = 1 }
-                    }, p => this.DistSqr(p) < RadiusSqr);
-                    break;
                 case "The Bleeding Fang" when Surge >= 2:
                     ApplyConditionEffect(ConditionEffectIndex.Armored, HP * 4);
-                    break;
-                case "The Bifierce" when HP <= Stats[0] / 2:
-                    Surge++;
-                    break;
-                case "Iok's Courage" when ProtectionDamage >= ProtectionMax:
-                    Surge += 15;
                     break;
                 case "Starmind Gauntlet" when Surge >= 60 && item.MpCost > 0:
                     WeakBlast(time, item, target);
@@ -310,9 +294,6 @@ namespace wServer.realm.entities
                     break;
                 case "Dimensional Prism" when Surge > 10:
                     MP += item.MpCost;
-                    break;
-                case "Urumi" when Surge >= 10:
-                    AEHealNoRest(time, item, target, 2*Surge+20);
                     break;
             }
 

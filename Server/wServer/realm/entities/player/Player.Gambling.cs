@@ -48,13 +48,6 @@ namespace wServer.realm.entities
                 return;
             }
 
-            if (target.Client.Account.Elite == 1 && Client.Account.Elite == 0 
-                || target.Client.Account.Elite == 0 && Client.Account.Elite == 1)
-            {
-                SendError("Both parties must either be or not be Elite Accounts in order to gamble.");
-                return;
-            }
-
             if (target.Client.Account.AccountId == Client.Account.AccountId) {
                 SendError("You can not gamble yourself.");
                 return;

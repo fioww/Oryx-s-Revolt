@@ -1942,12 +1942,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                 case StatData.SOR_STORAGE:
                     player.sorStorage_ = statValue;
                     break;
-                case StatData.ELITE:
-                    player.elite_ = statValue;
-                    break;
-                case StatData.PVP:
-                    player.pvp_ = statValue == 1;
-                    break;
             }
         }
     }

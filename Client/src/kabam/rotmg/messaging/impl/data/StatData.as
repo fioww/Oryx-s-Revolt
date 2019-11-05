@@ -131,8 +131,6 @@ public class StatData {
     public static const ASCENSIONENABLED:int = 146;
     public static const RAGE_STAT:int = 147;
     public static const SOR_STORAGE:int = 148;
-    public static const ELITE:int = 150;
-    public static const PVP:int = 151;
 
     // unimplemented
     public static const DAMAGE_MIN:int = 98;

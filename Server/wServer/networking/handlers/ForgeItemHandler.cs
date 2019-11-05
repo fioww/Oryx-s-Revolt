@@ -130,17 +130,6 @@ namespace wServer.networking.handlers
                                              .ToArray();
                         if (client.Manager.Resources.GameData.Items[(ushort)packet.ShardSlot.ObjectType].Legendary
                             && !_rerollExclude.Contains((ushort)packet.ShardSlot.ObjectType)) {
-                            if (client.Account.Elite != 1) {
-                                if (client.Player.Credits >= 75000) {
-                                    client.Player.Manager.Database.UpdateCredit(client.Account, -75000);
-                                    client.Player.Credits -= -75000;
-                                    client.Player.ForceUpdate(client.Player.Credits);
-
-                                    itemValue = allLegendaries[rnd.Next(allLegendaries.Length)];
-                                } else {
-                                    client.Player.SendError("You need 75k Gold in order to reroll with a Shine.");
-                                }
-                            } else {
                                 if (client.Player.Onrane >= 30) {
                                     client.Player.Manager.Database.UpdateOnrane(client.Account, -30);
                                     client.Player.Onrane -= 30;
@@ -151,7 +140,6 @@ namespace wServer.networking.handlers
                                     client.Player.SendError("You need 30 Onrane in order to reroll with a Shine.");
                                 }
                             }
-                        }
 
                         if (itemValue == 0x0) return;
                         var item = client.Player.Manager.Resources.GameData.Items[itemValue];

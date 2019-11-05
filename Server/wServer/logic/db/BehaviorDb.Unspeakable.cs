@@ -180,8 +180,7 @@ namespace wServer.logic
                     new TierLoot(10, ItemType.Armor, 0.05),
                     new TierLoot(10, ItemType.Weapon, 0.05),
                     new TierLoot(4, ItemType.Ring, 0.025),
-                    new ItemLoot("Ghilact Dagger", 0.04),
-                    new ItemLoot("Jacket of True Darkness", 0.01)
+                    new ItemLoot("Ghilact Dagger", 0.04)
                 )
             )
 
@@ -355,39 +354,37 @@ namespace wServer.logic
                        )
                     ),
                     new MostDamagers(3,
-                    LootTemplates.Sor4Perc()
+                        LootTemplates.Sor4Perc()
                     ),
                     new Threshold(0.11,
-                    new ItemLoot("Potion of Luck", 1),
-                new ItemLoot("Potion of Mana", 1),
-                new ItemLoot("Potion of Defense", 1),
-                new ItemLoot("Potion of Attack", 0.6),
-                new ItemLoot("Potion of Speed", 0.5),
-                new ItemLoot("Potion of Wisdom", 0.5),
-                new ItemLoot("Potion of Dexterity", 0.5),
-                new ItemLoot("Potion of Vitality", 0.5),
-                new ItemLoot("Night Dice", 0.005),
-                    new ItemLoot("Unholy Short Sword", 0.005),
-                    new ItemLoot("Unholy Bow", 0.005),
-                    new ItemLoot("Unholy Dagger", 0.005),
-                    new ItemLoot("Unholy Staff", 0.005),
-                    new ItemLoot("Unholy Shield", 0.005),
-                    new ItemLoot("Unholy Tome", 0.005),
-                new ItemLoot("Jacket of True Darkness", 0.005),
-                new ItemLoot("Broadsword of Bloodshed", 0.005),
-                new ItemLoot("Evil Shield of the Dark Knight", 0.005),
-                new ItemLoot("Amulet of the Dark Knight", 0.005),
-                new ItemLoot("Chestguard of the Underworld", 0.005),
-                    new TierLoot(10, ItemType.Weapon, 0.07),
-                    new TierLoot(11, ItemType.Weapon, 0.06),
-                    new TierLoot(12, ItemType.Weapon, 0.05),
-                    new TierLoot(5, ItemType.Ability, 0.07),
-                    new TierLoot(6, ItemType.Ability, 0.05),
-                    new TierLoot(11, ItemType.Armor, 0.07),
-                    new TierLoot(12, ItemType.Armor, 0.06),
-                    new TierLoot(13, ItemType.Armor, 0.05),
-                    new TierLoot(5, ItemType.Ring, 0.06)
-                )
+                        new ItemLoot("Potion of Luck", 1),
+                        new ItemLoot("Potion of Mana", 1),
+                        new ItemLoot("Potion of Defense", 1),
+                        new ItemLoot("Potion of Attack", 0.6),
+                        new ItemLoot("Potion of Speed", 0.5),
+                        new ItemLoot("Potion of Wisdom", 0.5),
+                        new ItemLoot("Potion of Dexterity", 0.5),
+                        new ItemLoot("Potion of Vitality", 0.5),
+                        new ItemLoot("Unholy Short Sword", 0.005),
+                        new ItemLoot("Unholy Bow", 0.005),
+                        new ItemLoot("Unholy Dagger", 0.005),
+                        new ItemLoot("Unholy Staff", 0.005),
+                        new ItemLoot("Unholy Shield", 0.005),
+                        new ItemLoot("Unholy Tome", 0.005),
+                        new ItemLoot("Broadsword of Bloodshed", 0.005),
+                        new ItemLoot("Evil Shield of the Dark Knight", 0.005),
+                        new ItemLoot("Amulet of the Dark Knight", 0.005),
+                        new ItemLoot("Chestguard of the Underworld", 0.005),
+                        new TierLoot(10, ItemType.Weapon, 0.07),
+                        new TierLoot(11, ItemType.Weapon, 0.06),
+                        new TierLoot(12, ItemType.Weapon, 0.05),
+                        new TierLoot(5, ItemType.Ability, 0.07),
+                        new TierLoot(6, ItemType.Ability, 0.05),
+                        new TierLoot(11, ItemType.Armor, 0.07),
+                        new TierLoot(12, ItemType.Armor, 0.06),
+                        new TierLoot(13, ItemType.Armor, 0.05),
+                        new TierLoot(5, ItemType.Ring, 0.06)
+                        )
                     );
 
 

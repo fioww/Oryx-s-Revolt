@@ -360,12 +360,6 @@ namespace common
             set => SetValue("guest", value);
         }
 
-        public int Elite
-        {
-            get => GetValue<int>("elite");
-            set => SetValue("elite", value);
-        }
-
         public int Credits
         {
             get => GetValue<int>("credits");

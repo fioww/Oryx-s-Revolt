@@ -41,16 +41,12 @@ namespace wServer.realm.entities.vendors
             new ShopItem("Wand of Recompense", 1000),
             new ShopItem("Sword of Acclaim", 1000),
             new ShopItem("Masamune", 1000),
-            new ShopItem("Master Blades", 1000),
-            new ShopItem("Lance of the Last Stand", 1000),
             new ShopItem("Staff of the Vital Unity", 7500),
             new ShopItem("Sadamune", 7500),
             new ShopItem("Sword of Splendor", 7500),
             new ShopItem("Wand of Evocation", 7500),
             new ShopItem("Bow of Mystical Energy", 7500),
-            new ShopItem("Dagger of Sinister Deeds", 7500),
-            new ShopItem("Ivory Blades", 7500),
-            new ShopItem("Ornate Lance", 7500)
+            new ShopItem("Dagger of Sinister Deeds", 7500)
         };
 
         private static readonly List<ISellableItem> Ability = new List<ISellableItem> {
@@ -67,13 +63,7 @@ namespace wServer.realm.entities.vendors
             new ShopItem("Planefetter Orb", 2000),
             new ShopItem("Prism of Apparitions", 2000),
             new ShopItem("Scepter of Storms", 2000),
-            new ShopItem("Doom Circle", 2000),
-            new ShopItem("Sheath of the Holy Revival", 2000),
-            new ShopItem("Banner of True War", 2000),
-            new ShopItem("Siphon of Redemption", 2000),
-            new ShopItem("Sanctified Charm", 2000),
-            new ShopItem("Stone Dice", 2000),
-            new ShopItem("Jacket of Sorrows", 2000)
+            new ShopItem("Doom Circle", 2000)
         };
 
         private static readonly List<ISellableItem> Armor = new List<ISellableItem> {
@@ -110,8 +100,7 @@ namespace wServer.realm.entities.vendors
             new ShopItem("Drannol's Fury", 120),
             new ShopItem("Grasp of Elysium", 140),
             new ShopItem("Fortification Shield", 160),
-            new ShopItem("Never Before Seen", 120),
-            new ShopItem("The Master's Betrayal", 110)
+            new ShopItem("Never Before Seen", 120)
         };
 
         private static readonly List<ISellableItem> Special = new List<ISellableItem> {

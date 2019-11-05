@@ -87,7 +87,6 @@ public class GameObject extends BasicObject {
     public var object3d_:Object3DStage3D = null;
     public var effect_:ParticleEffect = null;
     public var animations_:Animations = null;
-    public var pvp_:Boolean = false;
     public var dead_:Boolean = false;
     protected var portrait_:BitmapData = null;
     protected var texturingCache_:Dictionary = null;
@@ -284,9 +283,7 @@ public class GameObject extends BasicObject {
         }
     }
 	
-    public function canBeHitBy(_arg1:GameObject) : Boolean {
-        return (this.pvp_ && _arg1.pvp_);
-    }
+
 	
     public function setTex1(_arg1:int):void {
         if (_arg1 == this.tex1Id_) {

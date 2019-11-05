@@ -146,7 +146,6 @@ public class Player extends Character {
     public var node3_:int = 0;
     public var node4_:int = 0;
     public var rank_:int = 0;
-    public var elite_:int = 0;
     public var luckMax_:int = 0;
     public var mightMax_:int = 0;
     public var restorationMax_:int = 0;

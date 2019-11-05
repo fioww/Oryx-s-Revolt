@@ -196,7 +196,6 @@ namespace wServer.logic
                     new ItemLoot("Potion of Defense", 0.3),
                     new ItemLoot("Soulreaper Armor", 0.035),
                     new ItemLoot("Nether Blade", 0.035),
-                    new ItemLoot("Shadow Beacon", 0.035),
                     new ItemLoot("Staff of Dark Malediction", 0.035)
                     )
                 )*/
@@ -274,7 +273,6 @@ namespace wServer.logic
                          new ItemLoot("Potion of Defense", 0.3),
                          new ItemLoot("Soulreaper Armor", 0.01),
                          new ItemLoot("Nether Blade", 0.002),
-                         new ItemLoot("Shadow Beacon", 0.002),
                          new ItemLoot("Wand of Obscurity", 0.002),
                          new ItemLoot("Staff of Dark Malediction", 0.002)
                      )

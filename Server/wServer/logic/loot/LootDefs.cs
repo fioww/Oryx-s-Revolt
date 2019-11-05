@@ -1,4 +1,5 @@
 ﻿using System;
+using log4net;
 using System.Collections.Generic;
 using System.Linq;
 using common.resources;
@@ -62,6 +63,8 @@ namespace wServer.logic.loot
 
     public class ItemLoot : ILootDef
     {
+        private static readonly ILog Log = LogManager.GetLogger(typeof(ItemLoot));
+
         private readonly string _item;
         private readonly double _probability;
 
@@ -74,11 +77,18 @@ namespace wServer.logic.loot
         public void Populate(RealmManager manager, Enemy enemy, Tuple<Player, int> playerDat,
                              Random rand, IList<LootDef> lootDefs)
         {
-            if (playerDat != null) return;
-            var dat = manager.Resources.GameData;
-            if (dat.IdToObjectType.ContainsKey(_item)
-                && dat.Items.ContainsKey(dat.IdToObjectType[_item]))
-                lootDefs.Add(new LootDef(dat.Items[dat.IdToObjectType[_item]], _probability));
+            try
+            {
+                if (playerDat != null) return;
+                var dat = manager.Resources.GameData;
+                if (dat.IdToObjectType.ContainsKey(_item)
+                    && dat.Items.ContainsKey(dat.IdToObjectType[_item]))
+                    lootDefs.Add(new LootDef(dat.Items[dat.IdToObjectType[_item]], _probability));
+            }
+            catch
+            {
+                Log.Warn($"Problem adding {_item} to mob loot table.");
+            }
         }
     }
 
@@ -93,8 +103,8 @@ namespace wServer.logic.loot
 
     public class TierLoot : ILootDef
     {
-        public static readonly int[] WeaponT = { 1, 2, 3, 8, 17, 24, 29, 34 };
-        public static readonly int[] AbilityT = { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 27, 28, 30, 32, 33, 35, 36 };
+        public static readonly int[] WeaponT = { 1, 2, 3, 8, 17, 24};
+        public static readonly int[] AbilityT = { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23 };
         public static readonly int[] ArmorT = { 6, 7, 14 };
         public static readonly int[] RingT = { 9 };
         public static readonly int[] PotionT = { 10 };
@@ -190,7 +200,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.10),
                     new ItemLoot("Spirit of the Heart", 0.10),
                     new ItemLoot("The Grand Finale", 0.10),
-                    new ItemLoot("Merit of Rebellion", 0.10),
                     new ItemLoot("Enigma Wand", 0.10),
                     new ItemLoot("Spear of the Unforgiven", 0.10),
                     new ItemLoot("Dagger of Corruption", 0.10)
@@ -205,7 +214,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.5),
                     new ItemLoot("Spirit of the Heart", 0.5),
                     new ItemLoot("The Grand Finale", 0.5),
-                    new ItemLoot("Merit of Rebellion", 0.5),
                     new ItemLoot("Enigma Wand", 0.5),
                     new ItemLoot("Spear of the Unforgiven", 0.5),
                     new ItemLoot("Dagger of Corruption", 0.5)
@@ -289,7 +297,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 1),
                     new ItemLoot("Spirit of the Heart", 1),
                     new ItemLoot("The Grand Finale", 1),
-                    new ItemLoot("Merit of Rebellion", 1),
                     new ItemLoot("Enigma Wand", 1),
                     new ItemLoot("Spear of the Unforgiven", 1),
                     new ItemLoot("Dagger of Corruption", 1)
@@ -303,7 +310,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.10),
                     new ItemLoot("Spirit of the Heart", 0.10),
                     new ItemLoot("The Grand Finale", 0.10),
-                    new ItemLoot("Merit of Rebellion", 0.10),
                     new ItemLoot("Enigma Wand", 0.10),
                     new ItemLoot("Spear of the Unforgiven", 0.10),
                     new ItemLoot("Dagger of Corruption", 0.10)
@@ -318,7 +324,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.10),
                     new ItemLoot("Spirit of the Heart", 0.10),
                     new ItemLoot("The Grand Finale", 0.10),
-                    new ItemLoot("Merit of Rebellion", 0.10),
                     new ItemLoot("Enigma Wand", 0.10),
                     new ItemLoot("Spear of the Unforgiven", 0.10),
                     new ItemLoot("Dagger of Corruption", 0.10)
@@ -370,7 +375,6 @@ namespace wServer.logic.loot
             return new ILootDef[]
             {
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.10),
                     new ItemLoot("Lavos Armor", 0.10),
                     new ItemLoot("Quiver of the Onslaught", 0.10),
                     new ItemLoot("Stonepraise Tome", 0.10),
@@ -378,11 +382,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Evisceration Claws", 0.10),
                     new ItemLoot("Heatblast Trap", 0.10),
                     new ItemLoot("Royalty Bow", 0.10),
-                    new ItemLoot("Banner of Revenge", 0.10),
                     new ItemLoot("Percussion Shield", 0.10),
                     new ItemLoot("Toxin of the Vicious", 0.10),
-                    new ItemLoot("Implacable Ram", 0.10),
-                    new ItemLoot("Darkin Blades", 0.10),
                     new ItemLoot("The Twisted Cloak", 0.10),
                     new ItemLoot("The Twisted Axe", 0.10),
                     new ItemLoot("Twisted Amulet", 0.10),
@@ -393,7 +394,6 @@ namespace wServer.logic.loot
                 ),
                 //Have another chance to get fabled item
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.50),
                     new ItemLoot("Lavos Armor", 0.50),
                     new ItemLoot("Quiver of the Onslaught", 0.50),
                     new ItemLoot("Stonepraise Tome", 0.50),
@@ -401,11 +401,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Evisceration Claws", 0.50),
                     new ItemLoot("Heatblast Trap", 0.50),
                     new ItemLoot("Royalty Bow", 0.50),
-                    new ItemLoot("Banner of Revenge", 0.50),
                     new ItemLoot("Percussion Shield", 0.50),
                     new ItemLoot("Toxin of the Vicious", 0.50),
-                    new ItemLoot("Implacable Ram", 0.50),
-                    new ItemLoot("Darkin Blades", 0.50),
                     new ItemLoot("The Twisted Cloak", 0.50),
                     new ItemLoot("The Twisted Axe", 0.50),
                     new ItemLoot("Twisted Amulet", 0.50),
@@ -447,7 +444,6 @@ namespace wServer.logic.loot
                 ),
                 //certain fabled item
                new OnlyOne(
-                    new ItemLoot("Bloodwell", 1),
                     new ItemLoot("Lavos Armor", 1),
                     new ItemLoot("Quiver of the Onslaught", 1),
                     new ItemLoot("Stonepraise Tome", 1),
@@ -455,11 +451,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Evisceration Claws", 1),
                     new ItemLoot("Heatblast Trap", 1),
                     new ItemLoot("Royalty Bow", 1),
-                    new ItemLoot("Banner of Revenge", 1),
                     new ItemLoot("Percussion Shield", 1),
                     new ItemLoot("Toxin of the Vicious", 1),
-                    new ItemLoot("Implacable Ram", 1),
-                    new ItemLoot("Darkin Blades", 1),
                     new ItemLoot("The Twisted Cloak", 1),
                     new ItemLoot("The Twisted Axe", 1),
                     new ItemLoot("Twisted Amulet", 1),
@@ -469,7 +462,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Titanic Bracelet", 1)
                     ),
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.10),
                     new ItemLoot("Lavos Armor", 0.10),
                     new ItemLoot("Quiver of the Onslaught", 0.10),
                     new ItemLoot("Stonepraise Tome", 0.10),
@@ -477,11 +469,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Evisceration Claws", 0.10),
                     new ItemLoot("Heatblast Trap", 0.10),
                     new ItemLoot("Royalty Bow", 0.10),
-                    new ItemLoot("Banner of Revenge", 0.10),
                     new ItemLoot("Percussion Shield", 0.10),
                     new ItemLoot("Toxin of the Vicious", 0.10),
-                    new ItemLoot("Implacable Ram", 0.10),
-                    new ItemLoot("Darkin Blades", 0.10),
                     new ItemLoot("The Twisted Cloak", 0.10),
                     new ItemLoot("The Twisted Axe", 0.10),
                     new ItemLoot("Twisted Amulet", 0.10),
@@ -492,7 +481,6 @@ namespace wServer.logic.loot
                 ),
                 //Have another chance to get fabled iten
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.10),
                     new ItemLoot("Lavos Armor", 0.10),
                     new ItemLoot("Quiver of the Onslaught", 0.10),
                     new ItemLoot("Stonepraise Tome", 0.10),
@@ -500,11 +488,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Evisceration Claws", 0.10),
                     new ItemLoot("Heatblast Trap", 0.10),
                     new ItemLoot("Royalty Bow", 0.10),
-                    new ItemLoot("Banner of Revenge", 0.10),
                     new ItemLoot("Percussion Shield", 0.10),
                     new ItemLoot("Toxin of the Vicious", 0.10),
-                    new ItemLoot("Implacable Ram", 0.10),
-                    new ItemLoot("Darkin Blades", 0.10),
                     new ItemLoot("The Twisted Cloak", 0.10),
                     new ItemLoot("The Twisted Axe", 0.10),
                     new ItemLoot("Twisted Amulet", 0.10),
@@ -574,7 +559,6 @@ namespace wServer.logic.loot
             return new ILootDef[]
             {
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.05),
                     new ItemLoot("Lavos Armor", 0.05),
                     new ItemLoot("Quiver of the Onslaught", 0.05),
                     new ItemLoot("Stonepraise Tome", 0.05),
@@ -583,11 +567,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Titanic Bracelet", 0.05),
                     new ItemLoot("Heatblast Trap", 0.05),
                     new ItemLoot("Royalty Bow", 0.05),
-                    new ItemLoot("Banner of Revenge", 0.05),
                     new ItemLoot("Percussion Shield", 0.05),
                     new ItemLoot("Toxin of the Vicious", 0.05),
-                    new ItemLoot("Implacable Ram", 0.05),
-                    new ItemLoot("Darkin Blades", 0.05),
                     new ItemLoot("The Twisted Cloak", 0.05),
                     new ItemLoot("The Twisted Axe", 0.05),
                     new ItemLoot("Twisted Amulet", 0.05),
@@ -605,7 +586,6 @@ namespace wServer.logic.loot
             return new ILootDef[]
             {
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.10),
                     new ItemLoot("Lavos Armor", 0.10),
                     new ItemLoot("Quiver of the Onslaught", 0.10),
                     new ItemLoot("Stonepraise Tome", 0.10),
@@ -614,11 +594,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Titanic Bracelet", 0.10),
                     new ItemLoot("Heatblast Trap", 0.10),
                     new ItemLoot("Royalty Bow", 0.10),
-                    new ItemLoot("Banner of Revenge", 0.10),
                     new ItemLoot("Percussion Shield", 0.10),
                     new ItemLoot("Toxin of the Vicious", 0.10),
-                    new ItemLoot("Implacable Ram", 0.10),
-                    new ItemLoot("Darkin Blades", 0.10),
                     new ItemLoot("The Twisted Cloak", 0.10),
                     new ItemLoot("The Twisted Axe", 0.10),
                     new ItemLoot("Twisted Amulet", 0.10),
@@ -636,7 +613,6 @@ namespace wServer.logic.loot
             return new ILootDef[]
             {
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.05),
                     new ItemLoot("Lavos Armor", 0.05),
                     new ItemLoot("Quiver of the Onslaught", 0.05),
                     new ItemLoot("Stonepraise Tome", 0.05),
@@ -645,11 +621,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Titanic Bracelet", 0.05),
                     new ItemLoot("Heatblast Trap", 0.05),
                     new ItemLoot("Royalty Bow", 0.05),
-                    new ItemLoot("Banner of Revenge", 0.05),
                     new ItemLoot("Percussion Shield", 0.05),
                     new ItemLoot("Toxin of the Vicious", 0.05),
-                    new ItemLoot("Implacable Ram", 0.05),
-                    new ItemLoot("Darkin Blades", 0.05),
                     new ItemLoot("The Twisted Cloak", 0.05),
                     new ItemLoot("The Twisted Axe", 0.05),
                     new ItemLoot("Twisted Amulet", 0.05),
@@ -669,7 +642,6 @@ namespace wServer.logic.loot
             return new ILootDef[]
             {
                 new OnlyOne(
-                    new ItemLoot("Bloodwell", 0.10),
                     new ItemLoot("Lavos Armor", 0.10),
                     new ItemLoot("Quiver of the Onslaught", 0.10),
                     new ItemLoot("Stonepraise Tome", 0.10),
@@ -678,11 +650,8 @@ namespace wServer.logic.loot
                     new ItemLoot("Titanic Bracelet", 0.10),
                     new ItemLoot("Heatblast Trap", 0.10),
                     new ItemLoot("Royalty Bow", 0.10),
-                    new ItemLoot("Banner of Revenge", 0.10),
                     new ItemLoot("Percussion Shield", 0.10),
                     new ItemLoot("Toxin of the Vicious", 0.10),
-                    new ItemLoot("Implacable Ram", 0.10),
-                    new ItemLoot("Darkin Blades", 0.10),
                     new ItemLoot("The Twisted Cloak", 0.10),
                     new ItemLoot("The Twisted Axe", 0.10),
                     new ItemLoot("Twisted Amulet", 0.10),
@@ -802,7 +771,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.05),
                     new ItemLoot("Spirit of the Heart", 0.05),
                     new ItemLoot("The Grand Finale", 0.05),
-                    new ItemLoot("Merit of Rebellion", 0.05),
                     new ItemLoot("Enigma Wand", 0.05),
                     new ItemLoot("Spear of the Unforgiven", 0.05),
                     new ItemLoot("Dagger of Corruption", 0.05)
@@ -832,7 +800,6 @@ namespace wServer.logic.loot
                     new ItemLoot("Bane of the Vision", 0.10),
                     new ItemLoot("Spirit of the Heart", 0.10),
                     new ItemLoot("The Grand Finale", 0.10),
-                    new ItemLoot("Merit of Rebellion", 0.10),
                     new ItemLoot("Enigma Wand", 0.10),
                     new ItemLoot("Spear of the Unforgiven", 0.10),
                     new ItemLoot("Dagger of Corruption", 0.10)

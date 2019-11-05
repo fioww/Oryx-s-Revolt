@@ -414,8 +414,7 @@ namespace wServer.logic
                     new ItemLoot("Greater Potion of Might", 1),
                     new ItemLoot("Greater Potion of Attack", 1),
                     new ItemLoot("Greater Potion of Restoration", 1),
-                    new ItemLoot("Draketail Blade", 0.01),
-                    new ItemLoot("Crashing Crescendo", 0.01)
+                    new ItemLoot("Draketail Blade", 0.01)
                 )
             )
 

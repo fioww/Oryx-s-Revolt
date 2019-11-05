@@ -111,13 +111,13 @@ namespace wServer.networking.handlers
             conATrans[slotA] = itemB;
             // validate that soulbound items are not placed in public bags (includes any swaped item from admins)
             if (!ValidateItemSwap(player, a, itemB) 
-                && (player.Elite == 0 || IsSoleContainerOwner(player, a as Container)))
+                && IsSoleContainerOwner(player, a as Container))
             {
                 queue.Enqueue(() => DropInSoulboundBag(player, itemB));
                 conATrans[slotA] = null;
             }
             if (!ValidateItemSwap(player, b, itemA) 
-                && (player.Elite == 0 || IsSoleContainerOwner(player, b as Container)))
+                && IsSoleContainerOwner(player, b as Container))
             {
                 queue.Enqueue(() => DropInSoulboundBag(player, itemA));
                 conBTrans[slotB] = null;

@@ -22,7 +22,6 @@ namespace wServer.networking.handlers
 
             var entity = player.Owner.GetEntity(objectId);
 
-            if (!player.Owner.PvP) {
                 var prj = entity != null ?
                     ((IProjectileOwner)entity).Projectiles[bulletId] :
                     player.Owner.Projectiles
@@ -47,15 +46,6 @@ namespace wServer.networking.handlers
                 }
 
                 prj?.ForceHit(player, time);
-            } else {
-                var prj = entity != null ?
-                    ((IProjectileOwner)player).Projectiles[bulletId] :
-                    player.Owner.Projectiles
-                        .Where(p => p.Value.ProjectileOwner.Self.Id == objectId)
-                        .SingleOrDefault(p => p.Value.ProjectileId == bulletId).Value;
-
-                prj?.ForceHit(entity, time);
-            }
         }
     }
 }

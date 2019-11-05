@@ -44,13 +44,6 @@ public class PlayerToolTip extends ToolTip {
         this.rankText_.x = 6;
         this.rankText_.y = _local2;
         addChild(this.rankText_);
-        if(player_.elite_ == 1){
-            this.raidBitmapData = TextureRedrawer.redraw(AssetLibrary.getImageFromSet(IMAGE_NAME, IMAGE_ID), 26, true, 0);
-            this.raidBitmap = new Bitmap(this.raidBitmapData);
-            this.raidBitmap.x = this.rankText_.x + 70;
-            this.raidBitmap.y = this.rankText_.y - 8;
-            addChild(this.raidBitmap);
-        }
         _local2 = (_local2 + 30);
         if (((!((_arg1.guildName_ == null))) && (!((_arg1.guildName_ == ""))))) {
             this.guildText_ = new GuildText(this.player_.guildName_, this.player_.guildRank_, 136);

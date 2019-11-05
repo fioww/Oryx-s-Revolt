@@ -409,9 +409,7 @@ public class Map extends AbstractMap {
         }
 
         // draw shadows
-        // this also stops the main menu animation because of pvp check
         this.visible_.sortOn(VISIBLE_SORT_FIELDS, VISIBLE_SORT_PARAMS);
-        //if(player_.pvp_ != true){
             if (Parameters.data_.drawShadows) {
                 for each (bo in this.visible_) {
                     if (bo.hasShadow_) {
@@ -419,7 +417,6 @@ public class Map extends AbstractMap {
                     }
                 }
             }
-        //}
 
         // draw visible
         for each (bo in this.visible_) {

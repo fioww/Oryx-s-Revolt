@@ -65,7 +65,6 @@ namespace wServer.realm.worlds
         public int Difficulty { get; protected set; }
         public int Background { get; protected set; }
         public bool IsLimbo { get; protected set; }
-        public bool PvP { get; protected set; }
         public bool AllowTeleport { get; protected set; }
         public bool ShowDisplays { get; protected set; }
         public string[] ExtraXML { get; protected set; }
@@ -113,7 +112,6 @@ namespace wServer.realm.worlds
             AllowTeleport = !proto.restrictTp;
             ShowDisplays = proto.showDisplays;
             Blocking = proto.blocking;
-            PvP = proto.pvp;
             Opener = "";
 
             var rnd = new Random();
@@ -332,11 +330,6 @@ namespace wServer.realm.worlds
                     Players.TryAdd(player.Id, player);
                     PlayersCollision.Insert(player);
                     Interlocked.Increment(ref _totalConnects);
-                    if (player.Owner.PvP) {
-                        player.PvP = true;
-                        player.SendHelp("You have entered a PvP zone. You can die to other players here.");
-                    } else
-                        player.PvP = false;
 
                     break;
                 case Enemy enemy:

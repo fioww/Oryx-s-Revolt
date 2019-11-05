@@ -132,7 +132,6 @@ namespace wServer.logic
                 new Threshold(0.01,
                     new ItemLoot("Bloodbath Dagger", 0.01),
                     new ItemLoot("God Blood Robes", 0.005),
-                    new ItemLoot("Banner of the Blood Mountains", 0.005),
                     new ItemLoot("Titan Blood Armor", 0.005),
                     new TierLoot(8, ItemType.Weapon, 0.3),
                     new TierLoot(9, ItemType.Weapon, 0.275),

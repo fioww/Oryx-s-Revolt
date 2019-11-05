@@ -934,7 +934,7 @@ namespace wServer.realm
 
         public void OnPlayerEntered(Player player)
         {
-            player.SendInfo("Welcome to Valor!");
+            player.SendInfo("Welcome to Reaper Realms.");
             player.SendInfo("Use [WASD] to move, [QE] to rotate; click to shoot!");
         }
 

@@ -62,12 +62,6 @@ namespace wServer.realm.entities
                     ApplyConditionEffect(ConditionEffectIndex.Relentless, 0);
                 }
 
-                if (CheckCrescent()) {
-                    ApplyConditionEffect(ConditionEffectIndex.SlowedImmune);
-                } else {
-                    ApplyConditionEffect(ConditionEffectIndex.SlowedImmune, 0);
-                }
-
                 if (CheckGHelm()) {
                     _gildHelmBonus = 8;
                 } else {
@@ -142,7 +136,7 @@ namespace wServer.realm.entities
 
             }
 
-            float protHealing = ((Stats[3] / 4) + (Stats[7] / 3) + (Stats[8] / 6)) * (time.ElapsedMsDelta / 2200f);
+            float protHealing = ((Stats[3] / 4) + (Stats[7] / 3) + (Stats[8] / 6)) * (time.ElapsedMsDelta / 2000f);
             if (Stats[3] > 50 || Stats[7] > 55 || Stats[8] > 40) //lazy way of scaling
                 protHealing = ((Stats[3] / 6) + (Stats[7] / 5) + (Stats[8] / 8)) * (time.ElapsedMsDelta / 2400f);
 

@@ -150,20 +150,6 @@ namespace wServer.realm.entities
             set => _marksEnabled.SetValue(value);
         }
 
-        private readonly SV<bool> _pvp;
-        public bool PvP
-        {
-            get => _pvp.GetValue();
-            set => _pvp.SetValue(value);
-        }
-
-        private readonly SV<int> _elite;
-        public int Elite
-        {
-            get => _elite.GetValue();
-            set => _elite.SetValue(value);
-        }
-
         private readonly SV<bool> _ascensionEnabled;
         public bool AscensionEnabled
         {
@@ -470,8 +456,6 @@ namespace wServer.realm.entities
                 case StatsType.ProtectionPoints: Protection = (int)val; break;
                 case StatsType.ProtectionPointsMax: ProtectionMax = (int)val; break;
                 case StatsType.SorStorage: SorStorage = (int)val; break;
-                case StatsType.Elite: Elite = (int)val; break;
-                case StatsType.PvP: PvP = (int)val == 1; break;
             }
         }
 
@@ -569,8 +553,6 @@ namespace wServer.realm.entities
             stats[StatsType.ProtectionPoints] = Protection;
             stats[StatsType.ProtectionPointsMax] = ProtectionMax;
             stats[StatsType.SorStorage] = SorStorage;
-            stats[StatsType.Elite] = Elite;
-            stats[StatsType.PvP] = PvP;
             if (Owner.Name == "SummoningPoint") stats[StatsType.RageBar] = RageBar;
             if (Owner.Name == "Nexus") {
                 stats[StatsType.BronzeLootbox] = BronzeLootbox;
@@ -667,8 +649,6 @@ namespace wServer.realm.entities
             _lootbox4 = new SV<int>(this, StatsType.EliteLootbox, client.Account.EliteLootbox, true);
             _lootbox5 = new SV<int>(this, StatsType.PremiumLootbox, client.Account.PremiumLootbox, true);
             _sorStorage = new SV<int>(this, StatsType.SorStorage, client.Account.SorStorage, true);
-            _elite = new SV<int>(this, StatsType.Elite, client.Account.Elite, true);
-            _pvp = new SV<bool>(this, StatsType.PvP, true);
 
             Name = client.Account.Name;
             XmlEffect = "";
@@ -1188,8 +1168,6 @@ namespace wServer.realm.entities
 
             ApplyConditionEffect(projectile.ProjDesc.Effects);
 
-            if (!(Owner.PvP))
-            {
                 Owner.BroadcastPacketNearby(new Damage()
                 {
                     TargetId = this.Id,
@@ -1199,7 +1177,7 @@ namespace wServer.realm.entities
                     BulletId = projectile.ProjectileId,
                     ObjectId = projectile.ProjectileOwner.Self.Id
                 }, this, this);
-            }
+            
 
             if (HP <= 0)
                 Death(projectile.ProjectileOwner.Self.ObjectDesc.ObjectId,
@@ -1272,30 +1250,6 @@ namespace wServer.realm.entities
             var maxed = playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
             ushort objType;
             int time;
-            if (Owner.PvP)
-            {
-                switch (maxed)
-                {
-                    case 12: objType = 0x69cf; time = 600000; break;
-                    case 11: objType = 0x69ce; time = 600000; break;
-                    case 10: objType = 0x585d; time = 600000; break;
-                    case 9: objType = 0x585c; time = 600000; break;
-                    case 8: objType = 0x0735; time = 600000; break;
-                    case 7: objType = 0x0734; time = 600000; break;
-                    case 6: objType = 0x072b; time = 600000; break;
-                    case 5: objType = 0x072a; time = 600000; break;
-                    case 4: objType = 0x0729; time = 600000; break;
-                    case 3: objType = 0x0728; time = 600000; break;
-                    case 2: objType = 0x0727; time = 600000; break;
-                    case 1: objType = 0x0726; time = 600000; break;
-                    default:
-                        objType = 0x0725; time = 300000;
-                        if (Level < 20) { objType = 0x0724; time = 60000; }
-                        if (Level <= 1) { objType = 0x0723; time = 30000; }
-                        break;
-                }
-            }
-            else
             {
                 switch (maxed)
                 {
@@ -1319,17 +1273,6 @@ namespace wServer.realm.entities
                 }
             }
 
-            if (Owner.PvP)
-            {
-                var obj = new Container(Manager, objType, 10000, true);
-                obj.Move(X, Y);
-                obj.Name = Name;
-
-                for (int i = 0; i < 4; i++)
-                    obj.Inventory[i] = this.Inventory[i];
-                Owner.EnterWorld(obj);
-            }
-            else
             {
                 var obj = new StaticObject(Manager, objType, time, true, true, false);
                 obj.Move(X, Y);
@@ -1674,14 +1617,6 @@ namespace wServer.realm.entities
                 return;
 
             SaveToCharacter();
-
-           // if (Owner.PvP)
-           // {
-           //     var amount = ((int)Credits / 100) * 20;
-           //     Client.Manager.Database.UpdateCredit(Client.Account, -amount);
-           //     Credits = Client.Account.Credits - amount;
-                
-           // }
 
 
             if ((entity is Player))

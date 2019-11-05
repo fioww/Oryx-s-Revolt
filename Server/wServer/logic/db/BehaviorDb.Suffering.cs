@@ -279,7 +279,6 @@ namespace wServer.logic
                     new ItemLoot("Bone Axe", 0.02),
                     new ItemLoot("Sor Crystal", 0.005),
                     new ItemLoot("Malgoric Skull", 0.02),
-                    new ItemLoot("Malgoric Charm", 0.02),
                     new ItemLoot("Master Eon", 0.001),
                     new ItemLoot("Greater Potion of Protection", 1),
                     new ItemLoot("Greater Potion of Vitality", 1),

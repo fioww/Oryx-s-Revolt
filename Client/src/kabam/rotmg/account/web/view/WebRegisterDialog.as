@@ -50,8 +50,6 @@ public class WebRegisterDialog extends Frame {
         addLabeledField(this.retypePasswordInput);
         addComponent(this.ageVerificationInput, 17);
         addSpace(35);
-        this.checkbox = new CheckBoxField("Elite: Account can't trade but unlocks all classes and other benefits.", false, 12);
-        addCheckBox(this.checkbox);
         addSpace(17);
         this.makeTosText();
         addSpace((17 * 2));
@@ -193,7 +191,6 @@ public class WebRegisterDialog extends Frame {
         var _local1:AccountData = new AccountData();
         _local1.username = this.emailInput.text();
         _local1.password = this.passwordInput.text();
-        _local1.eliteAccount = ((this.checkbox.isChecked()) ? 1 : 0);
         this.register.dispatch(_local1);
     }
 

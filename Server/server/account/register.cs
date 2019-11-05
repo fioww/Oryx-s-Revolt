@@ -8,7 +8,6 @@ namespace server.account
     {
         public override void HandleRequest(RequestContext context, NameValueCollection query)
         {
-            var elite = (int)Utils.FromString(query["eliteAccount"]);
 
             if (!Utils.IsValidEmail(query["newGUID"]))
                 Write(context, "<Error>Invalid email</Error>");
@@ -36,7 +35,7 @@ namespace server.account
                     }
                     else
                     {
-                        var s = Database.Register(query["newGUID"], query["newPassword"], false, elite, out acc);
+                        var s = Database.Register(query["newGUID"], query["newPassword"], false, out acc);
                         if (s == RegisterStatus.OK)
                             Write(context, "<Success />");
                         else

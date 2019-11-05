@@ -70,7 +70,6 @@ namespace wServer.logic
                     LootTemplates.Sor1Perc()
                     ),
                 new Threshold(0.025,
-                    new ItemLoot("Earthforce Dice", 0.001),
                     new ItemLoot("Hill Giant Club", 0.001),
                     new ItemLoot("Helm of the Macrotitans", 0.001),
                     new ItemLoot("Potion of Restoration", 0.75),

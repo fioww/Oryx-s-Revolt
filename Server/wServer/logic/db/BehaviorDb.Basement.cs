@@ -316,8 +316,7 @@ namespace wServer.logic
                     new ItemLoot("Shoot Faster Potion", 0.8),
                     new ItemLoot("Dirk of Benevolence", 0.04),
                     new ItemLoot("Bow of the Lonesome Wraith", 0.02),
-                    new ItemLoot("Wand of Fractured Time", 0.04),
-                    new ItemLoot("Siphon of Courage", 0.04)
+                    new ItemLoot("Wand of Fractured Time", 0.04)
                 )
             )
         .Init("AB Secret Chest",

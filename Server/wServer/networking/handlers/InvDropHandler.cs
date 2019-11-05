@@ -79,7 +79,7 @@ namespace wServer.networking.handlers
 
             // create new container for item to be placed in
             Container container;
-            if (item.Soulbound || player.Client.Account.Admin || player.Client.Account.Elite == 1)
+            if (item.Soulbound || player.Client.Account.Admin)
             {
                 container = new Container(player.Manager, soulBag, 1000 * 60, true)
                 {

@@ -860,10 +860,6 @@ namespace wServer.realm.commands
         private static readonly Regex _regex = new Regex(@"^(\d+) (\d+)$", RegexOptions.IgnoreCase);
 
         protected override bool Process(Player player, RealmTime time, string args) {
-            if (player.Client.Account.Elite == 1) {
-                player.SendError("Elite accounts can't use the marketplace!");
-                return false;
-            }
 
             if (!(player.Owner is Marketplace)) {
                 player.SendError("Can only market items in Marketplace.");
@@ -901,11 +897,6 @@ namespace wServer.realm.commands
         private static readonly Regex Regex = new Regex(@"^([A-Za-z0-9 ]+) (\d+)$", RegexOptions.IgnoreCase);
 
         protected override bool Process(Player player, RealmTime time, string args) {
-
-            if (player.Client.Account.Elite == 1) {
-                player.SendError("Elite accounts can't use the marketplace!");
-                return false;
-            }
 
             if (!(player.Owner is Marketplace)) {
                 player.SendError("Can only market items in Marketplace.");

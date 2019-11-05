@@ -125,7 +125,6 @@ namespace wServer.logic
                     new ItemLoot("Staff of Noble Magic", 0.03),
                     new ItemLoot("Heaven Monk's Apparel", 0.03),
                     new ItemLoot("Necklace of Crystalline Celestial Forces", 0.03),
-                    new ItemLoot("Sheath of the Holy Revival", 0.03),
                     new ItemLoot("Spectrum Robe", 0.02),
                     new ItemLoot("Eternity Armor", 0.02)
                 )

@@ -326,8 +326,7 @@ namespace wServer.logic
                     new TierLoot(12, ItemType.Armor, 0.02),
                     new ItemLoot("Potion of Mana", 0.8),
                     new ItemLoot("Elemental Tome", 0.01),
-                    new ItemLoot("Wand of Elemental Sanctuary", 0.01),
-                    new ItemLoot("Earthbound Lance", 0.01)
+                    new ItemLoot("Wand of Elemental Sanctuary", 0.01)
                 )
             );
 
@@ -349,8 +348,7 @@ namespace wServer.logic
                 new TierLoot(12, ItemType.Armor, 0.02),
                 new ItemLoot("Potion of Mana", 0.8),
                 new ItemLoot("Elemental Tome", 0.04),
-                new ItemLoot("Wand of Elemental Sanctuary", 0.04),
-                new ItemLoot("Earthbound Lance", 0.04)
+                new ItemLoot("Wand of Elemental Sanctuary", 0.04)
                 )
             );*/
     }

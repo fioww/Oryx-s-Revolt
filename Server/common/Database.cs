@@ -144,20 +144,22 @@ namespace common
 
             // make sure account has all classes if they are supposed to
             var stats = new DbClassStats(acc);
-            if (_resources.Settings.Accounts.ClassesUnlocked || acc.Elite == 1)
+            if (_resources.Settings.Accounts.ClassesUnlocked || acc.Admin)
                 foreach (var @class in _resources.GameData.Classes.Keys)
                     stats.Unlock(@class);
             stats.FlushAsync();
-
-            if (acc.Elite == 1 && acc.VaultCount < 52)
+            
+            
+            if (acc.Admin && acc.VaultCount < 30)
             {
-                acc.VaultCount = 52;
+                acc.VaultCount = 30;
             }
 
-            if (acc.Elite == 1 && acc.MaxCharSlot < 20)
+            if (acc.Admin && acc.MaxCharSlot < 20)
             {
                 acc.MaxCharSlot = 20;
             }
+            
 
             // make sure account has all skins if they are supposed to
             if (acc.Rank >= 10)
@@ -361,7 +363,7 @@ namespace common
             acc.FlushAsync();
         }
 
-        public RegisterStatus Register(string uuid, string password, bool isGuest, int elite, out DbAccount acc)
+        public RegisterStatus Register(string uuid, string password, bool isGuest, out DbAccount acc)
         {
             var newAccounts = _resources.Settings.Accounts;
 
@@ -380,7 +382,6 @@ namespace common
                 Verified = false,
                 AgeVerified = true,
                 FirstDeath = true,
-                Elite = elite,
                 PetYardType = newAccounts.PetYardType,
                 GuildId = 0,
                 GuildRank = 0,

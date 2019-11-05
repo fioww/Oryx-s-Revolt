@@ -302,8 +302,7 @@ namespace wServer.logic
                     new ItemLoot("Onrane", 0.8),
                     new ItemLoot("Gold Cache", 0.4),
                     new ItemLoot("Warped Worlds Staff", 0.005),
-                    new ItemLoot("Null-Magic Trap", 0.005),
-                    new ItemLoot("Mirage Lance", 0.005)
+                    new ItemLoot("Null-Magic Trap", 0.005)
                 )
             )
     ;

@@ -83,7 +83,6 @@ namespace wServer.logic
                         LootTemplates.Sor1Perc()
                     ),
                  new Threshold(0.15,
-                     new ItemLoot("Thunder and Lightning", 0.005),
                      new ItemLoot("Seal of Sky Serenade", 0.005),
                      new ItemLoot("Potion of Dexterity", 1.0),
                      new ItemLoot("Potion of Mana", 1.0),
@@ -311,7 +310,6 @@ namespace wServer.logic
                          LootTemplates.SorRare()
                          ),
                      new Threshold(0.025,
-                         new ItemLoot("Thunder and Lightning", 0.001),
                          new ItemLoot("Seal of Sky Serenade", 0.001),
                          new ItemLoot("Potion of Dexterity", 1.0)
                      )

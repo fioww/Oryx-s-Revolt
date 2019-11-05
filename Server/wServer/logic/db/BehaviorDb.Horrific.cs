@@ -207,8 +207,6 @@ namespace wServer.logic
                     new ItemLoot("Potion of Might", 1.0),
                     new ItemLoot("Potion of Speed", 0.33),
                     new ItemLoot("Potion of Defense", 1.0),
-                    new ItemLoot("Glaive of Victory", 0.001),
-                    new ItemLoot("Victorious Banner", 0.001),
                     new ItemLoot("Victorious Armor", 0.001),
                     new ItemLoot("Necklace of Victory", 0.001),
                     new TierLoot(9, ItemType.Weapon, 0.1),
