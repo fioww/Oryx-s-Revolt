@@ -697,41 +697,39 @@ namespace wServer.realm.commands
         }
     }
 
-  /*  class SoloArenaCommand : Command
-    {
-        public SoloArenaCommand() : base("sa") { }
+    /*  class SoloArenaCommand : Command
+      {
+          public SoloArenaCommand() : base("sa") { }
 
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            player.Client.Reconnect(new Reconnect()
-            {
-                Host = "",
-                Port = 2050,
-                GameId = World.ArenaSolo,
-                Name = "Arena Solo"
-            });
-            return true;
-        }
-    }*/
+          protected override bool Process(Player player, RealmTime time, string args)
+          {
+              player.Client.Reconnect(new Reconnect()
+              {
+                  Host = "",
+                  Port = 2050,
+                  GameId = World.ArenaSolo,
+                  Name = "Arena Solo"
+              });
+              return true;
+          }
+      }*/
 
-    internal class GhallCommand : Command
+    class GhallCommand : Command
     {
         public GhallCommand() : base("ghall") { }
 
+
         protected override bool Process(Player player, RealmTime time, string args)
         {
-            if (player.GuildRank == -1)
+            if (player.GuildRank < 0)
             {
                 player.SendError("You need to be in a guild.");
                 return false;
             }
-            player.Client.Reconnect(new Reconnect()
-            {
-                Host = "",
-                Port = 2050,
-                GameId = World.GuildHall,
-                Name = "Guild Hall"
-            });
+
+            var proto = player.Manager.Resources.Worlds["GuildHall"];
+            var world = player.Manager.GetWorld(proto.id);
+            player.Reconnect(world.GetInstance(player.Client));
             return true;
         }
     }

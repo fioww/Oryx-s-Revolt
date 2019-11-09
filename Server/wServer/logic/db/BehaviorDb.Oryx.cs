@@ -14,7 +14,7 @@ namespace wServer.logic
         private _ Oryx = () => Behav()
             .Init("Oryx the Mad God 2",
                 new State(
-                    new ScaleHP(50000),
+                    new ScaleHP2(50000),
                     new State("Attack",
                         new Wander(.05),
                         new Shoot(25, projectileIndex: 0, count: 8, shootAngle: 45, coolDown: 1500, coolDownOffset: 1500),
@@ -93,7 +93,7 @@ namespace wServer.logic
 
                     .Init("Oryx the Mad God 2OA",
                 new State(
-                    new ScaleHP(50000),
+                    new ScaleHP2(50000),
                     new State("Attack",
                         new Wander(.05),
                         new Shoot(25, projectileIndex: 0, count: 8, shootAngle: 45, coolDown: 1500, coolDownOffset: 1500),

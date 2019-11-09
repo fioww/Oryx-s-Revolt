@@ -1133,7 +1133,7 @@ namespace wServer.realm.entities
         }
 
         private int RestorationHeal() {
-            return 25 + (int)Math.Min(Math.Floor(Stats[10] / 10d) * 25, 475);
+            return 20 + (int)Math.Min(Math.Floor(Stats[10] / 10d) * 20, 250);
         }
 
         public override bool HitByProjectile(Projectile projectile, RealmTime time)

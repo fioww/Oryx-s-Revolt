@@ -10,7 +10,8 @@ namespace wServer.logic
         private _ SnakePit = () => Behav()
             .Init("Stheno the Snake Queen",
                 new State(
-                    new RealmPortalDrop(),
+                    new ScaleHP(2200, 18000),
+                    new DropPortalOnDeath("Elder Snake Pit Portal", 0.1),
                     new State("Idle",
                         new PlayerWithinTransition(20, "Silver Blasts")
                     ),

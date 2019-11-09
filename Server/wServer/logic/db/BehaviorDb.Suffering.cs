@@ -81,7 +81,7 @@ namespace wServer.logic
                     new State(
                         new AnnounceOnDeath("Another elder has fallen.."),
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
-                        new ScaleHP(200000),
+                        new ScaleHP2(200000),
                     new State("default",
                         new PlayerWithinTransition(6, "taunt1")
                         ),

@@ -55,7 +55,7 @@ namespace wServer.logic
             )
         .Init("The Mothership",
                 new State(
-                    new ScaleHP(90000),
+                    new ScaleHP2(90000),
                     new DropPortalOnDeath("Galactic Plateau Portal"),
                     new State("default",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),

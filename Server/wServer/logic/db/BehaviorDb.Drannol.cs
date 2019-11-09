@@ -259,7 +259,7 @@ namespace wServer.logic
         .Init("Ultra Bastille Sorcerer",
             new State(
                 new State("Main",
-                    new ScaleHP(10000),
+                    new ScaleHP2(10000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new PlayerWithinTransition(6, "phasechooser")
                     ),
@@ -506,7 +506,7 @@ namespace wServer.logic
         .Init("Ultra Nagarith the Tormentor",
             new State(
                 new State("intro",
-                    new ScaleHP(15000),
+                    new ScaleHP2(15000),
                     new Taunt("Drannol has summoned me back for a purpose... You shall not form that seal, the Eternal Beast will rise again!"),
                     new Orbit(speed: 1, radius: 4, target: "Ultra Bastille Sorcerer", orbitClockwise: true),
                     new Shoot(10, 7),
@@ -2862,7 +2862,7 @@ namespace wServer.logic
 
                 .Init("Revil, the Twisted Vanguard",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new DropPortalOnDeath("The Steps Portal", 1, 120),
                     new ChangeMusicOnDeath("oldcity"),
                     new State("default",
@@ -3393,7 +3393,7 @@ namespace wServer.logic
             )
         .Init("Ultra Revil, the Twisted Vanguard",
                 new State(
-                    new ScaleHP(125000),
+                    new ScaleHP2(125000),
                     new DropPortalOnDeath("Ultra The Steps", 1, 120),
                     new ChangeMusicOnDeath("oldcity"),
                     new State("default",
@@ -3704,7 +3704,7 @@ namespace wServer.logic
             )
             .Init("BD Berikao, the Dark Hunter",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new DropPortalOnDeath("Twisted Trials Portal", 1, 120),
                     new State(
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
@@ -4305,7 +4305,7 @@ namespace wServer.logic
             )
         .Init("BD Ultra Berikao, the Dark Hunter",
                 new State(
-                    new ScaleHP(125000),
+                    new ScaleHP2(125000),
                     new DropPortalOnDeath("Ultra Twisted Trials", 1, 120),
                     new State(
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
@@ -5342,7 +5342,7 @@ namespace wServer.logic
                     //new DropPortalOnDeath("Summoning Point Portal", 1, 120),
                     new TransformOnDeath("Lin2", 1, 1),
                 new State(
-                    new ScaleHP(15000),
+                    new ScaleHP2(15000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new State("default",
                         new PlayerWithinTransition(8, "taunt")
@@ -5677,7 +5677,7 @@ namespace wServer.logic
                     //new DropPortalOnDeath("Summoning Point Portal", 1, 120),
                     new TransformOnDeath("UltraLin2", 1, 1),
                 new State(
-                    new ScaleHP(55000),
+                    new ScaleHP2(55000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new State("default",
                         new PlayerWithinTransition(8, "taunt")

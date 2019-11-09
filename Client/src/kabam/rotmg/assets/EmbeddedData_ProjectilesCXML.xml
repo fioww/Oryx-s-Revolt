@@ -6708,14 +6708,14 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>UnholyWandProj</Id>
+            <Id>nr\UnholyWandProj</Id>
         </RemoteTexture>
     </Object>
     <Object type="0x12D" id="Syringe">
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Syringe</Id>
+            <Id>nr\Syringe</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -6723,14 +6723,14 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>BedlamProjectile360</Id>
+            <Id>nr\BedlamProjectile360</Id>
         </RemoteTexture>
     </Object>
     <Object type="0x777A" id="AsylumFly">
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumFly</Id>
+            <Id>nr\AsylumFly</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
         <Size>80</Size>
@@ -6739,7 +6739,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumMaggotsProj</Id>
+            <Id>nr\AsylumMaggotsProj</Id>
         </RemoteTexture>
         <Rotation>80</Rotation>
         <Size>130</Size>
@@ -6748,7 +6748,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Asylum Spike2</Id>
+            <Id>nr\Asylum Spike2</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -6756,7 +6756,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumGuard Attack</Id>
+            <Id>nr\AsylumGuard Attack</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -6764,7 +6764,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WonderlandNew4</Id>
+            <Id>nr\WonderlandNew4</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>

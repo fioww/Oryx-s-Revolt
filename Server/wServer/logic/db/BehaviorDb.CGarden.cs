@@ -10,7 +10,7 @@ namespace wServer.logic
         private _ CGarden = () => Behav()
             .Init("Chomper",
             new State(
-                new ScaleHP(2000),
+                new ScaleHP2(2000),
                 new State("waiting",
                     new PlayerWithinTransition(12, "begin")
                     ),
@@ -58,7 +58,7 @@ namespace wServer.logic
                     )
         .Init("Kwargnor the Devourer of worlds",
             new State(
-                new ScaleHP(2000),
+                new ScaleHP2(2000),
                 new State("fuckyouandyourmovement",
                     new Wander(0.4),
                     new Shoot(40, 1, predictive: 1, coolDown: 1000),
@@ -75,7 +75,7 @@ namespace wServer.logic
             )
         .Init("Garganite",
             new State(
-                new ScaleHP(2000),
+                new ScaleHP2(2000),
                 new State("locate",
                     new PlayerWithinTransition(6, "begin")
                     ),
@@ -104,7 +104,7 @@ namespace wServer.logic
             new State(
                 new RemoveObjectOnDeath("CGarden Wall Lenin", 600),
                 new State("wait",
-                    new ScaleHP(45000),
+                    new ScaleHP2(45000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new PlayerWithinTransition(15, "dialogue")
                     ),
@@ -569,7 +569,7 @@ namespace wServer.logic
                 new State(
                     new State("locate",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
-                        new ScaleHP(45000),
+                        new ScaleHP2(45000),
                         new PlayerWithinTransition(8, "preyeet")
                         ),
                     new State("preyeet",
@@ -787,7 +787,7 @@ namespace wServer.logic
         .Init("Servant of Granithia",
             new State(
                 new State("wait",
-                    new ScaleHP(2000),
+                    new ScaleHP2(2000),
                     new ConditionalEffect(ConditionEffectIndex.Invulnerable),
                     new PlayerWithinTransition(7, "attack")
                     ),

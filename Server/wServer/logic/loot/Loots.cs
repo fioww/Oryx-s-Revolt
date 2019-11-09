@@ -90,7 +90,15 @@ namespace wServer.logic.loot
             }
         }
 
-        public void Handle(Enemy enemy, RealmTime time) {
+        public void Handle(Enemy enemy, RealmTime time)
+        {
+            // enemies that shouldn't drop loot
+            //to-do: add 'solo arena' and 'regular arena' to this
+            if (enemy.Spawned)
+            {
+                return;
+            }
+
             var consideration = new List<LootDef>();
 
             var sharedLoots = new List<Item>();
@@ -149,10 +157,11 @@ namespace wServer.logic.loot
                 items[idx] = i;
                 idx++;
 
+                //to-do: 
                 if (ValuableItems.Contains(i.ObjectId))
                     foreach (var p in enemy.Owner.Players.Values)
-                        p.SendHelp("<" + owners[0].Name + "> has received a drop: '"
-                                                  + i.ObjectId + "'");
+                        p.SendHelp("<" + owners[0].Name + "> has received a drop: ["
+                                                  + i.ObjectId + "]");
 
                 if (idx == 8) {
                     ShowBag(enemy, ownerIds, bagType, items);

@@ -10,7 +10,10 @@ namespace wServer.logic
         private _ Abyss = () => Behav()
             .Init("Archdemon Malphas",
                 new State(
-                    new RealmPortalDrop(),
+                    //3000, 40000
+                    new ScaleHP(3 * 10^3, 4 * 10^4),
+                    new DropPortalOnDeath("Elder Abyss of Demons Portal", 0.1),
+                    new OnDeathBehavior(new ApplySetpiece("AbyssDeath")),
                     new State("default",
                         new PlayerWithinTransition(8, "basic")
                         ),
@@ -65,11 +68,16 @@ namespace wServer.logic
                 new MostDamagers(3,
                     LootTemplates.Sor1Perc()
                     ),
-                new Threshold(0.025,
-                    new ItemLoot("Dagger of the Flaming Stinger", 0.01),
-                    new ItemLoot("Prism of Bright Star", 0.01),
-                    new ItemLoot("Armor from the Bowels of Hell", 0.01),
-                    new ItemLoot("The Ring of Flaming Power", 0.01),
+                new MostDamagers(4,
+                    new ItemLoot("Potion of Protection", 0.05)
+                    ),
+                new Threshold(0.034,
+                    new OnlyOne(
+                        new ItemLoot("Dagger of the Flaming Stinger", 0.01),
+                        new ItemLoot("Prism of Bright Star", 0.02),
+                        new ItemLoot("Armor from the Bowels of Hell", 0.015),
+                        new ItemLoot("The Ring of Flaming Power", 0.03)
+                    ),
                     new ItemLoot("Demon Blade", 0.008),
                     new ItemLoot("Abyssal Rune", 0.025),
                     new ItemLoot("Potion of Vitality", 1.0),

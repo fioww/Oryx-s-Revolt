@@ -10,7 +10,7 @@ import flash.system.Capabilities;
 import flash.utils.Dictionary;
 
 public class Parameters {
-    public static const BUILD_VERSION:String = "0.1.1";
+    public static const BUILD_VERSION:String = "0.2.0";
     public static const MINOR_VERSION:String = "A";
     public static const FULL_BUILD:String = BUILD_VERSION + "-" + MINOR_VERSION;
     public static const ENABLE_ENCRYPTION:Boolean = true;

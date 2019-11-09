@@ -832,6 +832,14 @@ public class EquipmentToolTip extends ToolTip {
             this.restrictions.push(new Restriction("This item is used to open raids.", 0xFF00FF, true));
         }
 
+        if (this.objectXML.hasOwnProperty("@legendary")) {
+            this.titleText.setColor(0xFFFF00);
+        }
+
+        if (this.objectXML.hasOwnProperty("@rare")) {
+            this.titleText.setColor(0x879ceb);
+        }
+
         if (this.playerCanUse) {
             if (this.objectXML.hasOwnProperty("Usable")) {
                 this.addAbilityItemRestrictions();

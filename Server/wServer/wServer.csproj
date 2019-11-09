@@ -114,11 +114,15 @@
     <Compile Include="logic\behaviors\RemoveObjectOnDeath.cs" />
     <Compile Include="logic\behaviors\ReplaceTile.cs" />
     <Compile Include="logic\behaviors\ScaleHP.cs" />
+    <Compile Include="logic\behaviors\ScaleHP2.cs" />
     <Compile Include="logic\behaviors\SetNoXP.cs" />
     <Compile Include="logic\behaviors\TalismanAttack.cs" />
     <Compile Include="logic\db\BehaviorDb.Asylum.cs" />
     <Compile Include="logic\db\BehaviorDb.CGarden.cs" />
     <Compile Include="logic\db\BehaviorDb.Drannol.cs" />
+    <Compile Include="logic\db\BehaviorDb.ElderAbyss.cs" />
+    <Compile Include="logic\db\BehaviorDb.ElderSnake.cs" />
+    <Compile Include="logic\db\BehaviorDb.ElderUndead.cs" />
     <Compile Include="logic\db\BehaviorDb.Encore.cs" />
     <Compile Include="logic\db\BehaviorDb.FrostChamber.cs" />
     <Compile Include="logic\db\BehaviorDb.FrozenIsland.cs" />
@@ -206,6 +210,7 @@
     <Compile Include="logic\db\BehaviorDb.Stronghold.cs" />
     <Compile Include="logic\db\BehaviorDb.Suffering.cs" />
     <Compile Include="logic\db\BehaviorDb.SwampBoss.cs" />
+    <Compile Include="logic\db\BehaviorDb.Thanos.cs" />
     <Compile Include="logic\db\BehaviorDb.Tomb.cs" />
     <Compile Include="logic\db\BehaviorDb.Torii.cs" />
     <Compile Include="logic\db\BehaviorDb.Trial.cs" />
@@ -220,6 +225,7 @@
     <Compile Include="logic\loot\LootDefs.cs" />
     <Compile Include="logic\transitions\DamageTakenTransition.cs" />
     <Compile Include="logic\transitions\RandomTransition.cs" />
+    <Compile Include="logic\transitions\TimedChanceTransition.cs" />
     <Compile Include="networking\handlers\AlertNoticeHandler.cs" />
     <Compile Include="networking\handlers\ForgeItemHandler.cs" />
     <Compile Include="networking\handlers\LaunchRaidHandler.cs" />
@@ -247,6 +253,7 @@
     <Compile Include="networking\packets\outgoing\SorForge.cs" />
     <Compile Include="networking\packets\outgoing\UnboxResult.cs" />
     <Compile Include="realm\ChunkManager.cs" />
+    <Compile Include="realm\commands\DeveloperCommands.cs" />
     <Compile Include="realm\entities\player\Player.Gambling.cs" />
     <Compile Include="realm\entities\player\Player.Marks.cs" />
     <Compile Include="realm\entities\Torii.cs" />

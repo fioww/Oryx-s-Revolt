@@ -11,7 +11,7 @@ namespace wServer.logic
             .Init("Yazanahar",
                 new State(
                     new DropPortalOnDeath("Ancient Depths Portal"),
-                    new ScaleHP(100000),
+                    new ScaleHP2(100000),
                     new HpLessTransition(0.20, "death1"),
                     new SetAltTexture(2),
                     new State(
@@ -221,7 +221,7 @@ namespace wServer.logic
 
             .Init("Split Yazanahar",
                 new State(
-                    new ScaleHP(5000),
+                    new ScaleHP2(5000),
                     new ConditionalEffect(ConditionEffectIndex.StasisImmune),
                     new State("swag",
                         new Prioritize(
@@ -310,7 +310,7 @@ namespace wServer.logic
                 new State(
                     new RemoveObjectOnDeath("The Depths Wall 3", 90),
                     new HpLessTransition(0.15, "rage"),
-                    new ScaleHP(15000),
+                    new ScaleHP2(15000),
                     new State(
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new State("default",
@@ -421,7 +421,7 @@ namespace wServer.logic
          .Init("Xanarich, the Chosen One",
                 new State(
                     new HpLessTransition(0.15, "rage"),
-                    new ScaleHP(15000),
+                    new ScaleHP2(15000),
                     new State(
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new State("default",

@@ -11,7 +11,7 @@ namespace wServer.logic
             .Init("Colothiois the Exalted",
                 new State(
                     new State("default",
-                        new ScaleHP(55000),
+                        new ScaleHP2(55000),
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
                         new PlayerWithinTransition(10, "talk")
                         ),
@@ -127,7 +127,7 @@ namespace wServer.logic
         .Init("Elemental Turret1",
             new State(
                 new ConditionalEffect(ConditionEffectIndex.Armored),
-                new ScaleHP(3000),
+                new ScaleHP2(3000),
                 new State("shoot",
                     new Shoot(10, 1, coolDown: 1400),
                     new Shoot(10, 1, fixedAngle: 90, coolDown: 1400),
@@ -142,7 +142,7 @@ namespace wServer.logic
         .Init("Elemental Turret2",
             new State(
                 new ConditionalEffect(ConditionEffectIndex.Armored),
-                new ScaleHP(3000),
+                new ScaleHP2(3000),
                 new State("shoot",
                     new Shoot(10, 1, coolDown: 1400),
                     new Shoot(10, 1, fixedAngle: 180, coolDown: 1400),
@@ -157,7 +157,7 @@ namespace wServer.logic
         .Init("Elemental Turret3",
             new State(
                 new ConditionalEffect(ConditionEffectIndex.Armored),
-                new ScaleHP(3000),
+                new ScaleHP2(3000),
                 new State("shoot",
                     new Shoot(10, 1, coolDown: 1400),
                     new Shoot(10, 1, fixedAngle: 270, coolDown: 1400),
@@ -172,7 +172,7 @@ namespace wServer.logic
         .Init("Elemental Turret4",
             new State(
                 new ConditionalEffect(ConditionEffectIndex.Armored),
-                new ScaleHP(3000),
+                new ScaleHP2(3000),
                 new State("shoot",
                     new Shoot(10, 1, coolDown: 1400),
                     new Shoot(10, 1, fixedAngle: 0, coolDown: 1400),
@@ -186,7 +186,7 @@ namespace wServer.logic
             )
          .Init("Tod",
             new State(
-                new ScaleHP(50000),
+                new ScaleHP2(50000),
                 new DropPortalOnDeath("Sky Palace Portal"),
                 new State("shoot",
                     new Taunt("Skrrt"),
@@ -294,7 +294,7 @@ namespace wServer.logic
             )
             .Init("Zeus",
                  new State(
-                     new ScaleHP(35000),
+                     new ScaleHP2(35000),
                      new TimedTransition(6000, "wait"),
                      new State("wait",
                      new PlayerWithinTransition(7, "move")

@@ -234,10 +234,25 @@ public class ChatListItemFactory {
         }
     }
 
-    private function makeMessageLine(_arg1:String):void {
-        var _local2:StringBuilder = new StaticStringBuilder(_arg1);
-        var _local3:BitmapData = this.getBitmapData(_local2, this.getTextColor());
-        this.buffer.push(new Bitmap(_local3));
+    private function makeMessageLine(text:String):void {
+        var SBuilder:StringBuilder;
+        var BitmapData_:BitmapData;
+        if (this.containsEmotes(text)) {
+            for each (var word:String in this.getAllWords(text)) {
+                if (Emotes.hasEmote(word)) {
+                    this.buffer.push(Emotes.getEmote(word));
+                }
+                else {
+                    SBuilder = new StaticStringBuilder(word);
+                    BitmapData_ = this.getBitmapData(SBuilder, this.getTextColor());
+                    this.buffer.push(new Bitmap(BitmapData_));
+                }
+            }
+            return;
+        }
+        SBuilder = new StaticStringBuilder(text);
+        BitmapData_ = this.getBitmapData(SBuilder, this.getTextColor());
+        this.buffer.push(new Bitmap(BitmapData_));
     }
 
     private function getNameColor():uint {

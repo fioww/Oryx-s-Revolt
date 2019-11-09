@@ -42,7 +42,7 @@ namespace wServer.logic
             )
             .Init("The Horrific",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new State(
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new State("default",

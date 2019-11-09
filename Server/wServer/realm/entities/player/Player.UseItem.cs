@@ -1229,14 +1229,14 @@ namespace wServer.realm.entities
 
         }
 
-        /* private void AEFameActivate(RealmTime time, Item item, Position target, ActivateEffect eff)
+        private void AEFameActivate(RealmTime time, Item item, Position target, ActivateEffect eff)
          {
              var acc = Client.Account;
              Client.Manager.Database.UpdateFame(acc, eff.Amount);
              Fame += eff.Amount;
              this.ForceUpdate(Fame);
 
-         }*/
+         }
 
         private void AEOnraneActivate(RealmTime time, Item item, Position target, ActivateEffect eff)
         {

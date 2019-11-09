@@ -1,44 +1,111 @@
 ﻿using System;
+using System.Collections.Generic;
 using wServer.realm;
 using wServer.realm.entities;
 
 namespace wServer.logic.behaviors
 {
-    internal class ScaleHP : Behavior
+    class ScaleHP : Behavior
     {
-        private readonly int _amount;
-        private readonly bool _checkMax;
-        private int _cachedMaxHp = -1;
-        private int _lastPlayerNum = -1;
-
-        public ScaleHP(int amount, bool checkMax = true) {
-            _amount = amount;
-            _checkMax = checkMax;
+        //State storage: scalehp state
+        class ScaleHPState
+        {
+            public IList<string> pNamesCounted;
+            public int initialScaleAmount = 0;
+            public int maxHP;
+            public bool hitMaxHP;
+            public int cooldown;
         }
 
-        protected override void TickCore(Entity host, RealmTime time, ref object state) {
-            var cool = (int?)state ?? -1;
 
-            if (cool <= 0) {
-                if (_lastPlayerNum == host.Owner.Players.Count) return;
+        private readonly int amountPerPlayer;
+        private readonly int maxAdditional; // leave as 0 for no limit
+        private readonly bool healAfterMax;
+        private readonly int dist; // leave as 0 for all players
+        private readonly int scaleAfter;
 
-                var playerNum = host.Owner.Players.Count - _lastPlayerNum;        
-                var enemy = host as Enemy;
-                var hpPerc = enemy.HP / enemy.MaximumHP;
+        public ScaleHP(int amountPerPlayer, int maxAdditional, bool healAfterMax = true, int dist = 30, int scaleAfter = 1000)
+        {
+            this.amountPerPlayer = amountPerPlayer;
+            this.maxAdditional = maxAdditional;
+            this.healAfterMax = healAfterMax;
+            this.dist = dist;
+            this.scaleAfter = scaleAfter;
+        }
 
-                if (_cachedMaxHp == -1)
-                    _cachedMaxHp = enemy.MaximumHP;
+        protected override void OnStateEntry(Entity host, RealmTime time, ref object state)
+        {
+            state = new ScaleHPState
+            {
+                pNamesCounted = new List<string>(),
+                initialScaleAmount = scaleAfter,
+                maxHP = 0,
+                hitMaxHP = false,
+                cooldown = 0
+            };
+        }
 
-                enemy.MaximumHP = _cachedMaxHp + _amount * Math.Max(playerNum - 1, 0);
-                enemy.HP += _amount * Math.Max(playerNum - 1, 0) * hpPerc;
+        protected override void TickCore(Entity host, RealmTime time, ref object state)
+        {
+            ScaleHPState scstate = (ScaleHPState)state;
+            if (scstate.cooldown <= 0)
+            {
+                scstate.cooldown = 1000;
+                if (!(host is Enemy)) return;
 
-                enemy.HP = Math.Min(enemy.MaximumHP, enemy.HP);
+                if (scstate.maxHP == 0)
+                    scstate.maxHP = (host as Enemy).MaximumHP + maxAdditional;
 
-                cool = 5000;
-                _lastPlayerNum = playerNum;
-            } else cool -= time.ElapsedMsDelta;
+                int plrCount = 0;
+                foreach (var i in host.Owner.Players)
+                {
+                    if (scstate.pNamesCounted.Contains(i.Value.Name)) continue;
+                    if (dist > 0)
+                    {
+                        if (host.Dist(i.Value) < dist)
+                            scstate.pNamesCounted.Add(i.Value.Name);
+                    }
+                    else
+                        scstate.pNamesCounted.Add(i.Value.Name);
+                }
+                plrCount = scstate.pNamesCounted.Count;
+                if (plrCount > scstate.initialScaleAmount)
+                {
+                    int amountInc = (plrCount - scstate.initialScaleAmount) * amountPerPlayer;
+                    scstate.initialScaleAmount += (plrCount - scstate.initialScaleAmount);
 
-            state = cool;
+                    if (maxAdditional != 0)
+                        amountInc = Math.Min(maxAdditional, amountInc);
+
+                    // ex: Enemy with 4000HP / 8000HP, being increased by 1200
+                    int curHp = (host as Enemy).HP;                             // ex: current hp was 4000HP
+                    int hpMaximum = (host as Enemy).MaximumHP;                  // ex: max hp was 8000HP
+                    double curHpPercent = ((double)curHp / hpMaximum);          // ex: 0.5
+                    int newHpMaximum = (host as Enemy).MaximumHP + amountInc;   // ex: max hp is now 9200HP
+                    int newHp = Convert.ToInt32(newHpMaximum * curHpPercent);   // ex: current has is now 4600HP
+
+                    if (!scstate.hitMaxHP || healAfterMax)
+                    {
+                        (host as Enemy).HP = newHp;
+                        (host as Enemy).MaximumHP = newHpMaximum;
+                    }
+                    if ((host as Enemy).MaximumHP >= scstate.maxHP && maxAdditional != 0)
+                    {
+                        (host as Enemy).MaximumHP = scstate.maxHP;
+                        scstate.hitMaxHP = true;
+                    }
+
+                    if ((host as Enemy).HP > (host as Enemy).MaximumHP)
+                        (host as Enemy).HP = (host as Enemy).MaximumHP;
+
+                    // DEBUG
+                    //Console.WriteLine("Increasing HP by: " + amountInc + ", New HP: " + (host as Enemy).HP + ", Player Count: " + host.Owner.Players.Count);
+                }
+            }
+            else
+                scstate.cooldown -= time.ElapsedMsDelta;
+
+            state = scstate;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace wServer.logic
         private _ Sphinx = () => Behav()
             .Init("Grand Sphinx",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new DropPortalOnDeath("Tomb of the Ancients Portal", 0.33),
                     new State("Spawned",
                         new ConditionalEffect(ConditionEffectIndex.Invulnerable),

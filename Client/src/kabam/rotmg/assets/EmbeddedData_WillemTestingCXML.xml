@@ -7,32 +7,32 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>9188006</Id>
+            <Id>nr\9188006</Id>
             <Right/>
         </RemoteTexture>
         <Animation prob="1" period="1.2">
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>9063644</Id>
+                    <Id>nr\9063644</Id>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.4">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>9188006</Id>
+                    <Id>nr\9188006</Id>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>9155528</Id>
+                    <Id>nr\9155528</Id>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.4">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>9188006</Id>
+                    <Id>nr\9188006</Id>
                 </RemoteTexture>
             </Frame>
         </Animation>
@@ -49,7 +49,7 @@
         <Enemy/>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>8989233</Id>
+            <Id>nr\8989233</Id>
         </RemoteTexture>
         <HitSound>monster/medusa_hit</HitSound>
         <DeathSound>monster/medusa_death</DeathSound>
@@ -66,26 +66,26 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>8989233</Id>
+            <Id>nr\8989233</Id>
         </RemoteTexture>
         <AltTexture id="1">
             <RemoteTexture>
                 <Instance>testing</Instance>
-                <Id>8965905</Id>
+                <Id>nr\8965905</Id>
                 <Right/>
             </RemoteTexture>
         </AltTexture>
         <AltTexture id="2">
             <RemoteTexture>
                 <Instance>testing</Instance>
-                <Id>8990256</Id>
+                <Id>nr\8990256</Id>
                 <Right/>
             </RemoteTexture>
         </AltTexture>
         <AltTexture id="3">
             <RemoteTexture>
                 <Instance>testing</Instance>
-                <Id>8986239</Id>
+                <Id>nr\8986239</Id>
                 <Right/>
             </RemoteTexture>
         </AltTexture>
@@ -98,7 +98,7 @@
         <AltTexture id="5">
             <RemoteTexture>
                 <Instance>testing</Instance>
-                <Id>9000147</Id>
+                <Id>nr\9000147</Id>
                 <Right/>
             </RemoteTexture>
         </AltTexture>
@@ -211,126 +211,126 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>4798003</Id>
+            <Id>nr\4798003</Id>
             <Right/>
         </RemoteTexture>
         <Animation prob="1" period="0">
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4798003</Id>
+                    <Id>nr\4798003</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4805001</Id>
+                    <Id>nr\4805001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4798004</Id>
+                    <Id>nr\4798004</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4806001</Id>
+                    <Id>nr\4806001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4807001</Id>
+                    <Id>nr\4807001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4808001</Id>
+                    <Id>nr\4808001</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4762010</Id>
+                    <Id>nr\4762010</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
@@ -420,63 +420,63 @@
         <Enemy/>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>4759176</Id>
+            <Id>nr\4759176</Id>
             <Right/>
         </RemoteTexture>
         <Animation prob="1" period="0">
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4759176</Id>
+                    <Id>nr\4759176</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4774177</Id>
+                    <Id>nr\4774177</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4774178</Id>
+                    <Id>nr\4774178</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4776161</Id>
+                    <Id>nr\4776161</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4804019</Id>
+                    <Id>nr\4804019</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4804021</Id>
+                    <Id>nr\4804021</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4758169</Id>
+                    <Id>nr\4758169</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.1">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4759176</Id>
+                    <Id>nr\4759176</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
@@ -518,56 +518,56 @@
         <Enemy/>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>4627022</Id>
+            <Id>nr\4627022</Id>
             <Right/>
         </RemoteTexture>
         <Animation prob="1" period="0">
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4627020</Id>
+                    <Id>nr\4627020</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4631015</Id>
+                    <Id>nr\4631015</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4627021</Id>
+                    <Id>nr\4627021</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4623020</Id>
+                    <Id>nr\4623020</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4627022</Id>
+                    <Id>nr\4627022</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4633011</Id>
+                    <Id>nr\4633011</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.2">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4623022</Id>
+                    <Id>nr\4623022</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
@@ -576,14 +576,14 @@
             <Frame time="0.4">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4631017</Id>
+                    <Id>nr\4631017</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>
             <Frame time="0.4">
                 <RemoteTexture>
                     <Instance>testing</Instance>
-                    <Id>4629015</Id>
+                    <Id>nr\4629015</Id>
                     <Right/>
                 </RemoteTexture>
             </Frame>

@@ -139,6 +139,8 @@ public class EmbeddedAssets {
     public static var d3LofiObjAlt_:Class = EmbeddedAssets_d3LofiObjAlt_;
     public static var lofiProjsAlt_:Class = EmbeddedAssets_lofiProjsAlt_;
     public static var lofiObj3Alt:Class = EmbeddedAssets_lofiObj3Alt;
+    public static var lofiObj7_:Class = EmbeddedAssets_lofiObj7Embed_;
+    public static var customEnemies16x16_:Class = EmbeddedAssets_customEnemies16x16;
     public static var models_:Object = {
         "Monster Tank1": new monsterTank1Embed_(),
         "Monster Tank2": new monsterTank2Embed_(),

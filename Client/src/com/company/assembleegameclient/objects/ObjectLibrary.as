@@ -230,13 +230,24 @@ public class ObjectLibrary {
         var _local_7:TextureData = typeToTextureData_[_arg_1];
         var _local_8:BitmapData = ((_local_7) ? _local_7.mask_ : null);
         var _local_9:XML = xmlLibrary_[_arg_1] || new XML();
-        if (_local_8 == null && _local_9.hasOwnProperty("Legendary")) {
+        //item glow
+        if (_local_8 == null && _local_9.hasOwnProperty("Legendary"))
+        {
             return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0xDDDD00, _arg_4, _arg_5));
-        }else if(_local_8 == null && _local_9.hasOwnProperty("Outfit")){
+        }
+        else if(_local_8 == null && _local_9.hasOwnProperty("Outfit"))
+        {
             return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0xFFFFFF, _arg_4, _arg_5));
-        }else if(_local_8 == null ){
+        }
+        else if(_local_8 == null && _local_9.hasOwnProperty("@legendary"))
+        {
+            return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0xFFFF00, _arg_4, _arg_5));
+        }
+        else if(_local_8 == null )
+        {
             return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0, _arg_4, _arg_5));
         }
+
         var _local_10:int = ((_local_9.hasOwnProperty("Tex1")) ? int(_local_9.Tex1) : 0);
         var _local_11:int = ((_local_9.hasOwnProperty("Tex2")) ? int(_local_9.Tex2) : 0);
         _local_6 = TextureRedrawer.resize(_local_6, _local_8, _arg_2, _arg_3, _local_10, _local_11, _arg_5);

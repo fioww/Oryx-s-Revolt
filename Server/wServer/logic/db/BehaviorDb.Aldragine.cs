@@ -770,7 +770,7 @@ namespace wServer.logic
         .Init("AH The Sincryer",
                 new State(
                     new DropPortalOnDeath("The Nontridus Portal", 100, timeout: 180),
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new HpLessTransition(0.14, "spookded"),
                     new State("default",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
@@ -931,7 +931,7 @@ namespace wServer.logic
            .Init("AH ULTRA The Sincryer",
                 new State(
                     new DropPortalOnDeath("Ultra The Nontridus Portal", 100, timeout: 180),
-                    new ScaleHP(125000),
+                    new ScaleHP2(125000),
                     new HpLessTransition(0.14, "spookded"),
                     new State("default",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
@@ -1261,7 +1261,7 @@ namespace wServer.logic
             )
         .Init("AH Secret Chest",
                 new State(
-                    new ScaleHP(10000),
+                    new ScaleHP2(10000),
                     new State("Idle",
                         new ConditionalEffect(ConditionEffectIndex.Invulnerable),
                         new TimedTransition(5000, "UnsetEffect")
@@ -1309,7 +1309,7 @@ namespace wServer.logic
             )
         .Init("AH The Vision of Aldragine",
                 new State(
-                    new ScaleHP(50000),
+                    new ScaleHP2(50000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new DropPortalOnDeath("Core of the Hideout Portal", 100, timeout: 180),
                     new HpLessTransition(0.15, "spookded"),
@@ -1464,7 +1464,7 @@ namespace wServer.logic
             )
         .Init("AH ULTRA The Vision of Aldragine",
                 new State(
-                    new ScaleHP(125000),
+                    new ScaleHP2(125000),
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                     new DropPortalOnDeath("Ultra Core of the Hideout Portal", 100, timeout: 180),
                     new HpLessTransition(0.15, "spookded"),
@@ -1989,7 +1989,7 @@ namespace wServer.logic
                 )
         .Init("AH Aldragine",
                 new State(
-                    new ScaleHP(70000),
+                    new ScaleHP2(70000),
                     new HpLessTransition(0.13, "ded"),
                     new State("default",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),
@@ -2376,7 +2376,7 @@ namespace wServer.logic
                 )
         .Init("AH ULTRA Aldragine",
                 new State(
-                    new ScaleHP(175000),
+                    new ScaleHP2(175000),
                     new HpLessTransition(0.13, "ded"),
                     new State("default",
                         new ConditionalEffect(ConditionEffectIndex.Invincible),

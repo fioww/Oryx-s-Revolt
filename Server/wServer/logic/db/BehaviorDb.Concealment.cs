@@ -10,7 +10,7 @@ namespace wServer.logic
         private _ Concealment = () => Behav()
             .Init("The Dreadnought",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new RealmPortalDrop(),
                     new State("default",
                         new PlayerWithinTransition(14, "fight1")
@@ -209,7 +209,7 @@ namespace wServer.logic
             )
            .Init("Treasure Basilisk",
                 new State(
-                  new ScaleHP(35000),
+                  new ScaleHP2(35000),
                   new State("default",
                   new Taunt(true, "Find us..kill us..gain our treasures, if you are brave."),
                    new PlayerWithinTransition(8, "fight")

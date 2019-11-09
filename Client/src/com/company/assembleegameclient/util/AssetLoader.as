@@ -91,6 +91,7 @@ public class AssetLoader {
         AssetLibrary.addImageSet("SakuraEnvironment8x8", new EmbeddedAssets.SakuraEnvironment8x8Embed_().bitmapData, 8, 8);
         AssetLibrary.addImageSet("SakuraEnvironment16x16", new EmbeddedAssets.SakuraEnvironment16x16Embed_().bitmapData, 16, 16);
         AssetLibrary.addImageSet("emotes", new EmbeddedAssets.emotesEmbed_().bitmapData, 16, 16);
+        AssetLibrary.addImageSet("lofiObj7", new EmbeddedAssets.lofiObj7_().bitmapData, 8, 8);
     }
 
     private function addAnimatedCharacters():void {
@@ -129,6 +130,7 @@ public class AssetLoader {
         AnimatedChars.add("mountainTempleChars16x16",new EmbeddedAssets.mountainTempleChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
         AnimatedChars.add("Hanami8x8chars",new EmbeddedAssets.Hanami8x8charsEmbed_().bitmapData,null,8,8,64,8,AnimatedChar.RIGHT);
         AnimatedChars.add("raiding32x32Embed",new EmbeddedAssets.raiding32x32Embed_().bitmapData,null,32,32,224,32,AnimatedChar.RIGHT);
+        AnimatedChars.add("customEnemies16x16",new EmbeddedAssets.customEnemies16x16_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
     }
 
     private function addSoundEffects():void {

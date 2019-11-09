@@ -56,6 +56,16 @@ public class TierUtil
                 _local_10 = TooltipHelper.QUEST_COLOR;
                 _local_11 = "QT";
             }
+            else if (_arg_1.hasOwnProperty("@legendary"))
+            {
+               _local_10 = 0xffff00;
+               _local_11 = "LG";
+            }
+            else if (_arg_1.hasOwnProperty("@rare"))
+            {
+               _local_10 = 0x879ceb;
+               _local_11 = "UT";
+            }
             else
             {
                _local_10 = TooltipHelper.UNTIERED_COLOR;

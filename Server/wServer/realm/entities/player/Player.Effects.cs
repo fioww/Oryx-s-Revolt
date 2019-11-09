@@ -136,9 +136,9 @@ namespace wServer.realm.entities
 
             }
 
-            float protHealing = ((Stats[3] / 4) + (Stats[7] / 3) + (Stats[8] / 6)) * (time.ElapsedMsDelta / 2000f);
-            if (Stats[3] > 50 || Stats[7] > 55 || Stats[8] > 40) //lazy way of scaling
-                protHealing = ((Stats[3] / 6) + (Stats[7] / 5) + (Stats[8] / 8)) * (time.ElapsedMsDelta / 2400f);
+            float protHealing = ((Stats[3] / 4) + (Stats[7] / 3)) * (time.ElapsedMsDelta / 1900f);
+            if (Stats[3] > 50 || Stats[7] > 55) //lazy way of scaling
+                protHealing = ((Stats[3] / 6) + (Stats[7] / 5)) * (time.ElapsedMsDelta / 2500f);
 
             if (HasConditionEffect(ConditionEffects.ShieldRecovery))
             {

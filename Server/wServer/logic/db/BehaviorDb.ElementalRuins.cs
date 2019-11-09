@@ -182,7 +182,7 @@ namespace wServer.logic
         //Swag
                     .Init("Urios, God of Elements",
                 new State(
-                    new ScaleHP(35000),
+                    new ScaleHP2(35000),
                     new RealmPortalDrop(),
                     //new TransformOnDeath("Urios Test Chest", 1, 1, 1),
                      new DamageTakenTransition(88800, "RealRage"),

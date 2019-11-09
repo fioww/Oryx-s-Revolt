@@ -103,6 +103,24 @@
     <None Include="resources\data\roles.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="resources\worlds\elderabyss.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ElderAbyss.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\eldersnake.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\eldersnake.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\elderundead.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Elderundead.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="resources\worlds\abandonedbasement.jm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -664,6 +682,12 @@
     <None Include="resources\worlds\testing.jm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="resources\worlds\thanos.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Thanos.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="resources\worlds\TheCrawlingDepths.jw">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -1000,1168 +1024,1585 @@
     <Content Include="resources\Languages\ru.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\1000Fame.png">
+    <Content Include="resources\textures\113472997634001.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\1007589779.png">
+    <Content Include="resources\textures\113472997634002.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\100Fame.png">
+    <Content Include="resources\textures\128391664739563.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\1023436625.png">
+    <Content Include="resources\textures\2019_t0_sword_reskin1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\1023464880.png">
+    <Content Include="resources\textures\2019_t1_katana_reskin1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\4627022.png">
+    <Content Include="resources\textures\2019_t1_katana_reskin1_p.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\4759176.png">
+    <Content Include="resources\textures\2019_t5_shield_reskin1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\4798003.png">
+    <Content Include="resources\textures\2019_t5_shield_reskin1_p.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\5000Fame.png">
+    <Content Include="resources\textures\amulet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\500Fame.png">
+    <Content Include="resources\textures\bigwhite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\5080919094329344.png">
+    <Content Include="resources\textures\Coloss%27s Katana Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\50Fame.png">
+    <Content Include="resources\textures\gapple.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\5347216931684352.png">
+    <Content Include="resources\textures\ghost_ship_nexus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\6057068523945984.png">
+    <Content Include="resources\textures\Golden_Apple.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\6323904540835840.png">
+    <Content Include="resources\textures\gship_trap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\6678217062612992.png">
+    <Content Include="resources\textures\hc shot.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\7632526.png">
+    <Content Include="resources\textures\Market_Place.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\8989233.png">
+    <Content Include="resources\textures\nr\1000Fame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\9188006.png">
+    <Content Include="resources\textures\nr\1007589779.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AcursedBowman.png">
+    <Content Include="resources\textures\nr\100Fame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\aliceSkin.png">
+    <Content Include="resources\textures\nr\1023436625.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\aliceSkin_mask.png">
+    <Content Include="resources\textures\nr\1023464880.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\americaProj.png">
+    <Content Include="resources\textures\nr\4627022.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AngelTea.png">
+    <Content Include="resources\textures\nr\4759176.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ArmorFronza.png">
+    <Content Include="resources\textures\nr\4798003.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Assassin Armor.png">
+    <Content Include="resources\textures\nr\5000Fame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Assassin Ring.png">
+    <Content Include="resources\textures\nr\500Fame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Assassin Star.png">
+    <Content Include="resources\textures\nr\5080919094329344.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Asylum Key.png">
+    <Content Include="resources\textures\nr\50Fame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Asylum Portal.png">
+    <Content Include="resources\textures\nr\5347216931684352.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Asylum Spike2.png">
+    <Content Include="resources\textures\nr\6057068523945984.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Asylum Wizzard.png">
+    <Content Include="resources\textures\nr\6323904540835840.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumBomb.png">
+    <Content Include="resources\textures\nr\6678217062612992.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumEye.png">
+    <Content Include="resources\textures\nr\7632526.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumFly.png">
+    <Content Include="resources\textures\nr\8989233.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumGuard Attack.png">
+    <Content Include="resources\textures\nr\9188006.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumGuard.png">
+    <Content Include="resources\textures\nr\AcursedBowman.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumLootBomb.png">
+    <Content Include="resources\textures\nr\aliceSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumLootEye.png">
+    <Content Include="resources\textures\nr\aliceSkin_mask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumLootProj.png">
+    <Content Include="resources\textures\nr\americaProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumLootSpike.png">
+    <Content Include="resources\textures\nr\AngelTea.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumMaggots.png">
+    <Content Include="resources\textures\nr\ArmorFronza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumMaggotsProj.png">
+    <Content Include="resources\textures\nr\Assassin Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumStatue.png">
+    <Content Include="resources\textures\nr\Assassin Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumStatueProj1.png">
+    <Content Include="resources\textures\nr\Assassin Star.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumStatueProj1A.png">
+    <Content Include="resources\textures\nr\Asylum Key.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumStatueProj1B.png">
+    <Content Include="resources\textures\nr\Asylum Portal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AsylumStatueProj3.png">
+    <Content Include="resources\textures\nr\Asylum Spike2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AvatarArmor.png">
+    <Content Include="resources\textures\nr\Asylum Wizzard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AvatarProj.png">
+    <Content Include="resources\textures\nr\AsylumBomb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AvatarRing.png">
+    <Content Include="resources\textures\nr\AsylumEye.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AvatarSet.png">
+    <Content Include="resources\textures\nr\AsylumFly.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AvatarStaff.png">
+    <Content Include="resources\textures\nr\AsylumGuard Attack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Axe.png">
+    <Content Include="resources\textures\nr\AsylumGuard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\AxeAnger.png">
+    <Content Include="resources\textures\nr\AsylumLootBomb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\bammerWeed.png">
+    <Content Include="resources\textures\nr\AsylumLootEye.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Battle Axe.png">
+    <Content Include="resources\textures\nr\AsylumLootProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BedlamGod.png">
+    <Content Include="resources\textures\nr\AsylumLootSpike.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BedlamProjectile360.png">
+    <Content Include="resources\textures\nr\AsylumMaggots.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bird.png">
+    <Content Include="resources\textures\nr\AsylumMaggotsProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bird2.png">
+    <Content Include="resources\textures\nr\AsylumStatue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bird3.png">
+    <Content Include="resources\textures\nr\AsylumStatueProj1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BlackCat.png">
+    <Content Include="resources\textures\nr\AsylumStatueProj1A.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Blaster.png">
+    <Content Include="resources\textures\nr\AsylumStatueProj1B.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BlasterProj.png">
+    <Content Include="resources\textures\nr\AsylumStatueProj3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bloodbath Dagger Proj.png">
+    <Content Include="resources\textures\nr\AvatarArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bloodbath Dagger.png">
+    <Content Include="resources\textures\nr\AvatarProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BloodBlitz.png">
+    <Content Include="resources\textures\nr\AvatarRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BloodSword.png">
+    <Content Include="resources\textures\nr\AvatarSet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BloodSwordProj1.png">
+    <Content Include="resources\textures\nr\AvatarStaff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Boshy.png">
+    <Content Include="resources\textures\nr\Axe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Boshy2.png">
+    <Content Include="resources\textures\nr\AxeAnger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BoshyGun.png">
+    <Content Include="resources\textures\nr\bammerWeed.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BoshyProj.png">
+    <Content Include="resources\textures\nr\Battle Axe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Bow of Ornias.png">
+    <Content Include="resources\textures\nr\BedlamGod.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BowOfTheHesperides.png">
+    <Content Include="resources\textures\nr\BedlamProjectile360.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\BowOfTheHesperidesProj.png">
+    <Content Include="resources\textures\nr\Bird.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\CapeKid.png">
+    <Content Include="resources\textures\nr\Bird2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America Armor.png">
+    <Content Include="resources\textures\nr\Bird3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America Projectile.png">
+    <Content Include="resources\textures\nr\BlackCat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America Ring.png">
+    <Content Include="resources\textures\nr\Blaster.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America Seal.png">
+    <Content Include="resources\textures\nr\BlasterProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America Sword.png">
+    <Content Include="resources\textures\nr\Bloodbath Dagger Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Captain America.png">
+    <Content Include="resources\textures\nr\Bloodbath Dagger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Card Knight Black.png">
+    <Content Include="resources\textures\nr\BloodBlitz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Card Knight Red.png">
+    <Content Include="resources\textures\nr\BloodSword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\CardArmor.png">
+    <Content Include="resources\textures\nr\BloodSwordProj1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Chaos Guardians.png">
+    <Content Include="resources\textures\nr\Boshy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Chaos.png">
+    <Content Include="resources\textures\nr\Boshy2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\CrimsonDaggerOfTartarus.png">
+    <Content Include="resources\textures\nr\BoshyGun.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\CrimsonDaggerOfTartarusProj.png">
+    <Content Include="resources\textures\nr\BoshyProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\DaggerFronza.png">
+    <Content Include="resources\textures\nr\Bow of Ornias.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Armor.png">
+    <Content Include="resources\textures\nr\BowOfTheHesperides.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Armor2.png">
+    <Content Include="resources\textures\nr\BowOfTheHesperidesProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Helm.png">
+    <Content Include="resources\textures\nr\CapeKid.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Helm2.png">
+    <Content Include="resources\textures\nr\Captain America Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Knight Full.png">
+    <Content Include="resources\textures\nr\Captain America Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Knight Full_mask.png">
+    <Content Include="resources\textures\nr\Captain America Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Projectile.png">
+    <Content Include="resources\textures\nr\Captain America Seal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Projectile2.png">
+    <Content Include="resources\textures\nr\Captain America Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Projectile3.png">
+    <Content Include="resources\textures\nr\Captain America.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Ring.png">
+    <Content Include="resources\textures\nr\Card Knight Black.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Shield.png">
+    <Content Include="resources\textures\nr\Card Knight Red.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Dark Sword.png">
+    <Content Include="resources\textures\nr\CardArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Darkness.png">
+    <Content Include="resources\textures\nr\Chaos Guardians.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\DecoyFronza.png">
+    <Content Include="resources\textures\nr\Chaos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\devonRoach.png">
+    <Content Include="resources\textures\nr\CrimsonDaggerOfTartarus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Drannol.png">
+    <Content Include="resources\textures\nr\CrimsonDaggerOfTartarusProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Entman.png">
+    <Content Include="resources\textures\nr\DaggerFronza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanArmor.png">
+    <Content Include="resources\textures\nr\Dark Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanProj.png">
+    <Content Include="resources\textures\nr\Dark Armor2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanProj2.png">
+    <Content Include="resources\textures\nr\Dark Helm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanRing.png">
+    <Content Include="resources\textures\nr\Dark Helm2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanShield.png">
+    <Content Include="resources\textures\nr\Dark Knight Full.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EntmanWeapon.png">
+    <Content Include="resources\textures\nr\Dark Knight Full_mask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\EternalProj.png">
+    <Content Include="resources\textures\nr\Dark Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FanaticChaos.png">
+    <Content Include="resources\textures\nr\Dark Projectile2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Projectile.png">
+    <Content Include="resources\textures\nr\Dark Projectile3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Ring.png">
+    <Content Include="resources\textures\nr\Dark Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Robe.png">
+    <Content Include="resources\textures\nr\Dark Shield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Skin.png">
+    <Content Include="resources\textures\nr\Dark Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Skin2.png">
+    <Content Include="resources\textures\nr\Darkness.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fire Staff.png">
+    <Content Include="resources\textures\nr\DecoyFronza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FireStorm.png">
+    <Content Include="resources\textures\nr\devonRoach.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FireStormProj.png">
+    <Content Include="resources\textures\nr\Drannol.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FlamingBoomerang.png">
+    <Content Include="resources\textures\nr\Entman.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Fluffy.png">
+    <Content Include="resources\textures\nr\EntmanArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FoodBell.png">
+    <Content Include="resources\textures\nr\EntmanProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FoodTree.png">
+    <Content Include="resources\textures\nr\EntmanProj2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Frunza.png">
+    <Content Include="resources\textures\nr\EntmanRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FSoFarmor.png">
+    <Content Include="resources\textures\nr\EntmanShield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FSoFproj.png">
+    <Content Include="resources\textures\nr\EntmanWeapon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FSoFring.png">
+    <Content Include="resources\textures\nr\EternalProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FSoFseal.png">
+    <Content Include="resources\textures\nr\FanaticChaos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FSoFsword.png">
+    <Content Include="resources\textures\nr\Fire Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTarmor.png">
+    <Content Include="resources\textures\nr\Fire Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTdagger.png">
+    <Content Include="resources\textures\nr\Fire Robe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTprism.png">
+    <Content Include="resources\textures\nr\Fire Skin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTproj.png">
+    <Content Include="resources\textures\nr\Fire Skin2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTring.png">
+    <Content Include="resources\textures\nr\Fire Staff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\FTskin.png">
+    <Content Include="resources\textures\nr\FireStorm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GauntletofChaos.png">
+    <Content Include="resources\textures\nr\FireStormProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GauntletofMayhem.png">
+    <Content Include="resources\textures\nr\FlamingBoomerang.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GhostKingArmor.png">
+    <Content Include="resources\textures\nr\Fluffy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GhostKingHelm.png">
+    <Content Include="resources\textures\nr\FoodBell.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GhostKingRing.png">
+    <Content Include="resources\textures\nr\FoodTree.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GhostKingSword.png">
+    <Content Include="resources\textures\nr\Frunza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\GreyCat.png">
+    <Content Include="resources\textures\nr\FSoFarmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Guardian Armor.png">
+    <Content Include="resources\textures\nr\FSoFproj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Guardian Helm.png">
+    <Content Include="resources\textures\nr\FSoFring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Guardian Ring.png">
+    <Content Include="resources\textures\nr\FSoFseal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Guardian Sword.png">
+    <Content Include="resources\textures\nr\FSoFsword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Guardian.png">
+    <Content Include="resources\textures\nr\FTarmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\hadouken4.png">
+    <Content Include="resources\textures\nr\FTdagger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloProj.png">
+    <Content Include="resources\textures\nr\FTprism.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloProjTwo.png">
+    <Content Include="resources\textures\nr\FTproj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloRing.png">
+    <Content Include="resources\textures\nr\FTring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloRobe.png">
+    <Content Include="resources\textures\nr\FTskin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloSkin.png">
+    <Content Include="resources\textures\nr\GauntletofChaos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HalloSpell.png">
+    <Content Include="resources\textures\nr\GauntletofMayhem.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Hallostaff.png">
+    <Content Include="resources\textures\nr\GhostKingArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Hammer.png">
+    <Content Include="resources\textures\nr\GhostKingHelm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Haunt.png">
+    <Content Include="resources\textures\nr\GhostKingRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\heart.png">
+    <Content Include="resources\textures\nr\GhostKingSword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HeartDragon.png">
+    <Content Include="resources\textures\nr\GreyCat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HeavenlyHammer.png">
+    <Content Include="resources\textures\nr\Guardian Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HelmLeader.png">
+    <Content Include="resources\textures\nr\Guardian Helm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\HymnOfTheSky.png">
+    <Content Include="resources\textures\nr\Guardian Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\IceBlitz.png">
+    <Content Include="resources\textures\nr\Guardian Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\IceRing.png">
+    <Content Include="resources\textures\nr\Guardian.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\IceRobe.png">
+    <Content Include="resources\textures\nr\hadouken4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Insane Patient.png">
+    <Content Include="resources\textures\nr\HalloProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Invisi Armor.png">
+    <Content Include="resources\textures\nr\HalloProjTwo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Invisi Dagger.png">
+    <Content Include="resources\textures\nr\HalloRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Invisi Prism.png">
+    <Content Include="resources\textures\nr\HalloRobe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Invisi Ring.png">
+    <Content Include="resources\textures\nr\HalloSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Invisible Man.png">
+    <Content Include="resources\textures\nr\HalloSpell.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\IronProtection.png">
+    <Content Include="resources\textures\nr\Hallostaff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Janusarmor.png">
+    <Content Include="resources\textures\nr\Hammer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Janusbow.png">
+    <Content Include="resources\textures\nr\Haunt.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Janusproj.png">
+    <Content Include="resources\textures\nr\heart.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Janusring.png">
+    <Content Include="resources\textures\nr\HeartDragon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Janustrap.png">
+    <Content Include="resources\textures\nr\HeavenlyHammer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Jeebs Key.png">
+    <Content Include="resources\textures\nr\HelmLeader.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Jeebs Portal.png">
+    <Content Include="resources\textures\nr\HymnOfTheSky.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Kid.png">
+    <Content Include="resources\textures\nr\IceBlitz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Kid2.png">
+    <Content Include="resources\textures\nr\IceRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\KidProj.png">
+    <Content Include="resources\textures\nr\IceRobe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\KidProj1.png">
+    <Content Include="resources\textures\nr\Insane Patient.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Kithi.png">
+    <Content Include="resources\textures\nr\Invisi Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LabSetSkin.png">
+    <Content Include="resources\textures\nr\Invisi Dagger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Langolier.png">
+    <Content Include="resources\textures\nr\Invisi Prism.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Langolierr.png">
+    <Content Include="resources\textures\nr\Invisi Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Langoliers.png">
+    <Content Include="resources\textures\nr\Invisible Man.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LightweightLeather.png">
+    <Content Include="resources\textures\nr\IronProtection.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LootDrop5min.png">
+    <Content Include="resources\textures\nr\Janusarmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckyArmor.png">
+    <Content Include="resources\textures\nr\Janusbow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckyHat.png">
+    <Content Include="resources\textures\nr\Janusproj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckyProj.png">
+    <Content Include="resources\textures\nr\Janusring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckySeal.png">
+    <Content Include="resources\textures\nr\Janustrap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckySet.png">
+    <Content Include="resources\textures\nr\Jeebs Key.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\LuckySword.png">
+    <Content Include="resources\textures\nr\Jeebs Portal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\madHatter.png">
+    <Content Include="resources\textures\nr\Kid.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\madHatter_mask.png">
+    <Content Include="resources\textures\nr\Kid2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Megaman.png">
+    <Content Include="resources\textures\nr\KidProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanG.png">
+    <Content Include="resources\textures\nr\KidProj1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanGreenEnnemy.png">
+    <Content Include="resources\textures\nr\Kithi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanPinkThing.png">
+    <Content Include="resources\textures\nr\LabSetSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanProj.png">
+    <Content Include="resources\textures\nr\Langolier.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanProjGreen.png">
+    <Content Include="resources\textures\nr\Langolierr.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MegamanShield.png">
+    <Content Include="resources\textures\nr\Langoliers.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Mermaid.png">
+    <Content Include="resources\textures\nr\LightweightLeather.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloArmor.png">
+    <Content Include="resources\textures\nr\LootDrop5min.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloProj.png">
+    <Content Include="resources\textures\nr\LuckyArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloProjTwo.png">
+    <Content Include="resources\textures\nr\LuckyHat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloRing.png">
+    <Content Include="resources\textures\nr\LuckyProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloShield.png">
+    <Content Include="resources\textures\nr\LuckySeal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloSkin.png">
+    <Content Include="resources\textures\nr\LuckySet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MoloSword.png">
+    <Content Include="resources\textures\nr\LuckySword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MonkOrb.png">
+    <Content Include="resources\textures\nr\madHatter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MonkProj.png">
+    <Content Include="resources\textures\nr\madHatter_mask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MonkRing.png">
+    <Content Include="resources\textures\nr\Megaman.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MonkRobe.png">
+    <Content Include="resources\textures\nr\MegamanG.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\MonkStaff.png">
+    <Content Include="resources\textures\nr\MegamanGreenEnnemy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Nurse.png">
+    <Content Include="resources\textures\nr\MegamanPinkThing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Orange Thingy.png">
+    <Content Include="resources\textures\nr\MegamanProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\OrangeCat.png">
+    <Content Include="resources\textures\nr\MegamanProjGreen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Ornias Bow Shot.png">
+    <Content Include="resources\textures\nr\MegamanShield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\oryx.png">
+    <Content Include="resources\textures\nr\Mermaid.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\oryx2.png">
+    <Content Include="resources\textures\nr\MoloArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\oryx_mask.png">
+    <Content Include="resources\textures\nr\MoloProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\OssiSpectre.png">
+    <Content Include="resources\textures\nr\MoloProjTwo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacMan Key.png">
+    <Content Include="resources\textures\nr\MoloRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacMan Portal.png">
+    <Content Include="resources\textures\nr\MoloShield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacMan.png">
+    <Content Include="resources\textures\nr\MoloSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManBall.png">
+    <Content Include="resources\textures\nr\MoloSword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManBonus1.png">
+    <Content Include="resources\textures\nr\MonkOrb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManBonus2.png">
+    <Content Include="resources\textures\nr\MonkProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManBonus3.png">
+    <Content Include="resources\textures\nr\MonkRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManGhostRed.png">
+    <Content Include="resources\textures\nr\MonkRobe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\PacManGhostRedTest.png">
+    <Content Include="resources\textures\nr\MonkStaff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pandora Key.png">
+    <Content Include="resources\textures\nr\Nurse.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pandora Portal.png">
+    <Content Include="resources\textures\nr\Orange Thingy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Phoenix Projectile.png">
+    <Content Include="resources\textures\nr\OrangeCat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Phoenix Ring.png">
+    <Content Include="resources\textures\nr\Ornias Bow Shot.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Phoenix Wand.png">
+    <Content Include="resources\textures\nr\oryx.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Armor.png">
+    <Content Include="resources\textures\nr\oryx2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Helm.png">
+    <Content Include="resources\textures\nr\oryx_mask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Projectile.png">
+    <Content Include="resources\textures\nr\OssiSpectre.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Ring.png">
+    <Content Include="resources\textures\nr\PacMan Key.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Skin.png">
+    <Content Include="resources\textures\nr\PacMan Portal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Pizza Sword.png">
+    <Content Include="resources\textures\nr\PacMan.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ProjFrunza.png">
+    <Content Include="resources\textures\nr\PacManBall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ProjSteelShocker.png">
+    <Content Include="resources\textures\nr\PacManBonus1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ProjWandPristine.png">
+    <Content Include="resources\textures\nr\PacManBonus2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Qsheep.png">
+    <Content Include="resources\textures\nr\PacManBonus3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Queen of Hearts.png">
+    <Content Include="resources\textures\nr\PacManGhostRed.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QueenProj0.png">
+    <Content Include="resources\textures\nr\PacManGhostRedTest.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QueenProj1.png">
+    <Content Include="resources\textures\nr\Pandora Key.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QueenProj2.png">
+    <Content Include="resources\textures\nr\Pandora Portal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QueenProj3.png">
+    <Content Include="resources\textures\nr\Phoenix Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QueensHead.png">
+    <Content Include="resources\textures\nr\Phoenix Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QuiverOfDemonicRage.png">
+    <Content Include="resources\textures\nr\Phoenix Wand.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\QuiverOfDemonicRageProj.png">
+    <Content Include="resources\textures\nr\Pizza Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\RabbitsFoot.png">
+    <Content Include="resources\textures\nr\Pizza Helm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\realNinja.png">
+    <Content Include="resources\textures\nr\Pizza Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Reap.png">
+    <Content Include="resources\textures\nr\Pizza Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\reaper.png">
+    <Content Include="resources\textures\nr\Pizza Skin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Reapers Armor.png">
+    <Content Include="resources\textures\nr\Pizza Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Reapers Cloak.png">
+    <Content Include="resources\textures\nr\ProjFrunza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Reapers Ring.png">
+    <Content Include="resources\textures\nr\ProjSteelShocker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Reapers Scythe.png">
+    <Content Include="resources\textures\nr\ProjWandPristine.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\reaper_mask.png">
+    <Content Include="resources\textures\nr\Qsheep.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\RingFronza.png">
+    <Content Include="resources\textures\nr\Queen of Hearts.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Roach.png">
+    <Content Include="resources\textures\nr\QueenProj0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\RobeOfStorms.png">
+    <Content Include="resources\textures\nr\QueenProj1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Sanic.png">
+    <Content Include="resources\textures\nr\QueenProj2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SanicHelm.png">
+    <Content Include="resources\textures\nr\QueenProj3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SantaHat.png">
+    <Content Include="resources\textures\nr\QueensHead.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\santaMoto.png">
+    <Content Include="resources\textures\nr\QuiverOfDemonicRage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ShadowBlitz.png">
+    <Content Include="resources\textures\nr\QuiverOfDemonicRageProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SharkAttack.png">
+    <Content Include="resources\textures\nr\RabbitsFoot.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ShortCircuit.png">
+    <Content Include="resources\textures\nr\realNinja.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ShrimpProj.png">
+    <Content Include="resources\textures\nr\Reap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ShrimpQuiver.png">
+    <Content Include="resources\textures\nr\reaper.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Skull Ring.png">
+    <Content Include="resources\textures\nr\Reapers Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SkullCube.png">
+    <Content Include="resources\textures\nr\Reapers Cloak.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SkyGuard.png">
+    <Content Include="resources\textures\nr\Reapers Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SkyGuardian.png">
+    <Content Include="resources\textures\nr\Reapers Scythe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SmokeBlitz.png">
+    <Content Include="resources\textures\nr\reaper_mask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLarmor.png">
+    <Content Include="resources\textures\nr\RingFronza.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLdagger.png">
+    <Content Include="resources\textures\nr\Roach.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLdaggerProj.png">
+    <Content Include="resources\textures\nr\RobeOfStorms.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLpoison.png">
+    <Content Include="resources\textures\nr\Sanic.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLring.png">
+    <Content Include="resources\textures\nr\SanicHelm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampfly.png">
+    <Content Include="resources\textures\nr\SantaHat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswamplizardassassin.png">
+    <Content Include="resources\textures\nr\santaMoto.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswamplizardpriest.png">
+    <Content Include="resources\textures\nr\ShadowBlitz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswamplizardrogue.png">
+    <Content Include="resources\textures\nr\SharkAttack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampmamatoad.png">
+    <Content Include="resources\textures\nr\ShortCircuit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswamppfrog.png">
+    <Content Include="resources\textures\nr\ShrimpProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampslugmage.png">
+    <Content Include="resources\textures\nr\ShrimpQuiver.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampslugwarrior.png">
+    <Content Include="resources\textures\nr\Skull Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampspirit.png">
+    <Content Include="resources\textures\nr\SkullCube.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SoLLswampvfrog.png">
+    <Content Include="resources\textures\nr\SkyGuard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerArmor.png">
+    <Content Include="resources\textures\nr\SkyGuardian.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerCloak.png">
+    <Content Include="resources\textures\nr\SmokeBlitz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerPet.png">
+    <Content Include="resources\textures\nr\SoLLarmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerProj.png">
+    <Content Include="resources\textures\nr\SoLLdagger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerRing.png">
+    <Content Include="resources\textures\nr\SoLLdaggerProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerSkin.png">
+    <Content Include="resources\textures\nr\SoLLpoison.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SottlerWeap.png">
+    <Content Include="resources\textures\nr\SoLLring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Souls1.png">
+    <Content Include="resources\textures\nr\SoLLswampfly.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Souls2.png">
+    <Content Include="resources\textures\nr\SoLLswamplizardassassin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Souls3.png">
+    <Content Include="resources\textures\nr\SoLLswamplizardpriest.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Spectacles.png">
+    <Content Include="resources\textures\nr\SoLLswamplizardrogue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\StaffInsanity.png">
+    <Content Include="resources\textures\nr\SoLLswampmamatoad.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Star.png">
+    <Content Include="resources\textures\nr\SoLLswamppfrog.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\SteelShocker.png">
+    <Content Include="resources\textures\nr\SoLLswampslugmage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\streetFighter.png">
+    <Content Include="resources\textures\nr\SoLLswampslugwarrior.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\streetFighterKen.png">
+    <Content Include="resources\textures\nr\SoLLswampspirit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\sword.png">
+    <Content Include="resources\textures\nr\SoLLswampvfrog.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Syringe.png">
+    <Content Include="resources\textures\nr\SottlerArmor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\T13katana.png">
+    <Content Include="resources\textures\nr\SottlerCloak.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\T13katanaProj.png">
+    <Content Include="resources\textures\nr\SottlerPet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\T14katana.png">
+    <Content Include="resources\textures\nr\SottlerProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\T14katanaProj.png">
+    <Content Include="resources\textures\nr\SottlerRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\The Maze Portal.png">
+    <Content Include="resources\textures\nr\SottlerSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TheFrozenCompass.png">
+    <Content Include="resources\textures\nr\SottlerWeap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TheReactor.png">
+    <Content Include="resources\textures\nr\Souls1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TremorStaff.png">
+    <Content Include="resources\textures\nr\Souls2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TrumpRing.png">
+    <Content Include="resources\textures\nr\Souls3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TrumpSkin.png">
+    <Content Include="resources\textures\nr\Spectacles.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Turkey.png">
+    <Content Include="resources\textures\nr\StaffInsanity.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\TurkeyPortal.png">
+    <Content Include="resources\textures\nr\Star.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Arrow.png">
+    <Content Include="resources\textures\nr\SteelShocker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Bow.png">
+    <Content Include="resources\textures\nr\streetFighter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Cloak.png">
+    <Content Include="resources\textures\nr\streetFighterKen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Dagger Proj.png">
+    <Content Include="resources\textures\nr\sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Dagger.png">
+    <Content Include="resources\textures\nr\Syringe.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Helm.png">
+    <Content Include="resources\textures\nr\T13katana.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Poison.png">
+    <Content Include="resources\textures\nr\T13katanaProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Prism.png">
+    <Content Include="resources\textures\nr\T14katana.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Quiver.png">
+    <Content Include="resources\textures\nr\T14katanaProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Seal.png">
+    <Content Include="resources\textures\nr\The Maze Portal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Shield Proj.png">
+    <Content Include="resources\textures\nr\TheFrozenCompass.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Shield.png">
+    <Content Include="resources\textures\nr\TheReactor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Short Sword Proj.png">
+    <Content Include="resources\textures\nr\TremorStaff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Short Sword.png">
+    <Content Include="resources\textures\nr\TrumpRing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Spell.png">
+    <Content Include="resources\textures\nr\TrumpSkin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Staff Proj.png">
+    <Content Include="resources\textures\nr\Turkey.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Staff.png">
+    <Content Include="resources\textures\nr\TurkeyPortal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Unholy Tome.png">
+    <Content Include="resources\textures\nr\Unholy Arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\UnholyWand.png">
+    <Content Include="resources\textures\nr\Unholy Bow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\UnholyWandProj.png">
+    <Content Include="resources\textures\nr\Unholy Cloak.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\VorpalSword.png">
+    <Content Include="resources\textures\nr\Unholy Dagger Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WandOfTheCuretes.png">
+    <Content Include="resources\textures\nr\Unholy Dagger.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WandOfTheCuretesProj.png">
+    <Content Include="resources\textures\nr\Unholy Helm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WandPristine.png">
+    <Content Include="resources\textures\nr\Unholy Poison.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\War Hammer.png">
+    <Content Include="resources\textures\nr\Unholy Prism.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Wavebreaker.png">
+    <Content Include="resources\textures\nr\Unholy Quiver.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WhiteBag.png">
+    <Content Include="resources\textures\nr\Unholy Seal.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Armor.png">
+    <Content Include="resources\textures\nr\Unholy Shield Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Bow.png">
+    <Content Include="resources\textures\nr\Unholy Shield.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Projectile.png">
+    <Content Include="resources\textures\nr\Unholy Short Sword Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Queen.png">
+    <Content Include="resources\textures\nr\Unholy Short Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Ring.png">
+    <Content Include="resources\textures\nr\Unholy Spell.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Winter Trap.png">
+    <Content Include="resources\textures\nr\Unholy Staff Proj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\Wizzard Spawn.png">
+    <Content Include="resources\textures\nr\Unholy Staff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WizzardProj0.png">
+    <Content Include="resources\textures\nr\Unholy Tome.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WizzardProj1.png">
+    <Content Include="resources\textures\nr\UnholyWand.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WizzardProj2.png">
+    <Content Include="resources\textures\nr\UnholyWandProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WizzardProj3.png">
+    <Content Include="resources\textures\nr\VorpalSword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WizzardSpawnProj.png">
+    <Content Include="resources\textures\nr\WandOfTheCuretes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\wonderland0.png">
+    <Content Include="resources\textures\nr\WandOfTheCuretesProj.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\wonderland1.png">
+    <Content Include="resources\textures\nr\WandPristine.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\wonderland2.png">
+    <Content Include="resources\textures\nr\War Hammer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\wonderland3.png">
+    <Content Include="resources\textures\nr\Wavebreaker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\WonderlandNew4.png">
+    <Content Include="resources\textures\nr\WhiteBag.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ZeroSaber.png">
+    <Content Include="resources\textures\nr\Winter Armor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\ZeroSaberProj.png">
+    <Content Include="resources\textures\nr\Winter Bow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_4627022.png">
+    <Content Include="resources\textures\nr\Winter Projectile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_4630001.png">
+    <Content Include="resources\textures\nr\Winter Queen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_4759176.png">
+    <Content Include="resources\textures\nr\Winter Ring.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_4798003.png">
+    <Content Include="resources\textures\nr\Winter Trap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_7632526.png">
+    <Content Include="resources\textures\nr\Wizzard Spawn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_8989233.png">
+    <Content Include="resources\textures\nr\WizzardProj0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\textures\_9188006.png">
+    <Content Include="resources\textures\nr\WizzardProj1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\WizzardProj2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\WizzardProj3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\WizzardSpawnProj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\wonderland0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\wonderland1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\wonderland2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\wonderland3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\WonderlandNew4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\ZeroSaber.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\ZeroSaberProj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_4627022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_4630001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_4759176.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_4798003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_7632526.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_8989233.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\nr\_9188006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\omega ripper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\Papa Staff Proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\reapshot1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\reapshot2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\reapshot3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\reapshot4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\robe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\scep.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Ak.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Bow of Time.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Elite Colo Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\kat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Realm Worm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Rift Key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Rift Portal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Riv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\robe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\shield.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Thanos Key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Throwing Cards.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Time Key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Time Portal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Time Shot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Fiery\Timelord.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Ban_Hammer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Ban_Proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Elder_Malphas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Elder_Septavius.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Elder_Stheno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Fiery_Stuff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Infinity_Gauntlet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Ketsune%27s Holy Grail Kendo Proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Ketsune%27s Holy Grail Kendo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\ketsunex\Oryx_The_Mad_God_Frame_II.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Kuro\Armor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Kuro\Ring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Kuro\Scythe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Champion of Oryx.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Crusade Commander.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Crusade Explorer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Crusade Shipwright.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Crusade Soldier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Fire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Golem of Anger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Golem of Sorrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Golems.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Oryx Admiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Oryx ArmorBearer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\lh\Oryx Swordsman.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Nest\Killer Queen Bee.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Nest\Yellow large stinger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Nest\Yellow Magic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Nest\Yellow small stinger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\Nest\Yellow Star.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\esnake bow proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\esnake bow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\esnake dagger proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\esnake dagger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\Magic of the Djinn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\Reaper%27s Scythe Projectile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\Reaper%27s Scythe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\omanoit\snake star.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Amber Crystal Projectile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Amber Crystal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Crystal Turtle Projectile1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Crystal Turtle Projectile2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Crystal Turtle Projectile3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Crystal Turtle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Emerald Crystal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Rose Crystal Projectile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Rose Crystal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Sapphire Crystal Projectile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\oryxslayer\Sapphire Crystal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Colosss_Katana_Proj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Colossuss_Cloak.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Colossuss_powerful_Orb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Dangerous_Colos_Katana.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Light_Cemetery_Skull.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\qelig\Powerful_Void_Armor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_ennemy01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_ennemy02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_ennemy03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_ennemy04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_ennemy05.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_exclamation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_rat01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_slime01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_slime02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_slime03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\renewed_sewers\rs_solutionofgulpord.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\sci-fi_dungeon\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\sci-fi_dungeon\Scifi_Boss.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\sci-fi_dungeon\Scifi_Minion.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\ct_bone01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\ct_bone01_bloody.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\ct_mageshot01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\ct_mageshot02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\ct_mageshot03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\separate\the_catacombs\hybridbone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\shield_of_cards.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\ShopPortalBeta.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\shot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\statshot1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\statshot2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\statshot3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\statshot4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\knight\linktunic2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\knight\Navi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\knight\sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\knight\untitled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\sorcerer\sorc_st1_ring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\sorcerer\sorc_st1_robe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\sorcerer\sorc_st1_scepter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\st\sorcerer\sorc_st1_wand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\ThunderGod.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\voidport.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\voidshot1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\voidshot2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\voidshot3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\wana be hand cannon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\textures\wand.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="resources\web\crossdomain.xml">
@@ -2384,6 +2825,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="resources\web\music\stormypalace.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\web\music\tanos.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="resources\web\music\thevillage.mp3">
@@ -3001,393 +3445,6 @@
     <Content Include="resources\xmls\client\Lootboxes.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="textures\1000Fame.png" />
-    <Content Include="textures\1007589779.png" />
-    <Content Include="textures\100Fame.png" />
-    <Content Include="textures\1023436625.png" />
-    <Content Include="textures\1023464880.png" />
-    <Content Include="textures\4627022.png" />
-    <Content Include="textures\4759176.png" />
-    <Content Include="textures\4798003.png" />
-    <Content Include="textures\5000Fame.png" />
-    <Content Include="textures\500Fame.png" />
-    <Content Include="textures\5080919094329344.png" />
-    <Content Include="textures\50Fame.png" />
-    <Content Include="textures\5347216931684352.png" />
-    <Content Include="textures\6057068523945984.png" />
-    <Content Include="textures\6323904540835840.png" />
-    <Content Include="textures\6678217062612992.png" />
-    <Content Include="textures\7632526.png" />
-    <Content Include="textures\8989233.png" />
-    <Content Include="textures\9188006.png" />
-    <Content Include="textures\AcursedBowman.png" />
-    <Content Include="textures\aliceSkin.png" />
-    <Content Include="textures\aliceSkin_mask.png" />
-    <Content Include="textures\americaProj.png" />
-    <Content Include="textures\AngelTea.png" />
-    <Content Include="textures\ArmorFronza.png" />
-    <Content Include="textures\Assassin Armor.png" />
-    <Content Include="textures\Assassin Ring.png" />
-    <Content Include="textures\Assassin Star.png" />
-    <Content Include="textures\Asylum Key.png" />
-    <Content Include="textures\Asylum Portal.png" />
-    <Content Include="textures\Asylum Spike2.png" />
-    <Content Include="textures\Asylum Wizzard.png" />
-    <Content Include="textures\AsylumBomb.png" />
-    <Content Include="textures\AsylumEye.png" />
-    <Content Include="textures\AsylumFly.png" />
-    <Content Include="textures\AsylumGuard Attack.png" />
-    <Content Include="textures\AsylumGuard.png" />
-    <Content Include="textures\AsylumLootBomb.png" />
-    <Content Include="textures\AsylumLootEye.png" />
-    <Content Include="textures\AsylumLootProj.png" />
-    <Content Include="textures\AsylumLootSpike.png" />
-    <Content Include="textures\AsylumMaggots.png" />
-    <Content Include="textures\AsylumMaggotsProj.png" />
-    <Content Include="textures\AsylumStatue.png" />
-    <Content Include="textures\AsylumStatueProj1.png" />
-    <Content Include="textures\AsylumStatueProj1A.png" />
-    <Content Include="textures\AsylumStatueProj1B.png" />
-    <Content Include="textures\AsylumStatueProj3.png" />
-    <Content Include="textures\AvatarArmor.png" />
-    <Content Include="textures\AvatarProj.png" />
-    <Content Include="textures\AvatarRing.png" />
-    <Content Include="textures\AvatarSet.png" />
-    <Content Include="textures\AvatarStaff.png" />
-    <Content Include="textures\Axe.png" />
-    <Content Include="textures\AxeAnger.png" />
-    <Content Include="textures\bammerWeed.png" />
-    <Content Include="textures\Battle Axe.png" />
-    <Content Include="textures\BedlamGod.png" />
-    <Content Include="textures\BedlamProjectile360.png" />
-    <Content Include="textures\Bird.png" />
-    <Content Include="textures\Bird2.png" />
-    <Content Include="textures\Bird3.png" />
-    <Content Include="textures\BlackCat.png" />
-    <Content Include="textures\Blaster.png" />
-    <Content Include="textures\BlasterProj.png" />
-    <Content Include="textures\Bloodbath Dagger Proj.png" />
-    <Content Include="textures\Bloodbath Dagger.png" />
-    <Content Include="textures\BloodBlitz.png" />
-    <Content Include="textures\BloodSword.png" />
-    <Content Include="textures\BloodSwordProj1.png" />
-    <Content Include="textures\Boshy.png" />
-    <Content Include="textures\Boshy2.png" />
-    <Content Include="textures\BoshyGun.png" />
-    <Content Include="textures\BoshyProj.png" />
-    <Content Include="textures\Bow of Ornias.png" />
-    <Content Include="textures\BowOfTheHesperides.png" />
-    <Content Include="textures\BowOfTheHesperidesProj.png" />
-    <Content Include="textures\CapeKid.png" />
-    <Content Include="textures\Captain America Armor.png" />
-    <Content Include="textures\Captain America Projectile.png" />
-    <Content Include="textures\Captain America Ring.png" />
-    <Content Include="textures\Captain America Seal.png" />
-    <Content Include="textures\Captain America Sword.png" />
-    <Content Include="textures\Captain America.png" />
-    <Content Include="textures\Card Knight Black.png" />
-    <Content Include="textures\Card Knight Red.png" />
-    <Content Include="textures\CardArmor.png" />
-    <Content Include="textures\Chaos Guardians.png" />
-    <Content Include="textures\Chaos.png" />
-    <Content Include="textures\CrimsonDaggerOfTartarus.png" />
-    <Content Include="textures\CrimsonDaggerOfTartarusProj.png" />
-    <Content Include="textures\DaggerFronza.png" />
-    <Content Include="textures\Dark Armor.png" />
-    <Content Include="textures\Dark Armor2.png" />
-    <Content Include="textures\Dark Helm.png" />
-    <Content Include="textures\Dark Helm2.png" />
-    <Content Include="textures\Dark Knight Full.png" />
-    <Content Include="textures\Dark Knight Full_mask.png" />
-    <Content Include="textures\Dark Projectile.png" />
-    <Content Include="textures\Dark Projectile2.png" />
-    <Content Include="textures\Dark Projectile3.png" />
-    <Content Include="textures\Dark Ring.png" />
-    <Content Include="textures\Dark Shield.png" />
-    <Content Include="textures\Dark Sword.png" />
-    <Content Include="textures\Darkness.png" />
-    <Content Include="textures\DecoyFronza.png" />
-    <Content Include="textures\devonRoach.png" />
-    <Content Include="textures\Entman.png" />
-    <Content Include="textures\EntmanArmor.png" />
-    <Content Include="textures\EntmanProj.png" />
-    <Content Include="textures\EntmanProj2.png" />
-    <Content Include="textures\EntmanRing.png" />
-    <Content Include="textures\EntmanShield.png" />
-    <Content Include="textures\EntmanWeapon.png" />
-    <Content Include="textures\EternalProj.png" />
-    <Content Include="textures\FanaticChaos.png" />
-    <Content Include="textures\Fire Projectile.png" />
-    <Content Include="textures\Fire Ring.png" />
-    <Content Include="textures\Fire Robe.png" />
-    <Content Include="textures\Fire Skin.png" />
-    <Content Include="textures\Fire Skin2.png" />
-    <Content Include="textures\Fire Staff.png" />
-    <Content Include="textures\FireStorm.png" />
-    <Content Include="textures\FireStormProj.png" />
-    <Content Include="textures\FlamingBoomerang.png" />
-    <Content Include="textures\Fluffy.png" />
-    <Content Include="textures\FoodBell.png" />
-    <Content Include="textures\FoodTree.png" />
-    <Content Include="textures\Frunza.png" />
-    <Content Include="textures\FSoFarmor.png" />
-    <Content Include="textures\FSoFproj.png" />
-    <Content Include="textures\FSoFring.png" />
-    <Content Include="textures\FSoFseal.png" />
-    <Content Include="textures\FSoFsword.png" />
-    <Content Include="textures\FTarmor.png" />
-    <Content Include="textures\FTdagger.png" />
-    <Content Include="textures\FTprism.png" />
-    <Content Include="textures\FTproj.png" />
-    <Content Include="textures\FTring.png" />
-    <Content Include="textures\FTskin.png" />
-    <Content Include="textures\GauntletofChaos.png" />
-    <Content Include="textures\GauntletofMayhem.png" />
-    <Content Include="textures\GhostKingArmor.png" />
-    <Content Include="textures\GhostKingHelm.png" />
-    <Content Include="textures\GhostKingRing.png" />
-    <Content Include="textures\GhostKingSword.png" />
-    <Content Include="textures\GreyCat.png" />
-    <Content Include="textures\Guardian Armor.png" />
-    <Content Include="textures\Guardian Helm.png" />
-    <Content Include="textures\Guardian Ring.png" />
-    <Content Include="textures\Guardian Sword.png" />
-    <Content Include="textures\Guardian.png" />
-    <Content Include="textures\hadouken4.png" />
-    <Content Include="textures\HalloProj.png" />
-    <Content Include="textures\HalloProjTwo.png" />
-    <Content Include="textures\HalloRing.png" />
-    <Content Include="textures\HalloRobe.png" />
-    <Content Include="textures\HalloSkin.png" />
-    <Content Include="textures\HalloSpell.png" />
-    <Content Include="textures\Hallostaff.png" />
-    <Content Include="textures\Hammer.png" />
-    <Content Include="textures\Haunt.png" />
-    <Content Include="textures\heart.png" />
-    <Content Include="textures\HeartDragon.png" />
-    <Content Include="textures\HeavenlyHammer.png" />
-    <Content Include="textures\HelmLeader.png" />
-    <Content Include="textures\HymnOfTheSky.png" />
-    <Content Include="textures\IceBlitz.png" />
-    <Content Include="textures\IceRing.png" />
-    <Content Include="textures\IceRobe.png" />
-    <Content Include="textures\Insane Patient.png" />
-    <Content Include="textures\Invisi Armor.png" />
-    <Content Include="textures\Invisi Dagger.png" />
-    <Content Include="textures\Invisi Prism.png" />
-    <Content Include="textures\Invisi Ring.png" />
-    <Content Include="textures\Invisible Man.png" />
-    <Content Include="textures\IronProtection.png" />
-    <Content Include="textures\Janusarmor.png" />
-    <Content Include="textures\Janusbow.png" />
-    <Content Include="textures\Janusproj.png" />
-    <Content Include="textures\Janusring.png" />
-    <Content Include="textures\Janustrap.png" />
-    <Content Include="textures\Jeebs Key.png" />
-    <Content Include="textures\Jeebs Portal.png" />
-    <Content Include="textures\Kid.png" />
-    <Content Include="textures\Kid2.png" />
-    <Content Include="textures\KidProj.png" />
-    <Content Include="textures\KidProj1.png" />
-    <Content Include="textures\Kithi.png" />
-    <Content Include="textures\LabSetSkin.png" />
-    <Content Include="textures\Langolier.png" />
-    <Content Include="textures\Langolierr.png" />
-    <Content Include="textures\Langoliers.png" />
-    <Content Include="textures\LightweightLeather.png" />
-    <Content Include="textures\LootDrop5min.png" />
-    <Content Include="textures\LuckyArmor.png" />
-    <Content Include="textures\LuckyHat.png" />
-    <Content Include="textures\LuckyProj.png" />
-    <Content Include="textures\LuckySeal.png" />
-    <Content Include="textures\LuckySet.png" />
-    <Content Include="textures\LuckySword.png" />
-    <Content Include="textures\madHatter.png" />
-    <Content Include="textures\madHatter_mask.png" />
-    <Content Include="textures\Megaman.png" />
-    <Content Include="textures\MegamanG.png" />
-    <Content Include="textures\MegamanGreenEnnemy.png" />
-    <Content Include="textures\MegamanPinkThing.png" />
-    <Content Include="textures\MegamanProj.png" />
-    <Content Include="textures\MegamanProjGreen.png" />
-    <Content Include="textures\MegamanShield.png" />
-    <Content Include="textures\Mermaid.png" />
-    <Content Include="textures\MoloArmor.png" />
-    <Content Include="textures\MoloProj.png" />
-    <Content Include="textures\MoloProjTwo.png" />
-    <Content Include="textures\MoloRing.png" />
-    <Content Include="textures\MoloShield.png" />
-    <Content Include="textures\MoloSkin.png" />
-    <Content Include="textures\MoloSword.png" />
-    <Content Include="textures\MonkOrb.png" />
-    <Content Include="textures\MonkProj.png" />
-    <Content Include="textures\MonkRing.png" />
-    <Content Include="textures\MonkRobe.png" />
-    <Content Include="textures\MonkStaff.png" />
-    <Content Include="textures\Nurse.png" />
-    <Content Include="textures\Orange Thingy.png" />
-    <Content Include="textures\OrangeCat.png" />
-    <Content Include="textures\Ornias Bow Shot.png" />
-    <Content Include="textures\oryx.png" />
-    <Content Include="textures\oryx2.png" />
-    <Content Include="textures\oryx_mask.png" />
-    <Content Include="textures\OssiSpectre.png" />
-    <Content Include="textures\PacMan Key.png" />
-    <Content Include="textures\PacMan Portal.png" />
-    <Content Include="textures\PacMan.png" />
-    <Content Include="textures\PacManBall.png" />
-    <Content Include="textures\PacManBonus1.png" />
-    <Content Include="textures\PacManBonus2.png" />
-    <Content Include="textures\PacManBonus3.png" />
-    <Content Include="textures\PacManGhostRed.png" />
-    <Content Include="textures\PacManGhostRedTest.png" />
-    <Content Include="textures\Pandora Key.png" />
-    <Content Include="textures\Pandora Portal.png" />
-    <Content Include="textures\Phoenix Projectile.png" />
-    <Content Include="textures\Phoenix Ring.png" />
-    <Content Include="textures\Phoenix Wand.png" />
-    <Content Include="textures\Pizza Armor.png" />
-    <Content Include="textures\Pizza Helm.png" />
-    <Content Include="textures\Pizza Projectile.png" />
-    <Content Include="textures\Pizza Ring.png" />
-    <Content Include="textures\Pizza Skin.png" />
-    <Content Include="textures\Pizza Sword.png" />
-    <Content Include="textures\ProjFrunza.png" />
-    <Content Include="textures\ProjSteelShocker.png" />
-    <Content Include="textures\ProjWandPristine.png" />
-    <Content Include="textures\Qsheep.png" />
-    <Content Include="textures\Queen of Hearts.png" />
-    <Content Include="textures\QueenProj0.png" />
-    <Content Include="textures\QueenProj1.png" />
-    <Content Include="textures\QueenProj2.png" />
-    <Content Include="textures\QueenProj3.png" />
-    <Content Include="textures\QueensHead.png" />
-    <Content Include="textures\QuiverOfDemonicRage.png" />
-    <Content Include="textures\QuiverOfDemonicRageProj.png" />
-    <Content Include="textures\RabbitsFoot.png" />
-    <Content Include="textures\realNinja.png" />
-    <Content Include="textures\Reap.png" />
-    <Content Include="textures\reaper.png" />
-    <Content Include="textures\Reapers Armor.png" />
-    <Content Include="textures\Reapers Cloak.png" />
-    <Content Include="textures\Reapers Ring.png" />
-    <Content Include="textures\Reapers Scythe.png" />
-    <Content Include="textures\reaper_mask.png" />
-    <Content Include="textures\RingFronza.png" />
-    <Content Include="textures\Roach.png" />
-    <Content Include="textures\RobeOfStorms.png" />
-    <Content Include="textures\Sanic.png" />
-    <Content Include="textures\SanicHelm.png" />
-    <Content Include="textures\SantaHat.png" />
-    <Content Include="textures\santaMoto.png" />
-    <Content Include="textures\ShadowBlitz.png" />
-    <Content Include="textures\SharkAttack.png" />
-    <Content Include="textures\ShortCircuit.png" />
-    <Content Include="textures\ShrimpProj.png" />
-    <Content Include="textures\ShrimpQuiver.png" />
-    <Content Include="textures\Skull Ring.png" />
-    <Content Include="textures\SkullCube.png" />
-    <Content Include="textures\SkyGuard.png" />
-    <Content Include="textures\SkyGuardian.png" />
-    <Content Include="textures\SmokeBlitz.png" />
-    <Content Include="textures\SoLLarmor.png" />
-    <Content Include="textures\SoLLdagger.png" />
-    <Content Include="textures\SoLLdaggerProj.png" />
-    <Content Include="textures\SoLLpoison.png" />
-    <Content Include="textures\SoLLring.png" />
-    <Content Include="textures\SoLLswampfly.png" />
-    <Content Include="textures\SoLLswamplizardassassin.png" />
-    <Content Include="textures\SoLLswamplizardpriest.png" />
-    <Content Include="textures\SoLLswamplizardrogue.png" />
-    <Content Include="textures\SoLLswampmamatoad.png" />
-    <Content Include="textures\SoLLswamppfrog.png" />
-    <Content Include="textures\SoLLswampslugmage.png" />
-    <Content Include="textures\SoLLswampslugwarrior.png" />
-    <Content Include="textures\SoLLswampspirit.png" />
-    <Content Include="textures\SoLLswampvfrog.png" />
-    <Content Include="textures\SottlerArmor.png" />
-    <Content Include="textures\SottlerCloak.png" />
-    <Content Include="textures\SottlerPet.png" />
-    <Content Include="textures\SottlerProj.png" />
-    <Content Include="textures\SottlerRing.png" />
-    <Content Include="textures\SottlerSkin.png" />
-    <Content Include="textures\SottlerWeap.png" />
-    <Content Include="textures\Souls1.png" />
-    <Content Include="textures\Souls2.png" />
-    <Content Include="textures\Souls3.png" />
-    <Content Include="textures\Spectacles.png" />
-    <Content Include="textures\StaffInsanity.png" />
-    <Content Include="textures\Star.png" />
-    <Content Include="textures\SteelShocker.png" />
-    <Content Include="textures\streetFighter.png" />
-    <Content Include="textures\streetFighterKen.png" />
-    <Content Include="textures\sword.png" />
-    <Content Include="textures\Syringe.png" />
-    <Content Include="textures\T13katana.png" />
-    <Content Include="textures\T13katanaProj.png" />
-    <Content Include="textures\T14katana.png" />
-    <Content Include="textures\T14katanaProj.png" />
-    <Content Include="textures\The Maze Portal.png" />
-    <Content Include="textures\TheFrozenCompass.png" />
-    <Content Include="textures\TheReactor.png" />
-    <Content Include="textures\TremorStaff.png" />
-    <Content Include="textures\TrumpRing.png" />
-    <Content Include="textures\TrumpSkin.png" />
-    <Content Include="textures\Turkey.png" />
-    <Content Include="textures\TurkeyPortal.png" />
-    <Content Include="textures\Unholy Arrow.png" />
-    <Content Include="textures\Unholy Bow.png" />
-    <Content Include="textures\Unholy Cloak.png" />
-    <Content Include="textures\Unholy Dagger Proj.png" />
-    <Content Include="textures\Unholy Dagger.png" />
-    <Content Include="textures\Unholy Helm.png" />
-    <Content Include="textures\Unholy Poison.png" />
-    <Content Include="textures\Unholy Prism.png" />
-    <Content Include="textures\Unholy Quiver.png" />
-    <Content Include="textures\Unholy Seal.png" />
-    <Content Include="textures\Unholy Shield Proj.png" />
-    <Content Include="textures\Unholy Shield.png" />
-    <Content Include="textures\Unholy Short Sword Proj.png" />
-    <Content Include="textures\Unholy Short Sword.png" />
-    <Content Include="textures\Unholy Spell.png" />
-    <Content Include="textures\Unholy Staff Proj.png" />
-    <Content Include="textures\Unholy Staff.png" />
-    <Content Include="textures\Unholy Tome.png" />
-    <Content Include="textures\UnholyWand.png" />
-    <Content Include="textures\UnholyWandProj.png" />
-    <Content Include="textures\VorpalSword.png" />
-    <Content Include="textures\WandOfTheCuretes.png" />
-    <Content Include="textures\WandOfTheCuretesProj.png" />
-    <Content Include="textures\WandPristine.png" />
-    <Content Include="textures\War Hammer.png" />
-    <Content Include="textures\Wavebreaker.png" />
-    <Content Include="textures\WhiteBag.png" />
-    <Content Include="textures\Winter Armor.png" />
-    <Content Include="textures\Winter Bow.png" />
-    <Content Include="textures\Winter Projectile.png" />
-    <Content Include="textures\Winter Queen.png" />
-    <Content Include="textures\Winter Ring.png" />
-    <Content Include="textures\Winter Trap.png" />
-    <Content Include="textures\Wizzard Spawn.png" />
-    <Content Include="textures\WizzardProj0.png" />
-    <Content Include="textures\WizzardProj1.png" />
-    <Content Include="textures\WizzardProj2.png" />
-    <Content Include="textures\WizzardProj3.png" />
-    <Content Include="textures\WizzardSpawnProj.png" />
-    <Content Include="textures\wonderland0.png" />
-    <Content Include="textures\wonderland1.png" />
-    <Content Include="textures\wonderland2.png" />
-    <Content Include="textures\wonderland3.png" />
-    <Content Include="textures\WonderlandNew4.png" />
-    <Content Include="textures\ZeroSaber.png" />
-    <Content Include="textures\ZeroSaberProj.png" />
-    <Content Include="textures\_4627022.png" />
-    <Content Include="textures\_4630001.png" />
-    <Content Include="textures\_4759176.png" />
-    <Content Include="textures\_4798003.png" />
-    <Content Include="textures\_7632526.png" />
-    <Content Include="textures\_8989233.png" />
-    <Content Include="textures\_9188006.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

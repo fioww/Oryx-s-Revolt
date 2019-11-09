@@ -259,7 +259,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>UnholyWandProj</Id>
+            <Id>nr\UnholyWandProj</Id>
         </RemoteTexture>
     </Object>
     <!-- Projectiles -->
@@ -267,7 +267,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Syringe</Id>
+            <Id>nr\Syringe</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -275,14 +275,14 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>BedlamProjectile360</Id>
+            <Id>nr\BedlamProjectile360</Id>
         </RemoteTexture>
     </Object>
     <Object type="0x777A" id="AsylumFly">
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumFly</Id>
+            <Id>nr\AsylumFly</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
         <Size>80</Size>
@@ -291,7 +291,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumMaggotsProj</Id>
+            <Id>nr\AsylumMaggotsProj</Id>
         </RemoteTexture>
         <Rotation>80</Rotation>
         <Size>130</Size>
@@ -300,7 +300,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Asylum Spike2</Id>
+            <Id>nr\Asylum Spike2</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -308,7 +308,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumGuard Attack</Id>
+            <Id>nr\AsylumGuard Attack</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -317,7 +317,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumBomb</Id>
+            <Id>nr\AsylumBomb</Id>
         </RemoteTexture>
         <HitSound>monster/stone_walls_hit</HitSound>
         <DeathSound>monster/stone_walls_death</DeathSound>
@@ -339,7 +339,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumLootProj</Id>
+            <Id>nr\AsylumLootProj</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
         <Size>125</Size>
@@ -349,7 +349,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumLootBomb</Id>
+            <Id>nr\AsylumLootBomb</Id>
         </RemoteTexture>
         <HitSound>monster/stone_walls_hit</HitSound>
         <DeathSound>monster/stone_walls_death</DeathSound>
@@ -370,7 +370,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumLootSpike</Id>
+            <Id>nr\AsylumLootSpike</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -378,7 +378,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumStatueProj1</Id>
+            <Id>nr\AsylumStatueProj1</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -386,7 +386,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumStatueProj1A</Id>
+            <Id>nr\AsylumStatueProj1A</Id>
         </RemoteTexture>
         <Rotation>-80</Rotation>
     </Object>
@@ -394,7 +394,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumStatueProj1B</Id>
+            <Id>nr\AsylumStatueProj1B</Id>
         </RemoteTexture>
         <Rotation>80</Rotation>
     </Object>
@@ -402,7 +402,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumStatueProj3</Id>
+            <Id>nr\AsylumStatueProj3</Id>
         </RemoteTexture>
         <Rotation>60</Rotation>
         <Size>125</Size>
@@ -411,14 +411,14 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WizzardProj0</Id>
+            <Id>nr\WizzardProj0</Id>
         </RemoteTexture>
     </Object>
     <Object type="0x780E" id="WizzardProj1">
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WizzardProj1</Id>
+            <Id>nr\WizzardProj1</Id>
         </RemoteTexture>
         <Rotation>100</Rotation>
     </Object>
@@ -426,7 +426,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WizzardProj2</Id>
+            <Id>nr\WizzardProj2</Id>
         </RemoteTexture>
         <Rotation>100</Rotation>
     </Object>
@@ -434,7 +434,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WizzardProj3</Id>
+            <Id>nr\WizzardProj3</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -442,7 +442,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WizzardSpawnProj</Id>
+            <Id>nr\WizzardSpawnProj</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -454,7 +454,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>BedlamGod</Id>
+            <Id>nr\BedlamGod</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>monster/oryx_death</DeathSound>
@@ -516,7 +516,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Chaos Guardians</Id>
+            <Id>nr\Chaos Guardians</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>monster/oryx_death</DeathSound>
@@ -565,7 +565,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Insane Patient</Id>
+            <Id>nr\Insane Patient</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>player/archer_death</DeathSound>
@@ -601,7 +601,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Nurse</Id>
+            <Id>nr\Nurse</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>player/archer_death</DeathSound>
@@ -636,7 +636,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Roach</Id>
+            <Id>nr\Roach</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>player/archer_death</DeathSound>
@@ -664,7 +664,7 @@
         <Enemy />
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumEye</Id>
+            <Id>nr\AsylumEye</Id>
         </RemoteTexture>
         <Size>100</Size>
         <MaxHitPoints>50000</MaxHitPoints>
@@ -688,7 +688,7 @@
         <Size>80</Size>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumMaggots</Id>
+            <Id>nr\AsylumMaggots</Id>
         </RemoteTexture>
         <MaxHitPoints>1500</MaxHitPoints>
         <Defense>50</Defense>
@@ -709,7 +709,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumGuard</Id>
+            <Id>nr\AsylumGuard</Id>
         </RemoteTexture>
         <HitSound>monster/elves_death</HitSound>
         <DeathSound>monster/golems_death</DeathSound>
@@ -737,7 +737,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Bird3</Id>
+            <Id>nr\Bird3</Id>
         </RemoteTexture>
         <Size>100</Size>
         <StasusImmune />
@@ -753,7 +753,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumLootEye</Id>
+            <Id>nr\AsylumLootEye</Id>
         </RemoteTexture>
         <Size>100</Size>
         <MaxHitPoints>30000</MaxHitPoints>
@@ -771,7 +771,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>AsylumStatue</Id>
+            <Id>nr\AsylumStatue</Id>
         </RemoteTexture>
         <Size>100</Size>
         <MaxHitPoints>30000</MaxHitPoints>
@@ -822,7 +822,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Asylum Wizzard</Id>
+            <Id>nr\Asylum Wizzard</Id>
         </RemoteTexture>
         <Size>100</Size>
         <MaxHitPoints>50000</MaxHitPoints>
@@ -874,7 +874,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Asylum Wizzard</Id>
+            <Id>nr\Asylum Wizzard</Id>
         </RemoteTexture>
         <HitSound>monster/ghost_god_hit</HitSound>
         <DeathSound>monster/ghost_god_death</DeathSound>
@@ -898,7 +898,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Wizzard Spawn</Id>
+            <Id>nr\Wizzard Spawn</Id>
         </RemoteTexture>
         <HitSound>monster/cyclops_hit</HitSound>
         <DeathSound>monster/cyclops_death</DeathSound>
@@ -921,7 +921,7 @@
         <Class>Projectile</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>WonderlandNew4</Id>
+            <Id>nr\WonderlandNew4</Id>
         </RemoteTexture>
         <AngleCorrection>1</AngleCorrection>
     </Object>
@@ -930,7 +930,7 @@
         <Item />
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>VorpalSword</Id>
+            <Id>nr\VorpalSword</Id>
         </RemoteTexture>
         <SlotType>1</SlotType>
         <Description>Crafted with the finest "Muchness"</Description>
@@ -956,7 +956,7 @@
         <Item />
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>RabbitsFoot</Id>
+            <Id>nr\RabbitsFoot</Id>
         </RemoteTexture>
         <SlotType>9</SlotType>
         <Description>The rabbit is even later now...</Description>
@@ -971,7 +971,7 @@
         <Item />
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>CardArmor</Id>
+            <Id>nr\CardArmor</Id>
         </RemoteTexture>
         <SlotType>7</SlotType>
         <Description>This enchanted armor is made from recycled paper. Remarkably, it is stronger than even mithril, and makes the wearer feel unbeatable.</Description>
@@ -990,7 +990,7 @@
         <Item />
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>QueensHead</Id>
+            <Id>nr\QueensHead</Id>
         </RemoteTexture>
         <SlotType>19</SlotType>
         <Description>Off with her head!</Description>
@@ -1009,7 +1009,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>wonderland0</Id>
+            <Id>nr\wonderland0</Id>
         </RemoteTexture>
         <HitSound>monster/default_hit</HitSound>
         <DeathSound>monster/default_death</DeathSound>
@@ -1033,7 +1033,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>wonderland1</Id>
+            <Id>nr\wonderland1</Id>
         </RemoteTexture>
         <HitSound>monster/default_hit</HitSound>
         <DeathSound>monster/default_death</DeathSound>
@@ -1056,7 +1056,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>wonderland2</Id>
+            <Id>nr\wonderland2</Id>
         </RemoteTexture>
         <HitSound>monster/default_hit</HitSound>
         <DeathSound>monster/default_death</DeathSound>
@@ -1079,7 +1079,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>wonderland3</Id>
+            <Id>nr\wonderland3</Id>
         </RemoteTexture>
         <HitSound>monster/default_hit</HitSound>
         <DeathSound>monster/default_death</DeathSound>
@@ -1101,7 +1101,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>Queen of Hearts</Id>
+            <Id>nr\Queen of Hearts</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>monster/oryx_death</DeathSound>

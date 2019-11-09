@@ -78,19 +78,31 @@ namespace wServer.logic
             {
                 if (player.HasConditionEffect(common.resources.ConditionEffects.Paused))
                     continue;
-                double xp = enemy.GivesNoXp ? 0 : 1;
 
+                float xp, exp, expc = enemy.GivesNoXp ? 0 : 1;
+                xp = exp = expc = enemy.GivesNoXp ? 0 : 1;
 
-                xp *= Math.Floor(Math.Min(enemy.ObjectDesc.MaxHP * 0.1f, (player.Level * 100 - 50) * 0.1f) *
-                                        (enemy.ObjectDesc.ExpMultiplier ?? 1));
+                xp *= enemy.ObjectDesc.MaxHP / 10f *        //<XpMult>
+                    (enemy.ObjectDesc.ExpMultiplier ?? 1);
+                exp *= enemy.ObjectDesc.Experience;         //<Exp> (Capped)
+                expc *= enemy.ObjectDesc.ExperienceCap;     //<Experience>
 
                 float upperLimit = player.ExperienceGoal * 0.1f;
                 if (player.Quest == enemy)
                     upperLimit = player.ExperienceGoal * 0.5f;
 
-                double playerXp;
+                float playerXp;
                 if (upperLimit < xp)
                     playerXp = upperLimit;
+                else if (enemy.ObjectDesc.ExperienceCap > 0)
+                    if (player.Level < 20)
+                    {
+                        playerXp = upperLimit;
+                    }
+                    else
+                        playerXp = expc;
+                else if (enemy.ObjectDesc.Experience > 0)
+                    playerXp = exp;
                 else
                     playerXp = xp;
 

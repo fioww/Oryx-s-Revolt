@@ -3,7 +3,6 @@ public class EmbeddedData {
 
     public static const PlayersCXML:Class = EmbeddedData_PlayersCXML;
     private static const GroundCXML:Class = EmbeddedData_GroundCXML;
-    public static const groundFiles:Array = [new GroundCXML()];
     private static const ProjectilesCXML:Class = EmbeddedData_ProjectilesCXML;
     private static const EquipCXML:Class = EmbeddedData_EquipCXML;
     private static const EquipmentSetsCXML:Class = EmbeddedData_EquipmentSetsCXML;
@@ -59,12 +58,32 @@ public class EmbeddedData {
     private static const BelladonnaCXML:Class = EmbeddedData_BelladonnaCXML;
     private static const PuppetMasterCXML:Class = EmbeddedData_PuppetMasterCXML;
     private static const IceCaveCXML:Class = EmbeddedData_IceCaveCXML;
+    private static const FieryRealmsCXML:Class = EmbeddedData_OthersMiscCXML;
+    private static const RegionsCXML:Class = EmbeddedData_RegionsCXML;
+    private static const TutorialScriptCXML:Class = EmbeddedData_TutorialScriptCXML;
+    //load objects
+    public static const objectFiles:Array =
+            [
+                new ProjectilesCXML(), new EquipCXML(), new DyesCXML(), new TextilesCXML(), new PermapetsCXML(), new WillemTestingCXML(),
+                new TTestingCXML(), new BTestingCXML(), new STestingCXML(), new MTestingCXML(), new KTestingCXML(), new PlayersCXML(),
+                new ObjectsCXML(), new TestingObjectsCXML(), new StaticObjectsCXML(), new TutorialObjectsCXML(), new MonstersCXML(),
+                new PetsCXML(), new TempObjectsCXML(), new ShoreCXML(), new LowCXML(), new MidCXML(), new HighCXML(), new MountainsCXML(),
+                new EncountersCXML(), new OryxCastleCXML(), new TombOfTheAncientsCXML(), new SpriteWorldCXML(), new UndeadLairCXML(),
+                new OceanTrenchCXML(), new ForbiddenJungleCXML(), new OryxChamberCXML(), new OryxWineCellarCXML(), new ManorOfTheImmortalsCXML(),
+                new PirateCaveCXML(), new SnakePitCXML(), new AbyssOfDemonsCXML(), new GhostShipCXML(), new MadLabCXML(),
+                new CaveOfAThousandTreasuresCXML(), new CandyLandCXML(), new HauntedCemeteryCXML(), new ForestMazeCXML(), new EpicForestMazeCXML(),
+                new EpicPirateCaveCXML(), new EpicSpiderDenCXML(), new NexusDestroyedCXML(), new MiniDungeonHubCXML(), new LairOfDraconisCXML(),
+                new LairOfShaitanCXML(), new ShattersCXML(), new BelladonnaCXML(), new PuppetMasterCXML(), new IceCaveCXML(), new FieryRealmsCXML()
+            ];
+    //load tiles
+    public static const groundFiles:Array =
+            [
+                new GroundCXML()
+            ];
+    //load others
     public static const skinsXML:XML = XML(new SkinsCXML());
     public static const skinsEquipmentSetsXML:XML = XML(new EquipmentSetsCXML());
-    public static const objectFiles:Array = [new ProjectilesCXML(), new EquipCXML(), new DyesCXML(), new TextilesCXML(), new PermapetsCXML(), new WillemTestingCXML(), new TTestingCXML(), new BTestingCXML(), new STestingCXML(), new MTestingCXML(), new KTestingCXML(), new PlayersCXML(), new ObjectsCXML(), new TestingObjectsCXML(), new StaticObjectsCXML(), new TutorialObjectsCXML(), new MonstersCXML(), new PetsCXML(), new TempObjectsCXML(), new ShoreCXML(), new LowCXML(), new MidCXML(), new HighCXML(), new MountainsCXML(), new EncountersCXML(), new OryxCastleCXML(), new TombOfTheAncientsCXML(), new SpriteWorldCXML(), new UndeadLairCXML(), new OceanTrenchCXML(), new ForbiddenJungleCXML(), new OryxChamberCXML(), new OryxWineCellarCXML(), new ManorOfTheImmortalsCXML(), new PirateCaveCXML(), new SnakePitCXML(), new AbyssOfDemonsCXML(), new GhostShipCXML(), new MadLabCXML(), new CaveOfAThousandTreasuresCXML(), new CandyLandCXML(), new HauntedCemeteryCXML(), new ForestMazeCXML(), new EpicForestMazeCXML(), new EpicPirateCaveCXML(), new EpicSpiderDenCXML(), new NexusDestroyedCXML(), new MiniDungeonHubCXML(), new LairOfDraconisCXML(), new LairOfShaitanCXML(), new ShattersCXML(), new BelladonnaCXML(), new PuppetMasterCXML(), new IceCaveCXML()];
-    private static const RegionsCXML:Class = EmbeddedData_RegionsCXML;
     public static const regionFiles:Array = [new RegionsCXML()];
-    private static const TutorialScriptCXML:Class = EmbeddedData_TutorialScriptCXML;
     public static const tutorialXML:XML = XML(new TutorialScriptCXML());
 
 

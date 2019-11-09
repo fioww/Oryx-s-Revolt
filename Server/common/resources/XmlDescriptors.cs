@@ -1155,6 +1155,8 @@ namespace common.resources
         public bool Hero { get; }
         public int? PerRealmMax { get; }
         public float? ExpMultiplier { get; }    //Exp gained = level total / 10 * multi
+        public float ExperienceCap { get; private set; }    //Exp gained = number set on xml (with level cap)
+        public float Experience { get; private set; }    //Exp gained = number set on xml (without cap)
         public bool Restricted { get; }
         public bool IsPet { get; }
         public bool IsPetSkin { get; }
@@ -1253,10 +1255,17 @@ namespace common.resources
                 PerRealmMax = Utils.FromString(n.Value);
             else
                 PerRealmMax = null;
+
             if ((n = elem.Element("XpMult")) != null)
                 ExpMultiplier = float.Parse(n.Value);
             else
                 ExpMultiplier = null;
+
+            if ((n = elem.Element("Exp")) != null)
+                Experience = float.Parse(n.Value);
+
+            if ((n = elem.Element("Experience")) != null)
+                ExperienceCap = float.Parse(n.Value);
 
             IsPet = elem.Element("Pet") != null;
             IsPetSkin = elem.Element("PetSkin") != null;

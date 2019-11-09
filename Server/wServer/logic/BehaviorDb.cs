@@ -25,6 +25,8 @@ namespace wServer.logic
         {
             Log.Info("Initializing Behavior Database...");
 
+            int behavCount = 0;
+
             Manager = manager;
 
             Definitions = new Dictionary<ushort, Tuple<State, Loot>>();
@@ -40,13 +42,14 @@ namespace wServer.logic
                 .ToArray();
             for (var i = 0; i < fields.Length; i++) {
                 var field = fields[i];
-                Log.InfoFormat("Loading behavior for '{0}'({1}/{2})...", field.Name, i + 1, fields.Length);
+                behavCount = i;
                 ((_)field.GetValue(this))();
                 field.SetValue(this, null);
             }
 
             InitDb = null;
             _initializing = 0;
+            Log.Info($"{behavCount} Behaviors loaded.");
             Log.Info("Behavior Database initialized...");
         }
 

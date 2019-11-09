@@ -650,6 +650,24 @@ namespace wServer.realm.commands
 
             var item = gameData.Items[objType];
 
+            if (player.Client.Account.Rank < 95 &&
+            (
+            #region Banned Items
+                 item.DisplayName.Equals("Potion of Maxy") ||
+                 item.DisplayName.Equals("40 Fame") ||
+                 item.DisplayName.Equals("50 Fame") ||
+                 item.DisplayName.Equals("100 Fame") ||
+                 item.DisplayName.Equals("500 Fame") ||
+                 item.DisplayName.Equals("1000 Fame") ||
+                 item.DisplayName.Equals("5000 Fame") ||
+                 item.DisplayName.Equals("Dark Helm")
+            #endregion
+            ))
+            {
+                player.SendError("Insufficient Rank.");
+                return false;
+            }
+
             var availableSlot = player.Inventory.GetAvailableInventorySlot(item);
             if (availableSlot != -1)
             {
@@ -1104,27 +1122,6 @@ namespace wServer.realm.commands
         }
     }
 
-    internal class KillPlayerCommand : Command
-    {
-        public KillPlayerCommand() : base("killPlayer", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            foreach (var i in player.Manager.Clients.Keys)
-            {
-                if (i.Account.Name.EqualsIgnoreCase(args))
-                {
-                    i.Player.HP = 0;
-                    i.Player.Death(player.Name);
-                    player.SendInfo("Player killed!");
-                    return true;
-                }
-            }
-            player.SendError($"Player '{args}' could not be found!");
-            return false;
-        }
-    }
-
     internal class SizeCommand : Command
     {
         public SizeCommand() : base("size", permLevel: 10) { }
@@ -1363,65 +1360,6 @@ namespace wServer.realm.commands
         protected override bool Process(Player player, RealmTime time, string args)
         {
             player.SendInfo("X: " + (int)player.X + " - Y: " + (int)player.Y);
-            return true;
-        }
-    }
-
-    internal class RankCommand : Command
-    {
-        public RankCommand() : base("rank", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            var index = args.IndexOf(' ');
-            if (string.IsNullOrEmpty(args) || index == -1)
-            {
-                player.SendInfo("Usage: /rank <player name> <rank>\\n0: Normal Player, 20: Donor, 70: Former Staff, 80: GM, 90: Dev, 100: Owner");
-                return false;
-            }
-
-            var name = args.Substring(0, index);
-            var rank = int.Parse(args.Substring(index + 1));
-
-            if (Database.GuestNames.Contains(name, StringComparer.InvariantCultureIgnoreCase))
-            {
-                player.SendError("Cannot rank unnamed accounts.");
-                return false;
-            }
-
-            var id = player.Manager.Database.ResolveId(name);
-            if (id == player.AccountId)
-            {
-                player.SendError("Cannot rank self.");
-                return false;
-            }
-
-            var acc = player.Manager.Database.GetAccount(id);
-            if (id == 0 || acc == null)
-            {
-                player.SendError("Account not found!");
-                return false;
-            }
-
-            // kick player from server to set rank
-            foreach (var i in player.Manager.Clients.Keys)
-                if (i.Account.Name.EqualsIgnoreCase(name))
-                    i.Disconnect();
-
-            if (acc.Admin && rank < 80)
-            {
-                // reset account
-                player.Manager.Database.WipeAccount(
-                    acc, player.Manager.Resources.GameData, player.Name);
-                acc.Reload();
-            }
-
-            acc.Admin = rank >= 80;
-            acc.LegacyRank = rank;
-            acc.Hidden = false;
-            acc.FlushAsync();
-
-            player.SendInfo($"{acc.Name} given legacy rank {acc.LegacyRank}{((acc.Admin) ? " and now has admin status" : "")}.");
             return true;
         }
     }
@@ -2062,161 +2000,6 @@ namespace wServer.realm.commands
         }
     }
 
-    internal class GiftCommand : Command
-    {
-        public GiftCommand() : base("gift", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            if (player == null)
-                return false;
-
-            var manager = player.Manager;
-
-            // verify argument
-            var index = args.IndexOf(' ');
-            if (string.IsNullOrWhiteSpace(args) || index == -1)
-            {
-                player.SendInfo("Usage: /gift <player name> <item name>");
-                return false;
-            }
-
-            // get command args
-            var playerName = args.Substring(0, index);
-            var item = GetItem(player, args.Substring(index + 1));
-            if (item == null)
-            {
-                return false;
-            }
-
-            // get player account
-            if (Database.GuestNames.Contains(playerName, StringComparer.InvariantCultureIgnoreCase))
-            {
-                player.SendError("Cannot gift the unnamed...");
-                return false;
-            }
-            var id = manager.Database.ResolveId(playerName);
-            var acc = manager.Database.GetAccount(id);
-            if (id == 0 || acc == null)
-            {
-                player.SendError("Account not found!");
-                return false;
-            }
-
-            // add gift
-            var result = player.Manager.Database.AddGift(acc, item.ObjectType);
-            if (!result)
-            {
-                player.SendError("Gift not added. Something happened with the adding process.");
-                return false;
-            }
-
-            // send out success notifications
-            player.SendInfoFormat("You gifted {0} one {1}.", acc.Name, item.DisplayName);
-            var gifted = player.Manager.Clients.Keys
-                .SingleOrDefault(p => p.Account.AccountId == acc.AccountId);
-            gifted?.Player?.SendInfoFormat(
-                "You received a gift from {0}. Enjoy your {1}.",
-                player.Name,
-                item.DisplayName);
-            return true;
-        }
-
-        private Item GetItem(Player player, string itemName)
-        {
-            var gameData = player.Manager.Resources.GameData;
-
-            ushort objType;
-
-            // allow both DisplayId and Id for query
-            if (!gameData.DisplayIdToObjectType.TryGetValue(itemName, out objType))
-            {
-                if (!gameData.IdToObjectType.TryGetValue(itemName, out objType))
-                    player.SendError("Unknown item type!");
-                return null;
-            }
-
-            if (!gameData.Items.ContainsKey(objType))
-            {
-                player.SendError("Not an item!");
-                return null;
-            }
-
-
-            return gameData.Items[objType];
-        }
-    }
-
-    internal class RemovePets : Command
-    {
-        public RemovePets() : base("removeAllPets", permLevel: 110) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            // close all worlds / disconnect all players
-            foreach (var w in player.Manager.Worlds.Values)
-            {
-                w.Closed = true;
-                foreach (var p in w.Players.Values)
-                    p.Client.Disconnect();
-            }
-
-            player.Manager.Database.RemoveAllPets(player.Manager.Resources.GameData);
-
-            Program.Stop();
-            return true;
-        }
-    }
-
-    internal class RemoveServerGold : Command
-    {
-        public RemoveServerGold() : base("removeAllGold", permLevel: 110) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            // close all worlds / disconnect all players
-            foreach (var w in player.Manager.Worlds.Values)
-            {
-                w.Closed = true;
-                foreach (var p in w.Players.Values)
-                    p.Client.Disconnect();
-            }
-
-            player.Manager.Database.RemoveAllGold();
-
-            Program.Stop();
-            return true;
-        }
-    }
-
-    internal class OverrideAccountCommand : Command
-    {
-        public OverrideAccountCommand() : base("override", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string name)
-        {
-            var acc = player.Client.Account;
-
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                player.SendError("Usage: /override <player name>");
-                return false;
-            }
-
-            var id = player.Manager.Database.ResolveId(name);
-            if (id == 0)
-            {
-                player.SendError("Account not found!");
-                return false;
-            }
-
-            acc.AccountIdOverride = id;
-            acc.FlushAsync();
-            player.SendInfo("Account override set.");
-            return true;
-        }
-    }
-
     internal class Level20Command : Command
     {
         public Level20Command(RealmManager manager) : base("level20", permLevel: 10, alias: "l20") {
@@ -2243,7 +2026,7 @@ namespace wServer.realm.commands
 
     internal class RenameCommand : Command
     {
-        public RenameCommand() : base("rename", permLevel: 80) { }
+        public RenameCommand() : base("rename", permLevel: 90) { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
@@ -2307,109 +2090,6 @@ namespace wServer.realm.commands
                     db.ReleaseLock(key, lockToken);
             }
 
-            return true;
-        }
-    }
-
-    internal class UnnameCommand : Command
-    {
-        public UnnameCommand() : base("unname", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string args)
-        {
-            if (string.IsNullOrWhiteSpace(args))
-            {
-                player.SendInfo("Usage: /unname <player name>");
-                return false;
-            }
-
-            var playerName = args;
-
-            var id = player.Manager.Database.ResolveId(playerName);
-            if (id == 0)
-            {
-                player.SendError("Player account not found!");
-                return false;
-            }
-
-            string lockToken = null;
-            var key = Database.NAME_LOCK;
-            var db = player.Manager.Database;
-
-            try
-            {
-                while ((lockToken = db.AcquireLock(key)) == null) ;
-
-                var acc = db.GetAccount(id);
-                if (acc == null)
-                {
-                    player.SendError("Account doesn't exist.");
-                    return false;
-                }
-
-                using (var l = db.Lock(acc))
-                    if (db.LockOk(l))
-                    {
-                        while (!db.UnnameIGN(acc, lockToken)) ;
-                        player.SendInfo("Account succesfully unnamed.");
-                    }
-                    else
-                        player.SendError("Account in use.");
-            }
-            finally
-            {
-                if (lockToken != null)
-                    db.ReleaseLock(key, lockToken);
-            }
-
-            return true;
-        }
-    }
-
-    internal class WargCommand : Command
-    {
-        public WargCommand() : base("warg", permLevel: 100) { }
-
-        protected override bool Process(Player player, RealmTime time, string name)
-        {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                player.SendError("Usage: /warg <mob name>");
-                return false;
-            }
-
-            var target = player.GetNearestEntityByName(2900, name);
-            if (target == null)
-            {
-                player.SendError("Mob not found.");
-                return false;
-            }
-
-            if (target.Controller != null)
-            {
-                player.SendError("Only one person can control a mob at a time.");
-                return false;
-            }
-
-            if (player.SpectateTarget != null)
-            {
-                player.SpectateTarget.FocusLost -= player.ResetFocus;
-                player.SpectateTarget.Controller = null;
-            }
-
-            player.ApplyConditionEffect(ConditionEffectIndex.Paused);
-            target.FocusLost += player.ResetFocus;
-            target.Controller = player;
-            player.SpectateTarget = target;
-            player.Sight.UpdateCount++;
-
-            player.Owner.Timers.Add(new WorldTimer(500, (w, t) =>
-            {
-                player.Client.SendPacket(new SetFocus()
-                {
-                    ObjectId = target.Id
-                });
-            }));
             return true;
         }
     }
