@@ -84,7 +84,9 @@ namespace wServer.logic
                     new ItemLoot("Ouija Board", 0.045),
                     new ItemLoot("Golden Urn", 0.04),
                     new ItemLoot("Doom Bow", 0.01),
-                    new ItemLoot("Eidolon Venom", 0.01)
+                    new MostDamagers(2,
+                        new ItemLoot("Eidolon Venom", 0.01)
+                        )
                     )
             )
             .Init("Ghost Mage of Septavius",

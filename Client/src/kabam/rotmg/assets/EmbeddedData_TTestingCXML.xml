@@ -7,7 +7,7 @@
         <Group>Mad Lab</Group>
         <RemoteTexture>
             <Instance>testing</Instance>
-            <Id>7632526</Id>
+            <Id>nr\7632526</Id>
             <Right/>
         </RemoteTexture>
         <HitSound>monster/slimes_death</HitSound>

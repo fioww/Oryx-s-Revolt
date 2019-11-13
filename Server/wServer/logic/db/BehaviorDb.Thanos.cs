@@ -25,8 +25,7 @@ namespace wServer.logic
                 new Threshold(0.05,
                     new ItemLoot("Potion of Dexterity", 1),
                     new ItemLoot("Potion of Wisdom", 1),
-                    new ItemLoot("Infinity Gauntlet", 0.006),
-                    new ItemLoot("Fake Infinity Gauntlet", 0.04)
+                    new ItemLoot("Infinity Gauntlet", 0.006)
                     )
             )
             .Init("BB God Egg",
@@ -38,32 +37,31 @@ namespace wServer.logic
                         ),
                     new State("Say",
                      new ConditionalEffect(ConditionEffectIndex.Invulnerable),
-                     new Taunt("guess the magic word... and ill give you the best loot"),
-                     new PlayerTextTransition("Basic", "haha", 8, false, true),
-                     new TimedTransition(100000000, "Basic")
+                     new Taunt("Guess the easter word... good loot guaranteed!"),
+                     new PlayerTextTransition("Basic", "yuh is gayr", 8, false, true),
+                     new TimedTransition(100000000, "Say")
                         ),
                     new State("Basic",
                      new HpLessTransition(.93, "Ooh"),
-                     new Taunt("happy easter!")
+                     new Taunt(0.1, "happy easter!")
                                                 ),
                     new State("Ooh",
                      new HpLessTransition(.84, "Ooh2"),
-                     new Taunt("ouch that hurts")
+                     new Taunt(0.1, "ouch that hurts")
                                                 ),
                     new State("Ooh2",
                      new HpLessTransition(.75, "Ooh3"),
-                     new Taunt("oof")
+                     new Taunt(0.1, "oof")
                                                 ),
                     new State("Ooh3",
-                     new Taunt("argh")
+                     new Taunt(0.1, "argh")
                         )
                     ),
                 new Threshold(0.05,
                     new ItemLoot("Potion of Dexterity", 0.2),
                     new ItemLoot("Potion of Wisdom", 0.2),
                     new ItemLoot("Admin Crown", 0.05),
-                    new ItemLoot("Infinity Gauntlet", 0.001),
-                    new ItemLoot("Fake Infinity Gauntlet", 0.01)
+                    new ItemLoot("Infinity Gauntlet", 0.001)
                     )
             );
     }

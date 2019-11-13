@@ -191,7 +191,7 @@ namespace wServer.logic
                     new ItemLoot("Mark of Septavius", 0.15),
                     new ItemLoot("Rare Quest Chest Item", 0.05),
                               ),*/
-                new MostDamagers(3,
+                new MostDamagers(4,
                     new OnlyOne(
                         new ItemLoot("NecroST1", 0.003),
                         new ItemLoot("NecroST3", 0.0046),
@@ -200,7 +200,7 @@ namespace wServer.logic
                     ),
                     new ItemLoot("Doom Bow", 0.05),
                     new ItemLoot("Bloody Gauntlet", 0.01),
-                    new ItemLoot("Blood of the Reaper's Oath", 0.003)
+                    new ItemLoot("Blood of the Reaper's Oath", 0.001)
                               ),
                 new MostDamagers(4,
                     new ItemLoot("1000 Gold", 0.05)

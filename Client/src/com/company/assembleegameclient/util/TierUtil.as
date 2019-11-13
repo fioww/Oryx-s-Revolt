@@ -66,6 +66,21 @@ public class TierUtil
                _local_10 = 0x879ceb;
                _local_11 = "UT";
             }
+            else if (_arg_1.hasOwnProperty("@unique"))
+            {
+               _local_10 = 0xffaa00;
+               _local_11 = "UT";
+            }
+            else if (_arg_1.hasOwnProperty("@unholylg"))
+            {
+               _local_10 = TooltipHelper.UNHOLY_LG_COLOR;
+               _local_11 = "UT";
+            }
+            else if (_arg_1.hasOwnProperty("@onfire"))
+            {
+               _local_10 = 0xff0000;
+               _local_11 = "UT";
+            }
             else
             {
                _local_10 = TooltipHelper.UNTIERED_COLOR;

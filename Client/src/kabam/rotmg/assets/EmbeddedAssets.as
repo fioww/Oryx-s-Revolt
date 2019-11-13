@@ -125,6 +125,9 @@ public class EmbeddedAssets {
     public static var marksEmbed_:Class = EmbeddedAssets_marks10x10Embed_;
     public static var Hanami8x8charsEmbed_:Class = EmbeddedAssets_Hanami8x8charsEmbed_;
     public static var HanamiParts8x8Embed_:Class = EmbeddedAssets_HanamiParts8x8Embed_;
+    public static var buffedBunnyChars16x16Embed_:Class = EmbeddedAssets_buffedBunnyChars16x16Embed_;
+    public static var buffedBunnyObjects8x8Embed_:Class = EmbeddedAssets_buffedBunnyObjects8x8Embed_;
+    public static var buffedBunnyObjects16x16Embed_:Class = EmbeddedAssets_buffedBunnyObjects16x16Embed_;
     public static var mountainTempleChars8x8Embed_:Class = EmbeddedAssets_mountainTempleChars8x8Embed_;
     public static var mountainTempleChars16x16Embed_:Class = EmbeddedAssets_mountainTempleChars16x16Embed_;
     public static var mountainTempleObjects16x16Embed_:Class = EmbeddedAssets_mountainTempleObjects16x16Embed_;
@@ -139,7 +142,7 @@ public class EmbeddedAssets {
     public static var d3LofiObjAlt_:Class = EmbeddedAssets_d3LofiObjAlt_;
     public static var lofiProjsAlt_:Class = EmbeddedAssets_lofiProjsAlt_;
     public static var lofiObj3Alt:Class = EmbeddedAssets_lofiObj3Alt;
-    public static var lofiObj7_:Class = EmbeddedAssets_lofiObj7Embed_;
+    public static var lofiObj7Embed_:Class = EmbeddedAssets_lofiObj7Embed_;
     public static var customEnemies16x16_:Class = EmbeddedAssets_customEnemies16x16;
     public static var models_:Object = {
         "Monster Tank1": new monsterTank1Embed_(),

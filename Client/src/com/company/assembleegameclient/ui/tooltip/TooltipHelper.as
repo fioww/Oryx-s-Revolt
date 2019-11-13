@@ -11,7 +11,9 @@ public class TooltipHelper
 
     public static const WIS_BONUS_COLOR:uint = 4219875;
 
-    public static const UNTIERED_COLOR:uint = 9055202;
+    public static const UNTIERED_COLOR:uint = 0xffe34d;
+
+    public static const UNHOLY_LG_COLOR:uint = 9055202;
 
     public static const SET_COLOR:uint = 16750848;
 

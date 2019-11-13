@@ -243,6 +243,10 @@ public class ObjectLibrary {
         {
             return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0xFFFF00, _arg_4, _arg_5));
         }
+        else if(_local_8 == null && _local_9.hasOwnProperty("@special"))
+        {
+            return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0x87DFEB, _arg_4, _arg_5));
+        }
         else if(_local_8 == null )
         {
             return (TextureRedrawer.redraw(_local_6, _arg_2, _arg_3, 0, _arg_4, _arg_5));

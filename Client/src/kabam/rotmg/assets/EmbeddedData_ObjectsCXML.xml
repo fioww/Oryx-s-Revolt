@@ -456,6 +456,50 @@
         <Size>80</Size>
         <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
     </Object>
+    <Object type="0x0311" id="Loot Bag 10">
+        <DisplayId>Loot Bag</DisplayId>
+        <Class>Container</Class>
+        <Container/>
+        <CanPutNormalObjects/>
+        <CanPutSoulboundObjects/>
+        <Loot/>
+        <Texture>
+            <File>lofiObj4</File>
+            <Index>0x97</Index>
+        </Texture>
+        <Size>80</Size>
+        <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    </Object>
+
+    <Object type="0x0516" id="Loot Bag 11">
+        <DisplayId>Loot Bag</DisplayId>
+        <Class>Container</Class>
+        <Container/>
+        <CanPutNormalObjects/>
+        <CanPutSoulboundObjects/>
+        <Loot/>
+        <Texture>
+            <File>lofiObj4</File>
+            <Index>0x98</Index>
+        </Texture>
+        <Size>80</Size>
+        <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    </Object>
+
+    <Object type="0x0517" id="Loot Bag 12">
+        <DisplayId>Loot Bag</DisplayId>
+        <Class>Container</Class>
+        <Container/>
+        <CanPutNormalObjects/>
+        <CanPutSoulboundObjects/>
+        <Loot/>
+        <Texture>
+            <File>lofiObj4</File>
+            <Index>0x96</Index>
+        </Texture>
+        <Size>80</Size>
+        <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    </Object>
     <Object type="0x0511" id="Mystery Box">
         <Class>MysteryBoxGround</Class>
         <Texture>

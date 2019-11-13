@@ -37271,7 +37271,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Sound>spell/fire_nova</Sound>
         <Usable/>
         <MpCost>10</MpCost>
-        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="150">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="8">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="8">IncrementStat</ActivateOnEquip>
@@ -82169,7 +82169,7 @@ This dagger was a myth, will you live to tell the tale?
         <ActivateOnEquip stat="21" amount="18">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="60">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="340">IncrementStat</ActivateOnEquip>
     </Object>
 <Object type="0x509c" id="Derp Armor">
     <Class>Equipment</Class>
@@ -85202,7 +85202,7 @@ This dagger was a myth, will you live to tell the tale?
         <FameBonus>6</FameBonus>
         <MpCost>90</MpCost>
         <ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
         <Activate effect="Weak" duration="3" range="5" color="0xffff00" target="enemy" center="player" visualEffect="5" useWisMod="false">GenericActivate</Activate>
         <Activate effect="Healing" duration="6" range="5" useWisMod="true">ConditionEffectAura</Activate>
         <Activate range="5" amount="160" useWisMod="true">HealNova</Activate>
@@ -96223,10 +96223,10 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
     <Activate stat="20" amount="150">IncrementStat</Activate>
     <Activate stat="22" amount="150">IncrementStat</Activate>
     <Activate stat="28" amount="150">IncrementStat</Activate>
-	<Activate stat="112" amount="150">IncrementStat</Activate>
-	<Activate stat="114" amount="150">IncrementStat</Activate>
+	  <Activate stat="112" amount="150">IncrementStat</Activate>
+	  <Activate stat="114" amount="150">IncrementStat</Activate>
     <Activate stat="121" amount="150">IncrementStat</Activate>
-	<Activate stat="122" amount="150">IncrementStat</Activate>
+	  <Activate stat="122" amount="999">IncrementStat</Activate>
     <Consumable/>
     <Potion/>
     <Legendary/>
@@ -103767,7 +103767,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Description>Our focus can't be halted.</Description>
         <ActivateOnEquip stat="0" amount="160">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="20">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="20">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -103984,7 +103984,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
     <SlotType>10</SlotType>
     <Description>This relic can be shattered. Once shattered it causes the mortal to have the strength of the gods.</Description>
     <Sound>use_potion</Sound>
-    <Activate stat="122" amount="150">IncrementStat</Activate>
+    <Activate stat="122" amount="999">IncrementStat</Activate>
     <Consumable/>
     <Potion/>
     <BagType>11</BagType>
@@ -104078,7 +104078,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <SlotType>9</SlotType>
       <Tier>1</Tier>
       <Description>A diamond set in a silver ring.</Description>
-      <ActivateOnEquip stat="122" amount="3">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
       <BagType>1</BagType>
       <feedPower>20</feedPower>
       <DisplayId>Ring of Protection</DisplayId>
@@ -104093,7 +104093,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <SlotType>9</SlotType>
       <Tier>2</Tier>
       <Description>A diamond set in a gold ring.</Description>
-      <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="16">IncrementStat</ActivateOnEquip>
       <BagType>2</BagType>
       <FameBonus>1</FameBonus>
       <feedPower>37</feedPower>
@@ -104109,7 +104109,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <SlotType>9</SlotType>
       <Tier>3</Tier>
       <Description>A large diamond set in a glittering gold ring.</Description>
-      <ActivateOnEquip stat="122" amount="6">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
       <BagType>2</BagType>
       <FameBonus>2</FameBonus>
       <feedPower>75</feedPower>
@@ -104125,7 +104125,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <SlotType>9</SlotType>
       <Tier>4</Tier>
       <Description>A very large corundum set in a dazzling gold ring.</Description>
-      <ActivateOnEquip stat="122" amount="7">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="45">IncrementStat</ActivateOnEquip>
       <BagType>2</BagType>
       <FameBonus>3</FameBonus>
       <feedPower>150</feedPower>
@@ -104141,7 +104141,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <SlotType>9</SlotType>
       <Tier>5</Tier>
       <Description>A huge flawless corundom set in a stunningly beautiful gold ring.</Description>
-      <ActivateOnEquip stat="122" amount="8">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="70">IncrementStat</ActivateOnEquip>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>300</feedPower>
@@ -104315,7 +104315,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>9</SlotType>
         <Description>Boundless energies fill this gemstone...</Description>
         <ActivateOnEquip stat="0" amount="200">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="160">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="15">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -104452,7 +104452,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Description>Shiny, tough armor with sapphire lined in the middle of it's plates. This armor is used by the most worthy.</Description>
         <ActivateOnEquip stat="21" amount="45">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="75">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="380">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
         <feedPower>1850</feedPower>
@@ -104782,7 +104782,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
 	  <ActivateOnEquip stat="112" amount="10">IncrementStat</ActivateOnEquip>
 	  <ActivateOnEquip stat="114" amount="10">IncrementStat</ActivateOnEquip>
 	  <ActivateOnEquip stat="121" amount="10">IncrementStat</ActivateOnEquip>
-	  <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+	  <ActivateOnEquip stat="122" amount="60">IncrementStat</ActivateOnEquip>
       <BagType>6</BagType>
       <FameBonus>8</FameBonus>
       <feedPower>1800</feedPower>
@@ -105172,7 +105172,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <ArmorPiercing/>
             <Wavy/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="65">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="112" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="40">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -105451,7 +105451,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Description>A robe used by the great holy clerics of Dranbiel.</Description>
         <ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="180">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="75">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="18">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="26" amount="12">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="121" amount="40">IncrementStat</ActivateOnEquip>
@@ -105749,7 +105749,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <LifetimeMS>400</LifetimeMS>
         </Projectile>
         <ActivateOnEquip stat="0" amount="80">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="90">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="40">IncrementStat</ActivateOnEquip>
         <Legendary/>
         <Legend id="3" stat="27">
@@ -105872,7 +105872,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gauntlet that empowers the power of your thoughts and lends you the power of the celestial gods.</Description>
-        <ActivateOnEquip stat="122" amount="75">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="350">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="-100">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="30">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -106221,7 +106221,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>16</SlotType>
         <Description>Stay golden, warrior.</Description>
         <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="65">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -106658,7 +106658,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <FameBonus>6</FameBonus>
         <MpCost>120</MpCost>
         <ActivateOnEquip stat="3" amount="-40">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="190">IncrementStat</ActivateOnEquip>
         <Activate>BulletNova</Activate>
     </Object>
         <Object type="0x61ae" id="Prime Chaotic Seal">
@@ -106739,7 +106739,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <PassesCover/>
             <ParticleTrail/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="6">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
@@ -106915,7 +106915,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
         <ActivateOnEquip stat="3" amount="200">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="175">IncrementStat</ActivateOnEquip>
         <MpCost>125</MpCost>
         <Activate effect="Armored" duration="2" range="4" useWisMod="false">ConditionEffectAura</Activate>
         <Activate range="6" amount="260" useWisMod="true">HealNova</Activate>
@@ -106981,7 +106981,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <LifetimeMS>350</LifetimeMS>
         </Projectile>
         <ActivateOnEquip stat="26" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="120">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -107003,7 +107003,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <ActivateOnEquip stat="0" amount="100">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="-10">IncrementStat</ActivateOnEquip>
-	    <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
+	    <ActivateOnEquip stat="122" amount="100">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -107142,7 +107142,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Projectile>
         <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="99">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <Legendary/>
         <FameBonus>8</FameBonus>
@@ -107190,7 +107190,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
 	  <Activate stat="112" amount="1">IncrementStat</Activate>
 	  <Activate stat="114" amount="1">IncrementStat</Activate>
     <Activate stat="121" amount="1">IncrementStat</Activate>
-	  <Activate stat="122" amount="1">IncrementStat</Activate>
+	  <Activate stat="122" amount="4">IncrementStat</Activate>
     <Consumable/>
     <Potion/>
     <BagType>5</BagType>
@@ -107593,7 +107593,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <ActivateOnEquip stat="20" amount="11">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="14">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="70">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <Legendary/>
         <Legend id="4" stat="27">
@@ -108216,7 +108216,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>22</SlotType>
         <Description>A timeshard prism that holds an entire inconceivable dimension within itself. The true forms of the beings it summons will drive anyone into insanity.</Description>
         <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="20">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
@@ -110058,7 +110058,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>9</SlotType>
         <Description>A ring created from Truestone.</Description>
         <EffectEquip effect="Surged" delay="120"/>
-        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="3" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="2">IncrementStat</ActivateOnEquip>
@@ -110196,7 +110196,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Tier>2</Tier>
         <Description>A potion that permanently ascends your protection stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="122" amount="1">PowerStat</Activate>
+        <Activate stat="122" amount="4">PowerStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -110380,7 +110380,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <PassesCover/>
             <ParticleTrail intensity="0.3" lifetimeMS="270">0x0f0ff0</ParticleTrail>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
         <ConditionEffect duration="2.5">Stunned</ConditionEffect>
         <Usable/>
@@ -110481,7 +110481,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <Boomerang/>
             <ArmorPiercing/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="155">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="8">IncrementStat</ActivateOnEquip>
         <Steal type="mana" amount="2"/>
         <BagType>6</BagType>
@@ -119053,7 +119053,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>18</SlotType>
         <Description>A specialized poison used to ward off phantoms of the Undead Lair.</Description>
         <ActivateOnEquip stat="22" amount="8">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="20">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
@@ -119504,7 +119504,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <ActivateOnEquip stat="21" amount="30">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="3" amount="120">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="20" amount="-5">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>6</FameBonus>
@@ -119734,7 +119734,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <SlotType>9</SlotType>
         <Tier>6</Tier>
         <Description>A huge flawless diamond set in a stunningly beautiful gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="9">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="90">IncrementStat</ActivateOnEquip>
         <BagType>4</BagType>
         <FameBonus>5</FameBonus>
         <feedPower>300</feedPower>
@@ -127855,7 +127855,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <Usable/>
 	  <ActivateOnEquip stat="20" amount="10">IncrementStat</ActivateOnEquip>
 	  <ActivateOnEquip stat="28" amount="10">IncrementStat</ActivateOnEquip>
-	  <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+	  <ActivateOnEquip stat="122" amount="80">IncrementStat</ActivateOnEquip>
       <BagType>6</BagType>
       <FameBonus>6</FameBonus>
       <MpCost>125</MpCost>
@@ -129097,7 +129097,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <ActivateOnEquip stat="112" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="114" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="121" amount="5">IncrementStat</ActivateOnEquip>
-      <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
       <Usable/>
       <BagType>6</BagType>
       <FameBonus>6</FameBonus>
@@ -129208,7 +129208,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       </Texture>
       <SlotType>9</SlotType>
       <Description>bling bling</Description>
-      <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="122" amount="300">IncrementStat</ActivateOnEquip>
 	  <ActivateOnEquip stat="22" amount="-10">IncrementStat</ActivateOnEquip>
       <BagType>6</BagType>
       <DisplayId>Raptor Ring</DisplayId>
@@ -129970,242 +129970,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <AngleCorrection>1</AngleCorrection>
     </Object>
 
-
-
-    <Object type="0x1099" id="ct Lich">
-        <DisplayId>Lich</DisplayId>
-        <Group>Heros</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars8x8rHero1</File>
-            <Index>0x06</Index>
-        </AnimatedTexture>
-        <HitSound>monster/skeletons_hit</HitSound>
-        <DeathSound>monster/skeletons_death</DeathSound>
-        <Size>140</Size>
-        <MaxHitPoints>7000</MaxHitPoints>
-        <Defense>7</Defense>
-        <Hero/>
-        <Quest/>
-        <Level>9</Level>
-        <XpMult>1.5</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Violet Magic</ObjectId>
-            <Damage>70</Damage>
-            <Speed>80</Speed>
-            <LifetimeMS>2200</LifetimeMS>
-            <Size>80</Size>
-            <MultiHit/>
-        </Projectile>
-        <Projectile id="1">
-            <ObjectId>Catacombs Bone</ObjectId>
-            <Damage>90</Damage>
-            <Speed>60</Speed>
-            <LifetimeMS>2000</LifetimeMS>
-            <Size>110</Size>
-        </Projectile>
-    </Object>
-    <Object type="0x109a" id="ct Phylactery Bearer">
-        <Group>Ghosts</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars16x16dEncounters</File>
-            <Index>3</Index>
-        </AnimatedTexture>
-        <HitSound>monster/ghosts_hit</HitSound>
-        <DeathSound>monster/ghosts_death</DeathSound>
-        <Size>60</Size>
-        <MaxHitPoints>5200</MaxHitPoints>
-        <Defense>4</Defense>
-        <XpMult>0.3</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Bone</ObjectId>
-            <Damage>50</Damage>
-            <Speed>60</Speed>
-            <Size>70</Size>
-            <LifetimeMS>2000</LifetimeMS>
-        </Projectile>
-        <Projectile id="1">
-            <ObjectId>Catacombs Bone Bloody</ObjectId>
-            <Damage>75</Damage>
-            <Speed>100</Speed>
-            <Size>80</Size>
-            <LifetimeMS>2000</LifetimeMS>
-        </Projectile>
-    </Object>
-    <Object type="0x109b" id="ct Haunted Spirit">
-        <Group>Ghosts</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars8x8dEncounters</File>
-            <Index>2</Index>
-        </AnimatedTexture>
-        <HitSound>monster/ghosts_hit</HitSound>
-        <DeathSound>monster/ghosts_death</DeathSound>
-        <Size>80</Size>
-        <MaxHitPoints>4500</MaxHitPoints>
-        <Defense>18</Defense>
-        <XpMult>0.3</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Magic Shot</ObjectId>
-            <Damage>90</Damage>
-            <Speed>70</Speed>
-            <Size>105</Size>
-            <LifetimeMS>1500</LifetimeMS>
-            <MultiHit/>
-        </Projectile>
-        <Projectile id="1">
-            <ObjectId>Catacombs Magic Shot Boomerang</ObjectId>
-            <Damage>75</Damage>
-            <Speed>100</Speed>
-            <Size>80</Size>
-            <LifetimeMS>2000</LifetimeMS>
-            <Boomerang/>
-            <MultiHit/>
-        </Projectile>
-    </Object>
-    <Object type="0x109c" id="ct Mummy">
-        <Group>Mummies</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars8x8rHero1</File>
-            <Index>0x07</Index>
-        </AnimatedTexture>
-        <HitSound>monster/mummies_hit</HitSound>
-        <DeathSound>monster/mummies_death</DeathSound>
-        <Size>130</Size>
-        <MaxHitPoints>600</MaxHitPoints>
-        <Defense>0</Defense>
-        <XpMult>0.1</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Violet Magic</ObjectId>
-            <Damage>50</Damage>
-            <Speed>70</Speed>
-            <LifetimeMS>3000</LifetimeMS>
-        </Projectile>
-    </Object>
-    <Object type="0x109d" id="ct Mummy King">
-        <Group>Mummies</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars8x8rHero1</File>
-            <Index>0x08</Index>
-        </AnimatedTexture>
-        <HitSound>monster/mummies_hit</HitSound>
-        <DeathSound>monster/mummies_death</DeathSound>
-        <Size>130</Size>
-        <MaxHitPoints>700</MaxHitPoints>
-        <Defense>0</Defense>
-        <XpMult>0.1</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Violet Magic</ObjectId>
-            <Damage>70</Damage>
-            <Speed>100</Speed>
-            <LifetimeMS>2000</LifetimeMS>
-        </Projectile>
-    </Object>
-    <Object type="0x109e" id="ct Mummy Pharaoh">
-        <Group>Mummies</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <AnimatedTexture>
-            <File>chars8x8rHero1</File>
-            <Index>0x09</Index>
-        </AnimatedTexture>
-        <HitSound>monster/mummies_hit</HitSound>
-        <DeathSound>monster/mummies_death</DeathSound>
-        <Size>130</Size>
-        <MaxHitPoints>600</MaxHitPoints>
-        <Defense>0</Defense>
-        <XpMult>0.1</XpMult>
-        <Projectile id="0">
-            <ObjectId>Catacombs Violet Magic</ObjectId>
-            <Damage>55</Damage>
-            <Speed>70</Speed>
-            <LifetimeMS>3000</LifetimeMS>
-        </Projectile>
-    </Object>
-    <!--rebrand-->
-    <Object type="0x109f" id="ct WineSpill Puddle">
-        <Class>GameObject</Class>
-        <RandomTexture>
-            <Texture>
-                <File>lofiEnvironment3</File>
-                <Index>0x79</Index>
-            </Texture>
-            <Texture>
-                <File>lofiEnvironment3</File>
-                <Index>0x7a</Index>
-            </Texture>
-            <Texture>
-                <File>lofiEnvironment3</File>
-                <Index>0x7b</Index>
-            </Texture>
-        </RandomTexture>
-        <DrawOnGround/>
-        <Static/>
-    </Object>
-
-    <Object type="0x118f" id="Catacombs Bone">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\ct_bone01</Id>
-        </RemoteTexture>
-        <!--<AngleCorrection>1</AngleCorrection>-->
-        <Rotation>160</Rotation>
-    </Object>
-    <Object type="0x1190" id="Catacombs Bone Bloody">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\ct_bone01_bloody</Id>
-        </RemoteTexture>
-        <!--<AngleCorrection>1</AngleCorrection>-->
-        <Rotation>160</Rotation>
-    </Object>
-    <Object type="0x1191" id="Catacombs Magic Shot">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\ct_mageshot01</Id>
-        </RemoteTexture>
-        <AngleCorrection>1</AngleCorrection>
-        <!--<Rotation>160</Rotation>-->
-    </Object>
-    <Object type="0x1192" id="Catacombs Magic Shot Boomerang">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\ct_mageshot02</Id>
-        </RemoteTexture>
-        <AngleCorrection>1</AngleCorrection>
-        <!--<Rotation>160</Rotation>-->
-    </Object>
-    <Object type="0x1193" id="Catacombs Violet Magic">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\ct_mageshot03</Id>
-        </RemoteTexture>
-        <!--<AngleCorrection>1</AngleCorrection>-->
-        <!--<Rotation>160</Rotation>-->
-    </Object>
-    <Object type="0x297" id="Catacombs Bone Magic">
-        <Class>Projectile</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\the_catacombs\hybridbone</Id>
-        </RemoteTexture>
-        <!--<AngleCorrection>1</AngleCorrection>-->
-        <!--<Rotation>160</Rotation>-->
-    </Object>
-
     <Object type="0x298" id="White Bag En">
         <Enemy />
         <Class>Character</Class>
@@ -130242,10 +130006,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Activate stat="27" amount="1">IncrementStat</Activate>
     </Object>
 
-
-
-
-
     <Object type="0x0e5d" id="Thirsty Ghost Trap">
         <Class>Equipment</Class>
         <Item/>
@@ -130266,9 +130026,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Activate radius="3" totalDamage="300" condEffect="Sick" condDuration="4">Trap</Activate>
         <Activate radius="4.5" totalDamage="150" condEffect="Bleeding" condDuration="7.5">Trap</Activate>
     </Object>
-
-
-
 
     <Object type="0x293" id="Testing Boomerang">
         <Class>Equipment</Class>
@@ -130296,319 +130053,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Projectile>
         <BagType>6</BagType>
         <OldSound>arrowShoot</OldSound>
-        <!--<feedPower>0</feedPower>-->
-        <!--<DisplayId>Flaming Boomerang</DisplayId>-->
-    </Object>
-
-    <Object type="0x5445" id="Jokerwu test01">
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>ThunderGod</Id>
-        </RemoteTexture>
-        <HitSound>monster/rocks_hit</HitSound>
-        <DeathSound>monster/flaming_skulls_death</DeathSound>
-        <Size>130</Size>
-        <MaxHitPoints>10000</MaxHitPoints>
-        <Defense>15</Defense>
-        <XpMult>1.5</XpMult>
-        <Projectile id="0">
-            <ObjectId>Fire Boomerang</ObjectId>
-            <Speed>80</Speed>
-            <MinDamage>10</MinDamage>
-            <MaxDamage>50</MaxDamage>
-            <LifetimeMS>2000</LifetimeMS>
-            <MultiHit />
-            <Boomerang />
-            <Amplitude>1.85</Amplitude>
-            <Frequency>1</Frequency>
-            <ArmorPiercing />
-        </Projectile>
-    </Object>
-
-    <!--rs  Renewed sewers-->
-    <Object type="0x0301" id="Renewed Sewers Portal">
-        <Class>Portal</Class>
-        <IntergamePortal/>
-        <DisplayId>Renewed Sewers</DisplayId>
-        <DungeonName>Renewed Sewers</DungeonName>
-        <Texture>
-            <File>lofiObj3</File>
-            <Index>0x56c</Index>
-        </Texture>
-        <ShadowSize>0</ShadowSize>
-    </Object>
-    <Object type="0x0302" id="Renewed Sewers Key">
-        <Class>Equipment</Class>
-        <Item/>
-        <DisplayId>Renewed Sewers Key</DisplayId>
-        <Texture>
-            <File>lofiObj3</File>
-            <Index>0x56d</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>A key which opens an entrance to the Renewed Sewers.</Description>
-        <Sound>use_key</Sound>
-        <Consumable/>
-        <Activate id="Renewed Sewers Portal">Create</Activate>
-        <!--<feedPower>260</feedPower>-->
-        <Track/>
-    </Object>
-
-    <Object type="0x0303" id="rs Ennemy 01">
-        <DisplayId>Sewers Brute</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_ennemy01</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>95</Size>
-        <MaxHitPoints>1800</MaxHitPoints>
-        <Defense>20</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>100</Speed>
-            <Size>80</Size>
-            <MinDamage>40</MinDamage>
-            <MaxDamage>75</MaxDamage>
-            <LifetimeMS>440</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
-    </Object>
-    <Object type="0x0304" id="rs Ennemy 02">
-        <DisplayId>Sewers Brave Warrior</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_ennemy02</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>95</Size>
-        <MaxHitPoints>1500</MaxHitPoints>
-        <Defense>0</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>100</Speed>
-            <Size>70</Size>
-            <MinDamage>50</MinDamage>
-            <MaxDamage>85</MaxDamage>
-            <LifetimeMS>440</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
-    </Object>
-    <Object type="0x0305" id="rs Ennemy 03">
-        <DisplayId>Sewers Wizard</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_ennemy03</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>95</Size>
-        <MaxHitPoints>1400</MaxHitPoints>
-        <Defense>4</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>85</Speed>
-            <Size>65</Size>
-            <MinDamage>30</MinDamage>
-            <MaxDamage>49</MaxDamage>
-            <LifetimeMS>990</LifetimeMS>
-            <Amplitude>0.5</Amplitude>
-            <Frequency>2</Frequency>
-            <ArmorPiercing/>
-        </Projectile>
-    </Object>
-    <Object type="0x0306" id="rs Ennemy 04">
-        <DisplayId>Sewers Warrior</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_ennemy04</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>95</Size>
-        <MaxHitPoints>1200</MaxHitPoints>
-        <Defense>0</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>100</Speed>
-            <Size>70</Size>
-            <MinDamage>45</MinDamage>
-            <MaxDamage>65</MaxDamage>
-            <LifetimeMS>380</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
-    </Object>
-    <Object type="0x0308" id="rs Ennemy 05">
-        <DisplayId>Sewers Wizard</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_ennemy05</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>95</Size>
-        <MaxHitPoints>1400</MaxHitPoints>
-        <Defense>4</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>85</Speed>
-            <Size>65</Size>
-            <MinDamage>45</MinDamage>
-            <MaxDamage>70</MaxDamage>
-            <LifetimeMS>990</LifetimeMS>
-            <Amplitude>0.5</Amplitude>
-            <Frequency>2</Frequency>
-            <ArmorPiercing/>
-        </Projectile>
-    </Object>
-    <Object type="0x0309" id="rs GoldenRat">
-        <DisplayId>Golden Rat</DisplayId>
-        <Group>RS Boss</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_rat01</Id>
-        </RemoteTexture>
-        <HitSound>monster/archdemon_hit</HitSound>
-        <DeathSound>monster/archdemon_death</DeathSound>
-        <Size>95</Size>
-        <Quest/>
-        <Level>1</Level>
-        <MaxHitPoints>10000</MaxHitPoints>
-        <Defense>25</Defense>
-        <Flying/>
-        <Projectile id="0">
-            <ObjectId>Snake Shot Yellow</ObjectId>
-            <Speed>85</Speed>
-            <Size>90</Size>
-            <MinDamage>20</MinDamage>
-            <MaxDamage>70</MaxDamage>
-            <LifetimeMS>1000</LifetimeMS>
-            <Amplitude>0.2</Amplitude>
-            <Frequency>1.4</Frequency>
-            <ArmorPiercing/>
-        </Projectile>
-        <Projectile id="1">
-            <ObjectId>Snake Shot Yellow</ObjectId>
-            <Speed>100</Speed>
-            <Size>90</Size>
-            <MinDamage>40</MinDamage>
-            <MaxDamage>75</MaxDamage>
-            <LifetimeMS>1200</LifetimeMS>
-            <ArmorPiercing/>
-        </Projectile>
-    </Object>
-    <Object type="0x030a" id="rs Slime 01">
-        <DisplayId>Sewers Slime</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_slime01</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>125</Size>
-        <MaxHitPoints>3500</MaxHitPoints>
-        <Defense>20</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>100</Speed>
-            <Size>90</Size>
-            <MinDamage>65</MinDamage>
-            <MaxDamage>65</MaxDamage>
-            <LifetimeMS>700</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
-    </Object>
-    <Object type="0x030b" id="rs Slime 01_2">
-        <DisplayId>Sewers Slime Small</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_slime01</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>90</Size>
-        <MaxHitPoints>1800</MaxHitPoints>
-        <Defense>20</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Poison Fireball</ObjectId>
-            <Speed>100</Speed>
-            <Size>90</Size>
-            <MinDamage>38</MinDamage>
-            <MaxDamage>38</MaxDamage>
-            <LifetimeMS>550</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
-    </Object>
-    <Object type="0x030c" id="rs Slime 02">
-        <DisplayId>Sewers Slime Small</DisplayId>
-        <Group>RS Minion</Group>
-        <Enemy/>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_slime02</Id>
-        </RemoteTexture>
-        <HitSound>monster/slimes_hit</HitSound>
-        <DeathSound>monster/slimes_death</DeathSound>
-        <Size>90</Size>
-        <MaxHitPoints>3500</MaxHitPoints>
-        <Defense>40</Defense>
-        <!--<Flying/>-->
-        <Projectile id="0">
-            <ObjectId>Snake Shot Yellow</ObjectId>
-            <Speed>100</Speed>
-            <Size>90</Size>
-            <MinDamage>10</MinDamage>
-            <MaxDamage>100</MaxDamage>
-            <LifetimeMS>550</LifetimeMS>
-            <ArmorPiercing/>
-            <!--<Amplitude>0.5</Amplitude>-->
-            <!--<Frequency>2</Frequency>-->
-        </Projectile>
     </Object>
 
     <Object type="0x030d" id="Solution of Gulpord">
@@ -130629,66 +130073,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
-    </Object>
-
-    <!--rs  Renewed sewers-->
-
-    <Object type="0x8f8" id="Winter Queen">
-        <Group>Demons</Group>
-        <Enemy/>
-        <Hero/>
-        <Quest/>
-        <God/>
-        <Encounter/>
-        <StasisImmune/>
-        <StunImmune/>
-        <Quest/>
-        <Level>20</Level>
-        <PerRealmMax>1</PerRealmMax>
-        <Class>Character</Class>
-        <RemoteTexture>
-            <Instance>production</Instance>
-            <Id>nr\Winter Queen</Id>
-        </RemoteTexture>
-        <HitSound>monster/demons_hit</HitSound>
-        <DeathSound>monster/demons_death</DeathSound>
-        <Size>150</Size>
-        <MaxHitPoints>200000</MaxHitPoints>
-        <Defense>70</Defense>
-        <XpMul>1</XpMul>
-        <Projectile id="0">
-            <ObjectId>Unholy Shield Proj</ObjectId>
-            <Damage>100</Damage>
-            <Speed>90</Speed>
-            <ArmorPiercing/>
-            <LifetimeMS>1000</LifetimeMS>
-        </Projectile>
-        <Projectile id="1">
-            <ObjectId>Winter Projectile</ObjectId>
-            <Damage>100</Damage>
-            <Speed>50</Speed>
-            <LifetimeMS>1000</LifetimeMS>
-            <Size>150</Size>
-        </Projectile>
-        <Projectile id="2">
-            <ObjectId>Winter Projectile</ObjectId>
-            <Damage>100</Damage>
-            <Speed>80</Speed>
-            <ArmorPiercing/>
-            <LifetimeMS>2000</LifetimeMS>
-            <Size>180</Size>
-            <ConditionEffect duration="3">Quiet</ConditionEffect>
-            <ConditionEffect duration="3">Bleeding</ConditionEffect>
-        </Projectile>
-        <Projectile id="3">
-            <ObjectId>Unholy Shield Proj</ObjectId>
-            <Damage>200</Damage>
-            <Speed>80</Speed>
-            <ArmorPiercing/>
-            <LifetimeMS>2000</LifetimeMS>
-            <Size>240</Size>
-            <ConditionEffect duration="5">Quiet</ConditionEffect>
-        </Projectile>
     </Object>
 
     <Object type="0x5aa1" id="Bow of Unholy Frost" unholylg="true">
@@ -130778,35 +130162,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </RemoteTexture>
         <DisplayId>The Shop</DisplayId>
     </Object>
-
-    <Object type="0x2483" id="Admin Arena Key" special="true">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj6</File>
-            <Index>0x47</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>...</Description>
-        <Sound>use_key</Sound>
-        <Consumable/>
-        <Activate id="Spawn Arena Portal">Create</Activate>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0x33d1" id="Spawn Arena Portal">
-        <Class>Portal</Class>
-        <IntergamePortal/>
-        <DungeonName>Spawn Arena</DungeonName>
-        <Texture>
-            <File>lofiObj6</File>
-            <Index>0x48</Index>
-        </Texture>
-        <DisplayId>Spawn Arena</DisplayId>
-    </Object>
-
-    <!-- Master Rings!-->
+  
     <Object type="0x7833" id="Master Ring of Attack">
         <Class>Equipment</Class>
         <Item/>
@@ -130816,7 +130172,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you can destory anything in its path!</Description>
-        <ActivateOnEquip stat="20" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="20" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130829,7 +130185,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you can resist any thing!</Description>
-        <ActivateOnEquip stat="21" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="21" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130842,7 +130198,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you can go above and beyond!</Description>
-        <ActivateOnEquip stat="22" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130855,7 +130211,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you can regenarate faster than the speed of light!</Description>
-        <ActivateOnEquip stat="26" amount="25">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="26" amount="12">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130868,7 +130224,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you seek greater path!</Description>
-        <ActivateOnEquip stat="27" amount="25">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="27" amount="12">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130881,7 +130237,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you can attack more aster than the speed of light!</Description>
-        <ActivateOnEquip stat="28" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="28" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130894,7 +130250,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you are unbeatable!</Description>
-        <ActivateOnEquip stat="0" amount="220">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="0" amount="200">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
 
@@ -130907,10 +130263,9 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gold ring contains so much power, wearing this, you have greater magic within!</Description>
-        <ActivateOnEquip stat="3" amount="220">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="3" amount="200">IncrementStat</ActivateOnEquip>
         <BagType>11</BagType>
     </Object>
-    <!-- Master Rings !-->
 
     <Object type="0x6332" id="Oryx the Mad God 3">
         <DisplayId>Oryx the Mad God</DisplayId>
@@ -131628,210 +130983,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <OldSound>daggerSwing</OldSound>
     </Object>
 
-    <Object type="0xd8c" id="Quest Chest Item">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x78</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>An old looking chest from the Tinkerer's vault. It contains valuable items.</Description>
-        <Consumable/>
-        <Uncommon/>
-        <Activate id="Quest Chest">Create</Activate>
-        <ExtraTooltipData>
-            <EffectInfo name="Info" description="Use to spawn a destructible chest containing rewards."/>
-        </ExtraTooltipData>
-        <feedPower>200</feedPower>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0xe9c" id="Quest Chest">
-        <DisplayId>Quest Chest</DisplayId>
-        <Class>Character</Class>
-        <Enemy/>
-        <KeepDamageRecord/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x78</Index>
-        </Texture>
-        <AltTexture id="1">
-            <Texture>
-                <File>lofiObj7</File>
-                <Index>0x79</Index>
-            </Texture>
-        </AltTexture>
-        <MaxHitPoints>2500</MaxHitPoints>
-        <Defense>0</Defense>
-        <Size>160</Size>
-        <FixedExp/>
-        <Experience>2000</Experience>
-    </Object>
-
-    <Object type="0xd8d" id="Rare Quest Chest Item">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7a</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>An rare looking chest from the Tinkerer's vault. It contains rare items.</Description>
-        <Consumable/>
-        <Rare/>
-        <Activate id="Rare Quest Chest">Create</Activate>
-        <ExtraTooltipData>
-            <EffectInfo name="Info" description="Use to spawn a destructible chest containing rewards."/>
-        </ExtraTooltipData>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0xe9d" id="Rare Quest Chest">
-        <DisplayId>Quest Chest</DisplayId>
-        <Class>Character</Class>
-        <Enemy/>
-        <KeepDamageRecord/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7a</Index>
-        </Texture>
-        <AltTexture id="1">
-            <Texture>
-                <File>lofiObj7</File>
-                <Index>0x7b</Index>
-            </Texture>
-        </AltTexture>
-        <MaxHitPoints>5000</MaxHitPoints>
-        <Defense>0</Defense>
-        <Size>160</Size>
-        <FixedExp/>
-        <Experience>4000</Experience>
-    </Object>
-
-    <Object type="0xd8e" id="Epic Quest Chest Item">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7c</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>An rich looking chest from the Tinkerer's vault. It contains wonderful items.</Description>
-        <Consumable/>
-        <Epic/>
-        <Activate id="Epic Quest Chest">Create</Activate>
-        <ExtraTooltipData>
-            <EffectInfo name="Info" description="Use to spawn a destructible chest containing rewards."/>
-        </ExtraTooltipData>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0xe9e" id="Epic Quest Chest">
-        <DisplayId>Quest Chest</DisplayId>
-        <Class>Character</Class>
-        <Enemy/>
-        <KeepDamageRecord/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7c</Index>
-        </Texture>
-        <AltTexture id="1">
-            <Texture>
-                <File>lofiObj7</File>
-                <Index>0x7d</Index>
-            </Texture>
-        </AltTexture>
-        <MaxHitPoints>10000</MaxHitPoints>
-        <Defense>0</Defense>
-        <Size>160</Size>
-        <FixedExp/>
-        <Experience>6000</Experience>
-    </Object>
-
-    <Object type="0xd8f" id="Legendary Quest Chest Item" legendary="true">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7e</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>An legendary looking chest from the Tinkerer's vault. It contains mythical items.</Description>
-        <Consumable/>
-        <Activate id="Legendary Quest Chest">Create</Activate>
-        <ExtraTooltipData>
-            <EffectInfo name="Info" description="Use to spawn a destructible chest containing rewards."/>
-        </ExtraTooltipData>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0x9532" id="Legendary Quest Chest">
-        <DisplayId>Quest Chest</DisplayId>
-        <Class>Character</Class>
-        <Enemy/>
-        <KeepDamageRecord/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x7e</Index>
-        </Texture>
-        <AltTexture id="1">
-            <Texture>
-                <File>lofiObj7</File>
-                <Index>0x7f</Index>
-            </Texture>
-        </AltTexture>
-        <MaxHitPoints>20000</MaxHitPoints>
-        <Defense>0</Defense>
-        <Size>160</Size>
-        <FixedExp/>
-        <Experience>10000</Experience>
-    </Object>
-
-    <Object type="0x4321" id="ST Quest Chest Item">
-        <Class>Equipment</Class>
-        <Item/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x8c</Index>
-        </Texture>
-        <SlotType>10</SlotType>
-        <Description>An sweet looking chest from the Tinkerer's vault. It contains ST items.</Description>
-        <Consumable/>
-        <Activate id="ST Quest Chest">Create</Activate>
-        <ExtraTooltipData>
-            <EffectInfo name="Info" description="Use to spawn a destructible chest containing rewards."/>
-        </ExtraTooltipData>
-        <BagType>10</BagType>
-        <Track/>
-    </Object>
-
-    <Object type="0x9535" id="ST Quest Chest">
-        <DisplayId>Quest Chest</DisplayId>
-        <Class>Character</Class>
-        <Enemy/>
-        <KeepDamageRecord/>
-        <Texture>
-            <File>lofiObj7</File>
-            <Index>0x8c</Index>
-        </Texture>
-        <AltTexture id="1">
-            <Texture>
-                <File>lofiObj7</File>
-                <Index>0x8d</Index>
-            </Texture>
-        </AltTexture>
-        <MaxHitPoints>7500</MaxHitPoints>
-        <Defense>0</Defense>
-        <Size>160</Size>
-        <FixedExp/>
-        <Experience>10000</Experience>
-    </Object>
-
     <Object type="0x321d" id="Shield of the Sealed Spirits" legendary="true">
         <Class>Equipment</Class>
         <Item/>
@@ -131886,7 +131037,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <FameBonus>6</FameBonus>
     </Object>
 
-
+<!--
     <Object type="0x0409" id="Soul Collector RestingPlace">
         <DisplayId>Soul Collector</DisplayId>
         <Enemy/>
@@ -132081,7 +131232,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <Index>0x3f</Index>
         </Texture>
     </Object>
-
+-->
     <Object type="0x5444" id="Elder Archdemon Malphas">
         <Group>Demons</Group>
         <Enemy/>
@@ -132102,7 +131253,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Size>160</Size>
         <Defense>60</Defense>
         <Experience>4000</Experience>
-        <FixedExp/>
         <Projectile id="0">
             <ObjectId>White Bullet</ObjectId>
             <Speed>75</Speed>
@@ -132166,7 +131316,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Quest/>
         <Level>1</Level>
         <Experience>5000</Experience>
-        <FixedExp/>
         <NoArticle/>
         <Projectile id="0">
             <ObjectId>Blade</ObjectId>
@@ -132208,7 +131357,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <StunImmune/>
         <Level>1</Level>
         <Experience>5000</Experience>
-        <FixedExp/>
         <NoArticle/>
         <Projectile id="0">
             <ObjectId>White Bullet</ObjectId>
@@ -132263,9 +131411,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <Description>A key which opens an entrance to an Elder Undead Lair.</Description>
       <Sound>use_key</Sound>
       <Consumable/>
-      <!--<Soulbound/>-->
       <Activate id="Elder Undead Lair Portal">Create</Activate>
-      <!--<feedPower>200</feedPower>-->
       <BagType>10</BagType>
       <Track/>
    </Object>	 
@@ -132381,7 +131527,6 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
    <Object type="0x79d" id="Elder Abyss of Demons Portal">
       <Class>Portal</Class>
       <IntergamePortal/>
-	  <Size>135</Size>	  
       <DisplayId>Depths of the Abyss</DisplayId>
       <DungeonName>Depths of the Abyss</DungeonName>
       <Texture>
@@ -132419,32 +131564,109 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
       <StasisImmune/>
       <DisplayId>Easter Egg</DisplayId>
    </Object>
-  
-              <Object type="0x73d1" id="Thanos Portal">
-        <Class>Portal</Class>
-        <IntergamePortal/>
-        <DungeonName>Thanos</DungeonName>
-      <Texture>
-         <File>lofiEnvironment</File>
-         <Index>0x7c</Index>
-      </Texture>
-        <DisplayId>Thanos</DisplayId>
-    </Object>
-	
-         <Object type="0x7953" id="Thanos Key" unique="true">
-      <Class>Equipment</Class>
-      <Item/>
+
+
+  <Object type="0x090d" id="Thanos Key">
+    <Class>Equipment</Class>
+    <Item/>
       <RemoteTexture>
          <Instance>production</Instance>
          <Id>separate\Fiery\Thanos Key</Id>
       </RemoteTexture>
-      <SlotType>10</SlotType>
-      <Description>I am Inventiable.</Description>
-      <Sound>use_key</Sound>
-      <Consumable/>
-      <Activate id="Thanos Portal">Create</Activate>
-      <BagType>10</BagType>
-      <Track/>
+    <SlotType>10</SlotType>
+    <Description>I am Inventiable.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Thanos Portal">Create</Activate>
+    <feedPower>40</feedPower>
+    <BagType>10</BagType>
+  </Object>
+   <Object type="0x090c" id="Thanos Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Thanos</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <DisplayId>Thanos</DisplayId>
+   </Object>
+
+
+  <Object type="0x89e" id="Admin Crown">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xc6</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>{equip.Super_regalBANG}</Description>
+    <ActivateOnEquip stat="26" amount="1">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="1">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="20" amount="1">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="1">IncrementStat</ActivateOnEquip>
+    <BagType>3</BagType>
+    <Soulbound/>
+    <feedPower>0</feedPower>
+    <DisplayId>{equip.Crown}</DisplayId>
+  </Object>
+
+  <Object type="0x89f" id="Infinity Gauntlet" legendary="true">
+    <Class>Equipment</Class>
+    <Item/>
+    <RemoteTexture>
+      <Instance>production</Instance>
+      <Id>separate\ketsunex\Infinity_Gauntlet</Id>
+    </RemoteTexture>
+    <SlotType>9</SlotType>
+    <Description>Huh, so this is Thanos' infinity gauntlet... *SNAPS*\n\nSprite Credits: Ketsunex</Description>
+    <ActivateOnEquip stat="0" amount="100">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="100">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="20" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="10">IncrementStat</ActivateOnEquip>
+    <BagType>6</BagType>
+  </Object>
+  
+     <Object type="0x090e" id="Blood of the Reaper's Oath" onfire="true">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj7</File>
+         <Index>0x21</Index>
+      </Texture>
+      <SlotType>18</SlotType>
+      <Description>A bloody foul poison washed from the blood of the reaper.</Description>
+      <Usable/>
+      <BagType>6</BagType>
+      <FameBonus>7</FameBonus>
+      <HpCost>250</HpCost>
+      <MpCost>60</MpCost>
+	    <Cooldown>5</Cooldown>
+      <Activate radius="2.5" totalDamage="3000" duration="9" color="d1200c" throwTime="2.5">PoisonGrenade</Activate>
+	    <Activate radius="4" totalDamage="2250" duration="7" color="d1200c" throwTime="2.1">PoisonGrenade</Activate>
+	    <Activate radius="5.5" totalDamage="1500" duration="4" color="d1200c" throwTime="1.7">PoisonGrenade</Activate>
+   </Object>
+
+   <Object type="0x7325" id="Bloody Gauntlet">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj7</File>
+         <Index>0x23</Index>
+      </Texture>
+      <SlotType>9</SlotType>
+      <Description>Blood shall be wasted.</Description>
+      <ActivateOnEquip stat="0" amount="75">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+	    <ActivateOnEquip stat="26" amount="10">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+      <BagType>6</BagType>
    </Object>
 <!--Outside-->
 

@@ -18144,7 +18144,7 @@
         <ActivateOnEquip stat="112" amount="5">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="5">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="5">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
         <FameBonus>6</FameBonus>

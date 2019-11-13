@@ -58,7 +58,6 @@ public class EmbeddedData {
     private static const BelladonnaCXML:Class = EmbeddedData_BelladonnaCXML;
     private static const PuppetMasterCXML:Class = EmbeddedData_PuppetMasterCXML;
     private static const IceCaveCXML:Class = EmbeddedData_IceCaveCXML;
-    private static const FieryRealmsCXML:Class = EmbeddedData_OthersMiscCXML;
     private static const RegionsCXML:Class = EmbeddedData_RegionsCXML;
     private static const TutorialScriptCXML:Class = EmbeddedData_TutorialScriptCXML;
     //load objects
@@ -73,7 +72,7 @@ public class EmbeddedData {
                 new PirateCaveCXML(), new SnakePitCXML(), new AbyssOfDemonsCXML(), new GhostShipCXML(), new MadLabCXML(),
                 new CaveOfAThousandTreasuresCXML(), new CandyLandCXML(), new HauntedCemeteryCXML(), new ForestMazeCXML(), new EpicForestMazeCXML(),
                 new EpicPirateCaveCXML(), new EpicSpiderDenCXML(), new NexusDestroyedCXML(), new MiniDungeonHubCXML(), new LairOfDraconisCXML(),
-                new LairOfShaitanCXML(), new ShattersCXML(), new BelladonnaCXML(), new PuppetMasterCXML(), new IceCaveCXML(), new FieryRealmsCXML()
+                new LairOfShaitanCXML(), new ShattersCXML(), new BelladonnaCXML(), new PuppetMasterCXML(), new IceCaveCXML()
             ];
     //load tiles
     public static const groundFiles:Array =

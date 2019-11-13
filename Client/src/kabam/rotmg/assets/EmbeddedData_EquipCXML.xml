@@ -10449,7 +10449,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Sound>spell/fire_nova</Sound>
         <Usable/>
         <MpCost>10</MpCost>
-        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="150">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="8">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="8">IncrementStat</ActivateOnEquip>
@@ -17437,7 +17437,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <ActivateOnEquip stat="21" amount="18">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="60">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="340">IncrementStat</ActivateOnEquip>
     </Object>
     <Object type="0x509c" id="Derp Armor">
         <Class>Equipment</Class>
@@ -18593,7 +18593,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <FameBonus>6</FameBonus>
         <MpCost>90</MpCost>
         <ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
         <Activate effect="Weak" duration="3" range="5" color="0xffff00" target="enemy" center="player" visualEffect="5" useWisMod="false">GenericActivate</Activate>
         <Activate effect="Healing" duration="6" range="5" useWisMod="true">ConditionEffectAura</Activate>
         <Activate range="5" amount="160" useWisMod="true">HealNova</Activate>
@@ -19539,7 +19539,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <LifetimeMS>350</LifetimeMS>
         </Projectile>
         <ActivateOnEquip stat="26" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="120">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -19780,7 +19780,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Description>Shiny, tough armor with sapphire lined in the middle of it's plates. This armor is used by the most worthy.</Description>
         <ActivateOnEquip stat="21" amount="45">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="75">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="380">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
         <feedPower>1850</feedPower>
@@ -20805,7 +20805,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Description>Our focus can't be halted.</Description>
         <ActivateOnEquip stat="0" amount="160">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="20">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="20">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -21196,7 +21196,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <ActivateOnEquip stat="0" amount="100">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="-10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="100">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -23526,7 +23526,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Activate stat="112" amount="150">IncrementStat</Activate>
         <Activate stat="114" amount="150">IncrementStat</Activate>
         <Activate stat="121" amount="150">IncrementStat</Activate>
-        <Activate stat="122" amount="150">IncrementStat</Activate>
+        <Activate stat="122" amount="999">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <Legendary/>
@@ -27039,7 +27039,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>10</SlotType>
         <Description>This relic can be shattered. Once shattered it causes the mortal to have the indemnity of the gods, maxing their Protection stat.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="122" amount="150">IncrementStat</Activate>
+        <Activate stat="122" amount="999">IncrementStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>11</BagType>
@@ -27133,7 +27133,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Tier>1</Tier>
         <Description>A diamond set in a silver ring.</Description>
-        <ActivateOnEquip stat="122" amount="3">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
         <BagType>1</BagType>
         <feedPower>20</feedPower>
         <DisplayId>Ring of Protection</DisplayId>
@@ -27148,7 +27148,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Tier>2</Tier>
         <Description>A diamond set in a gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="16">IncrementStat</ActivateOnEquip>
         <BagType>2</BagType>
         <FameBonus>1</FameBonus>
         <feedPower>37</feedPower>
@@ -27164,7 +27164,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Tier>3</Tier>
         <Description>A large diamond set in a glittering gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="6">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
         <BagType>2</BagType>
         <FameBonus>2</FameBonus>
         <feedPower>75</feedPower>
@@ -27179,8 +27179,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>9</SlotType>
         <Tier>4</Tier>
-        <Description>A very large diamond set in a dazzling gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="7">IncrementStat</ActivateOnEquip>
+        <Description>A very large corundum set in a dazzling gold ring.</Description>
+        <ActivateOnEquip stat="122" amount="45">IncrementStat</ActivateOnEquip>
         <BagType>2</BagType>
         <FameBonus>3</FameBonus>
         <feedPower>150</feedPower>
@@ -27195,8 +27195,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>9</SlotType>
         <Tier>5</Tier>
-        <Description>A huge flawless diamond set in a stunningly beautiful gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="8">IncrementStat</ActivateOnEquip>
+        <Description>A huge flawless corundom set in a stunningly beautiful gold ring.</Description>
+        <ActivateOnEquip stat="122" amount="70">IncrementStat</ActivateOnEquip>
         <BagType>4</BagType>
         <FameBonus>4</FameBonus>
         <feedPower>300</feedPower>
@@ -27370,7 +27370,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Description>Boundless energies fill this gemstone...</Description>
         <ActivateOnEquip stat="0" amount="200">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="160">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="15">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -27844,7 +27844,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <ActivateOnEquip stat="112" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="5">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="60">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
         <feedPower>1800</feedPower>
@@ -27899,7 +27899,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <ArmorPiercing/>
             <Wavy/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="65">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="112" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="40">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -27953,7 +27953,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Description>A robe used by the great holy clerics of Dranbiel.</Description>
         <ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="180">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="75">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="18">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="26" amount="12">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="40">IncrementStat</ActivateOnEquip>
@@ -28054,7 +28054,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <LifetimeMS>400</LifetimeMS>
         </Projectile>
         <ActivateOnEquip stat="0" amount="80">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="90">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="40">IncrementStat</ActivateOnEquip>
         <Legendary/>
         <Legend id="3" stat="27">
@@ -28088,7 +28088,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>9</SlotType>
         <Description>A gauntlet that empowers the power of your thoughts and lends you the power of the celestial gods.</Description>
-        <ActivateOnEquip stat="122" amount="100">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="350">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="0" amount="-140">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="30">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
@@ -28195,7 +28195,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>16</SlotType>
         <Description>Stay golden, warrior.</Description>
         <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="15">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="65">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
@@ -28399,7 +28399,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <FameBonus>6</FameBonus>
         <MpCost>120</MpCost>
         <ActivateOnEquip stat="3" amount="-40">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="190">IncrementStat</ActivateOnEquip>
         <Activate>BulletNova</Activate>
     </Object>
     <Object type="0x61ae" id="Prime Chaotic Seal">
@@ -28451,7 +28451,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <PassesCover/>
             <ParticleTrail/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="6">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
@@ -28566,7 +28566,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <BagType>6</BagType>
         <FameBonus>8</FameBonus>
         <ActivateOnEquip stat="3" amount="200">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="50">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="175">IncrementStat</ActivateOnEquip>
         <MpCost>125</MpCost>
         <Activate effect="Armored" duration="2" range="4" useWisMod="false">ConditionEffectAura</Activate>
         <Activate range="6" amount="260" useWisMod="true">HealNova</Activate>
@@ -28729,7 +28729,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Projectile>
         <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="99">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <Legendary/>
         <FameBonus>8</FameBonus>
@@ -28777,7 +28777,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
 	<Activate stat="112" amount="1">IncrementStat</Activate>
 	<Activate stat="114" amount="1">IncrementStat</Activate>
     <Activate stat="121" amount="1">IncrementStat</Activate>
-	<Activate stat="122" amount="1">IncrementStat</Activate>
+	<Activate stat="122" amount="4">IncrementStat</Activate>
     <Consumable/>
     <Potion/>
     <BagType>5</BagType>
@@ -29140,7 +29140,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <ActivateOnEquip stat="20" amount="11">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="27" amount="14">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="70">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <Legendary/>
         <Legend id="4" stat="27">
@@ -29310,7 +29310,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>22</SlotType>
         <Description>A timeshard prism that holds an entire inconceivable dimension within itself. The true forms of the beings it summons will drive anyone into insanity.</Description>
         <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="25">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="121" amount="20">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
@@ -29350,7 +29350,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Description>A ring created from Truestone.</Description>
         <EffectEquip effect="Surged" delay="120"/>
-        <ActivateOnEquip stat="122" amount="35">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="3" amount="180">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="2">IncrementStat</ActivateOnEquip>
@@ -29464,7 +29464,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Tier>2</Tier>
         <Description>A potion that permanently ascends your protection stat by 1.</Description>
         <Sound>use_potion</Sound>
-        <Activate stat="122" amount="1">PowerStat</Activate>
+        <Activate stat="122" amount="4">PowerStat</Activate>
         <Consumable/>
         <Potion/>
         <BagType>5</BagType>
@@ -29629,7 +29629,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <PassesCover/>
             <ParticleTrail intensity="0.3" lifetimeMS="270">0x0f0ff0</ParticleTrail>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
         <ConditionEffect duration="2.5">Stunned</ConditionEffect>
         <Usable/>
@@ -29729,7 +29729,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
             <Boomerang/>
             <ArmorPiercing/>
         </Projectile>
-        <ActivateOnEquip stat="122" amount="30">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="155">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="21" amount="8">IncrementStat</ActivateOnEquip>
         <Steal type="mana" amount="2"/>
         <BagType>6</BagType>
@@ -30113,7 +30113,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>18</SlotType>
         <Description>A specialized poison used to ward off phantoms of the Undead Lair.</Description>
         <ActivateOnEquip stat="22" amount="8">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="114" amount="20">IncrementStat</ActivateOnEquip>
         <Usable/>
         <BagType>6</BagType>
@@ -30342,7 +30342,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <SlotType>9</SlotType>
         <Tier>6</Tier>
         <Description>A huge flawless diamond set in a stunningly beautiful gold ring.</Description>
-        <ActivateOnEquip stat="122" amount="9">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="90">IncrementStat</ActivateOnEquip>
         <BagType>4</BagType>
         <FameBonus>5</FameBonus>
         <feedPower>300</feedPower>
@@ -30964,7 +30964,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Usable/>
         <ActivateOnEquip stat="20" amount="10">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="28" amount="10">IncrementStat</ActivateOnEquip>
-        <ActivateOnEquip stat="122" amount="10">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="80">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <FameBonus>6</FameBonus>
         <MpCost>125</MpCost>
@@ -31038,7 +31038,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         </Texture>
         <SlotType>9</SlotType>
         <Description>bling bling</Description>
-        <ActivateOnEquip stat="122" amount="40">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="122" amount="300">IncrementStat</ActivateOnEquip>
         <ActivateOnEquip stat="22" amount="-10">IncrementStat</ActivateOnEquip>
         <BagType>6</BagType>
         <DisplayId>Raptor Ring</DisplayId>
