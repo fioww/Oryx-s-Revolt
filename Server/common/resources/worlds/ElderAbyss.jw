@@ -1,12 +1,14 @@
-{"id":0,
-"isLimbo":false,
-"name":"Elder Depths of the Abyss",
-"sbName":"Elder Depths of the Abyss",
-"difficulty":5,
-"background":0,
-"blocking":1,
-"restrictTp":true,
-"showDisplays":true,
-"portals":[0x79d],
-"maps":["elderabyss.jm"],
-"music":["abyss"]}
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Elder Depths of the Abyss",
+  "sbName": "Elder Depths of the Abyss",
+  "difficulty": 5,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": true,
+  "showDisplays": true,
+  "portals": [ 0x79d ],
+  "maps": [ "elderabyss.jm" ],
+  "music": [ "abyss" ]
+}

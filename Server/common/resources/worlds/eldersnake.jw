@@ -1,12 +1,14 @@
-{"id":0,
-"isLimbo":false,
-"name":"Stheno's Carvens",
-"sbName":"Stheno's Carvens",
-"difficulty":4,
-"background":0,
-"blocking":1,
-"restrictTp":true,
-"showDisplays":true,
-"portals":[0x5440],
-"maps":["eldersnake.jm"],
-"music":["snakepit"]}
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Stheno's Carvens",
+  "sbName": "Stheno's Carvens",
+  "difficulty": 4,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": true,
+  "showDisplays": true,
+  "portals": [ 0x5440 ],
+  "maps": [ "eldersnake.jm" ],
+  "music": [ "snakepit" ]
+}

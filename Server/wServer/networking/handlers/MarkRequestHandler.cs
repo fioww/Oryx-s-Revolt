@@ -14,8 +14,8 @@ namespace wServer.networking.handlers
         }
 
         public void MarkUpdate(Player player, int markId, int buyAmount) {
-            if (buyAmount != 15 || buyAmount != 40) {
-                player.SendError("Inproper purchase cost.");
+            if (buyAmount != 15 && buyAmount != 40) {
+                player.SendError("Improper purchase cost.");
                 return;
             }
 
