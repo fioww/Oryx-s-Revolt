@@ -9,6 +9,6 @@
   "restrictTp": true,
   "showDisplays": true,
   "portals": [ 0x411a ],
-  "maps": [ "Elderundead.jm" ],
+  "maps": [ "eudl.jm" ],
   "music": [ "udl" ]
 }

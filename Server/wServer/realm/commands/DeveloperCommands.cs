@@ -272,7 +272,7 @@ namespace wServer.realm.commands
                         return;
                     }
 
-                    entity.Spawned = true;
+                    entity.DevSpawned = true;
 
                     if (entity is Enemy enemy)
                     {
@@ -290,7 +290,7 @@ namespace wServer.realm.commands
 
                         enemy.ApplyConditionEffect(new ConditionEffect()
                         {
-                            Effect = ConditionEffectIndex.Invisible,
+                            Effect = ConditionEffectIndex.Alliance,
                             DurationMS = -1
                         });
                     }

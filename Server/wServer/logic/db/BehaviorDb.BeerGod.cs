@@ -10,6 +10,7 @@ namespace wServer.logic
         private _ BeerGod = () => Behav()
         .Init("Beer God",
             new State(
+                new ScaleHP(400, 5000),
                 new State(
                     new ConditionalEffect(ConditionEffectIndex.Invincible),
                 new State("default",
@@ -28,10 +29,14 @@ namespace wServer.logic
                     )
                 )
             ),
-                            new MostDamagers(3,
+                new MostDamagers(3,
                     LootTemplates.SorRare()
                     ),
-            new Threshold(0.01,
+                new MostDamagers(3,
+                    new ItemLoot("Potion of Vitality", 0.4),
+                    new ItemLoot("Azeweria Special +++", 0.2)
+                    ),
+                new Threshold(0.01,
                     new ItemLoot("Mad God Ale", 1.00),
                     new ItemLoot("Oryx Stout", 1.00),
                     new ItemLoot("Realm-wheat Hefeweizen", 1.00)

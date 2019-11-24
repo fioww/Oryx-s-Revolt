@@ -245,10 +245,16 @@ namespace wServer.logic
                     ),
                 new ItemLoot("Ghost Pirate Rum", 1.0),
 
+                new MostDamagers(3,
+                    new Threshold(0.075,
+                        new ItemLoot("Trap of the Vile Spirit", 0.03),
+                        new ItemLoot("Thirsty Ghost's Trap", 0.01)
+                        )
+                    ),
+
                 new Threshold(0.025,
                     new ItemLoot("Potion of Wisdom", 1.0),
                     new ItemLoot("Potion of Speed", 1.0),
-                    new ItemLoot("Trap of the Vile Spirit", 0.03),
                     new TierLoot(9, ItemType.Weapon, 0.1),
                     new TierLoot(4, ItemType.Ability, 0.1),
                     new TierLoot(5, ItemType.Ability, 0.05),

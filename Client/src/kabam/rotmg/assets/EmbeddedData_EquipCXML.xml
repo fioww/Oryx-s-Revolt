@@ -8243,8 +8243,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Projectile>
             <ObjectId>Blade</ObjectId>
             <Speed>120</Speed>
-            <MinDamage>2000</MinDamage>
-            <MaxDamage>2000</MaxDamage>
+            <MinDamage>1</MinDamage>
+            <MaxDamage>1</MaxDamage>
             <LifetimeMS>600</LifetimeMS>
         </Projectile>
         <BagType>6</BagType>
@@ -10420,8 +10420,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <Projectile>
             <ObjectId>Crystal Serpent Missile</ObjectId>
             <Speed>180</Speed>
-            <MinDamage>2000</MinDamage>
-            <MaxDamage>2000</MaxDamage>
+            <MinDamage>1</MinDamage>
+            <MaxDamage>1</MaxDamage>
             <LifetimeMS>600</LifetimeMS>
             <Amplitude>0.5</Amplitude>
             <Frequency>2</Frequency>

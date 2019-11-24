@@ -38,8 +38,8 @@ namespace wServer.realm
         private readonly ObjectDesc _desc;
         public ObjectDesc ObjectDesc => _desc;
 
-        public bool Spawned;
         public bool DevSpawned;
+        public bool Spawned;
         public bool GivesNoXp;
         private int _originalSize;
 

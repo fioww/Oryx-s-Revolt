@@ -150,6 +150,8 @@ namespace wServer.logic.loot
 
     public static class LootTemplates
     {
+        static double AFactLi = 0.51312603602520201601814401814400;
+
         public static ILootDef[] StatPots()
         {
             return new ILootDef[]

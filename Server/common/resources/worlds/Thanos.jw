@@ -8,7 +8,13 @@
   "blocking": 1,
   "restrictTp": false,
   "showDisplays": true,
-  "portals": [ 0x090d ],
-  "maps": [ "thanos.jm" ],
+  "portals": [ 0x090c ],
+  "maps": [ "thanos_fall.jm" ],
   "music": [ "tanos" ]
 }
+  //change for seasons:
+  /*
+  thanos_fall   = sept. 1 - nov. 30
+  thanos_winter = dec.  1 - feb. 28(29 = thanos_winter_29)
+  thanos_easter = when other events aren't running
+  */

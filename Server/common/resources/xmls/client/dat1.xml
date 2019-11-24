@@ -35147,8 +35147,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
       <Projectile>
          <ObjectId>Blade</ObjectId>
          <Speed>120</Speed>
-         <MinDamage>2000</MinDamage>
-         <MaxDamage>2000</MaxDamage>
+         <MinDamage>1</MinDamage>
+         <MaxDamage>1</MaxDamage>
          <LifetimeMS>600</LifetimeMS>
       </Projectile>
       <BagType>6</BagType>
@@ -37242,8 +37242,8 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
       <Projectile>
          <ObjectId>Crystal Serpent Missile</ObjectId>
          <Speed>180</Speed>
-         <MinDamage>2000</MinDamage>
-         <MaxDamage>2000</MaxDamage>
+         <MinDamage>1</MinDamage>
+         <MaxDamage>1</MaxDamage>
          <LifetimeMS>600</LifetimeMS>
          <Amplitude>0.5</Amplitude>
          <Frequency>2</Frequency>
@@ -130006,7 +130006,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Activate stat="27" amount="1">IncrementStat</Activate>
     </Object>
 
-    <Object type="0x0e5d" id="Thirsty Ghost Trap">
+    <Object type="0x0e5d" id="Thirsty Ghost's Trap">
         <Class>Equipment</Class>
         <Item/>
         <RemoteTexture>
@@ -130025,6 +130025,7 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
         <Activate effect="Sick" duration="3">ConditionEffectSelf</Activate>
         <Activate radius="3" totalDamage="300" condEffect="Sick" condDuration="4">Trap</Activate>
         <Activate radius="4.5" totalDamage="150" condEffect="Bleeding" condDuration="4">Trap</Activate>
+        <DisplayId>Thirsty Ghost's Trap</DisplayId>
     </Object>
 
     <Object type="0x293" id="Testing Boomerang">
@@ -131671,7 +131672,633 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
 <!--Outside-->
 
 
+    <Object type="0x331" id="wildGun">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xd5</Index>
+    </Texture>
+    <SlotType>3</SlotType>
+    <Description>Quick Scope enemy with this gun!</Description>
+    <RateOfFire>0.5</RateOfFire>
+    <OldSound>weapon/shotgun_bow</OldSound>
+    <Projectile>
+      <ObjectId>Gunproj</ObjectId>
+      <Speed>200</Speed>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>100</MaxDamage>
+      <LifetimeMS>400</LifetimeMS>
+      <Size>80</Size>
+      <MultiHit />
+      <PassesCover />
+    </Projectile>
+    <NumProjectiles>2</NumProjectiles>
+    <ArcGap>3</ArcGap>
+    <BagType>6</BagType>
+    <FameBonus>2</FameBonus>
+    <DisplayId>Wild Shadow Gun</DisplayId>
+  </Object>
+  <Object type="0x337" id="Gunproj">
+    <Class>Projectile</Class>
+     <Texture>
+      <File>lofiObj3</File>
+      <Index>0xcf</Index>
+    </Texture>
+  </Object>
+
+  <Object type="0x340" id="wildFace">
+    <Enemy />
+    <Class>Character</Class>
+    <StasisImmune />
+    <Level>20</Level>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>58</Index>
+    </AnimatedTexture>
+    <AltTexture id="1">
+      <AnimatedTexture>
+        <File>chars16x16dEncounters2</File>
+        <Index>59</Index>
+      </AnimatedTexture>
+    </AltTexture>
+    <AltTexture id="2">
+      <AnimatedTexture>
+        <File>chars16x16dEncounters2</File>
+        <Index>60</Index>
+      </AnimatedTexture>
+    </AltTexture>
+    <HitSound>monster/golems_hit</HitSound>
+    <DeathSound>monster/beholder_death</DeathSound>
+    <MaxHitPoints>70000</MaxHitPoints>
+    <Size>100</Size>
+    <Projectile id="0">
+      <ObjectId>White Beam</ObjectId>
+      <Speed>83</Speed>
+      <Damage>95</Damage>
+      <Size>80</Size>
+      <LifetimeMS>2000</LifetimeMS>
+    </Projectile>
+    <Defense>30</Defense>
+    <XpMult>0.3</XpMult>
+    <DisplayId>wildFace</DisplayId>
+  </Object>
+<Object type="0x301" id="wildBlobomb">
+    <DisplayId>wildBlobomb</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>72</Index>
+    </AnimatedTexture>
+    <MaxHitPoints>5000</MaxHitPoints>
+    <Defense>30</Defense>
+    <XpMult>0.0</XpMult>
+    <StunImmune />
+    <ParalyzeImmune />
+    <Size>100</Size>
+    <Projectile id="0">
+      <ObjectId>Directed Explosion</ObjectId>
+      <Speed>100</Speed>
+      <Damage>100</Damage>
+      <LifetimeMS>600</LifetimeMS>
+      <Size>200</Size>
+      <MultiHit />
+    </Projectile>
+  </Object>
+  <Object type="0x302" id="wildShatters">
+    <DisplayId>wildShatters</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>75</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x303" id="wildRat">
+    <DisplayId>wildRat</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>49</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x304" id="wildHauntedSkeleton">
+    <DisplayId>wildHauntedSkeleton</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>88</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x305" id="wildDemonRed">
+    <DisplayId>wildDemonRed</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>89</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x306" id="wildGreyDemon">
+    <DisplayId>wildGreyDemon</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>90</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x341" id="wildDragon">
+    <DisplayId>wildDragon</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>119</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x308" id="wildHuman">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>10</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x309" id="wildHuman1">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>10</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x250" id="wildHuman2">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>11</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x338" id="wildHuman3">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>12</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x339" id="wildHuman4">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x313" id="wildHuman5">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>14</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x314" id="wildHuman6">
+    <DisplayId>wildHuman</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHero2</File>
+      <Index>15</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x315" id="wildDwarf">
+    <DisplayId>wildDwarf</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rHigh</File>
+      <Index>17</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x316" id="wildHappyFace">
+    <DisplayId>wildHappyFace</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiCharBig</File>
+      <Index>0x15</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>lofiCharBig</File>
+        <Index>0x10</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>lofiCharBig</File>
+        <Index>0x11</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>lofiCharBig</File>
+        <Index>0x12</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>lofiCharBig</File>
+        <Index>0x13</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>lofiCharBig</File>
+        <Index>0x14</Index>
+      </Texture>
+    </AltTexture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x317" id="wildNPCa">
+    <DisplayId>wildNPCa</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiCharBig</File>
+      <Index>0x172</Index>
+    </Texture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x318" id="wildNPCb">
+    <DisplayId>wildNPCb</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiCharBig</File>
+      <Index>0x174</Index>
+    </Texture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x319" id="wildNPCc">
+    <DisplayId>wildNPCc</DisplayId>
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiCharBig</File>
+      <Index>0x176</Index>
+    </Texture>
+    <Size>100</Size>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Defense>70</Defense>
+    <StasisImmune />
+    <StunImmune />
+    <ParalyzeImmune />
+    <Projectile id="0">
+      <ObjectId>White Bullet</ObjectId>
+      <Damage>250</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x332" id="wildBedRT">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x87</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x333" id="wildBedLF">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x88</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x334" id="wildChairLT">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x89</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x335" id="wildChairRT">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x8a</Index>
+    </Texture>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x336" id="wildChairDW">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x8b</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x327" id="wildTable">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x8c</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x328" id="wildLibrary">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0x8d</Index>
+    </Texture>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x329" id="wildSignRT">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xdc</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+  <Object type="0x330" id="wildSignLT">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>lofiEnvironment</File>
+      <Index>0xdb</Index>
+    </Texture>
+    <Size>100</Size>
+    <HitSound>monster/trees_hit</HitSound>
+    <DeathSound>monster/tress_death</DeathSound>
+    <MaxHitPoints>1000</MaxHitPoints>
+    <Static />
+    <XpMult>0.0</XpMult>
+    <OccupySquare />
+  </Object>
+
 
 </Objects>
-
 <!--10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 = googol-->
