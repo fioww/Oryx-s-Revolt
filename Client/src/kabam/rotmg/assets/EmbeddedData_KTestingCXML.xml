@@ -6802,13 +6802,13 @@
             <ObjectId>Pink Slash</ObjectId>
             <Speed>180</Speed>
             <LifetimeMS>350</LifetimeMS>
-            <MinDamage>125</MinDamage>
-            <MaxDamage>150</MaxDamage>
+            <MinDamage>120</MinDamage>
+            <MaxDamage>140</MaxDamage>
             <ArmorPiercing/>
         </Projectile>
         <BagType>6</BagType>
-        <NumProjectiles>3</NumProjectiles>
-        <ArcGap>3</ArcGap>
+        <NumProjectiles>2</NumProjectiles>
+        <ArcGap>6</ArcGap>
         <FameBonus>6</FameBonus>
         <OldSound>magicShoot</OldSound>
     </Object>

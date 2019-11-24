@@ -11,7 +11,8 @@ namespace wServer.logic
             .Init("Stheno the Snake Queen",
                 new State(
                     new ScaleHP(2200, 18000),
-                    new DropPortalOnDeath("Elder Snake Pit Portal", 0.1),
+                    new DropPortalOnDeath("Elder Snake Pit Portal", 0.33),
+                    new RealmPortalDrop(),
                     new State("Idle",
                         new PlayerWithinTransition(20, "Silver Blasts")
                     ),

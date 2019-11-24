@@ -69,7 +69,7 @@ namespace wServer.logic
                     LootTemplates.Sor2Perc()
                     ),
                 new MostDamagers(3,
-                    new ItemLoot("Potion of Proteciton", 0.1),
+                    new ItemLoot("Potion of Protection", 0.25),
                     new ItemLoot("Potion of Restoration", 0.66)
                     ),
                     /*),

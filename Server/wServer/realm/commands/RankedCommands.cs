@@ -171,9 +171,14 @@ namespace wServer.realm.commands
                 return false;
             }
 
-            if(player.Owner.Name == "Nexus")
+            if(player.Owner.Name == "Nexus" && player.Rank < 150)
             {
                 player.SendError("Can't spawn in the nexus.");
+            }
+
+            if (player.Owner.Name != "Vault" && player.Rank < 100)
+            {
+                player.SendError("Forbidden.");
             }
 
             if (props.spawns != null)
@@ -262,6 +267,16 @@ namespace wServer.realm.commands
 
         private bool SpawnBasic(Player player, string args)
         {
+            if (player.Owner.Name == "Nexus" && player.Rank < 150)
+            {
+                player.SendError("Can't spawn in the nexus.");
+            }
+
+            if (player.Owner.Name != "Vault" && player.Rank < 100)
+            {
+                player.SendError("Forbidden.");
+            }
+
             var gameData = player.Manager.Resources.GameData;
 
             // split argument

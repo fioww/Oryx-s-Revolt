@@ -12,8 +12,9 @@ namespace wServer.logic
                 new State(
                     //3000, 40000
                     new ScaleHP(3 * 10^3, 4 * 10^4),
-                    new DropPortalOnDeath("Elder Abyss of Demons Portal", 0.1),
+                    new DropPortalOnDeath("Elder Abyss of Demons Portal", 0.33),
                     new OnDeathBehavior(new ApplySetpiece("AbyssDeath")),
+                    new RealmPortalDrop(),
                     new State("default",
                         new PlayerWithinTransition(8, "basic")
                         ),

@@ -74915,7 +74915,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <LevelIncrease min="0" max="0">Might</LevelIncrease>
         <LevelIncrease min="0" max="0">Luck</LevelIncrease>
         <LevelIncrease min="0" max="1">Restoration</LevelIncrease>
-        <LevelIncrease min="0" max="0">Protection</LevelIncrease>
+        <LevelIncrease min="1" max="9">Protection</LevelIncrease>
         <UnlockLevel level="5" type="0x0300">Rogue</UnlockLevel>
         <UnlockCost>199</UnlockCost>
         <DisplayId>Warrior</DisplayId>
@@ -74997,7 +74997,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <LevelIncrease min="0" max="0">Might</LevelIncrease>
         <LevelIncrease min="0" max="0">Luck</LevelIncrease>
         <LevelIncrease min="0" max="1">Restoration</LevelIncrease>
-        <LevelIncrease min="2" max="10">Protection</LevelIncrease>
+        <LevelIncrease min="1" max="8">Protection</LevelIncrease>
         <UnlockLevel level="20" type="0x031e">Knight</UnlockLevel>
         <UnlockLevel level="20" type="0x0310">Priest</UnlockLevel>
         <UnlockCost>499</UnlockCost>
@@ -75249,7 +75249,7 @@ A diamondwire bow used by guardians of the unseen ethereal shrines.
         <LevelIncrease min="0" max="1">Might</LevelIncrease>
         <LevelIncrease min="0" max="0">Luck</LevelIncrease>
         <LevelIncrease min="0" max="1">Restoration</LevelIncrease>
-        <LevelIncrease min="0" max="0">Protection</LevelIncrease>
+        <LevelIncrease min="0" max="4">Protection</LevelIncrease>
         <UnlockLevel level="20" type="0x0321">Necromancer</UnlockLevel>
         <UnlockLevel level="20" type="0x0320">Assassin</UnlockLevel>
         <UnlockCost>999</UnlockCost>
@@ -130450,13 +130450,13 @@ All initiates who start the path of becoming a Dragon Tamer are given a special 
             <ObjectId>Pink Slash</ObjectId>
             <Speed>180</Speed>
             <LifetimeMS>350</LifetimeMS>
-            <MinDamage>125</MinDamage>
-            <MaxDamage>150</MaxDamage>
+            <MinDamage>120</MinDamage>
+            <MaxDamage>140</MaxDamage>
             <ArmorPiercing/>
         </Projectile>
         <BagType>6</BagType>
-        <NumProjectiles>3</NumProjectiles>
-        <ArcGap>3</ArcGap>
+        <NumProjectiles>2</NumProjectiles>
+        <ArcGap>6</ArcGap>
         <FameBonus>6</FameBonus>
         <OldSound>magicShoot</OldSound>
     </Object>

@@ -11,7 +11,8 @@ namespace wServer.logic
             .Init("Septavius the Ghost God",
                 new State(
                     new ScaleHP(7000, 0),
-                    new DropPortalOnDeath("Elder Undead Lair Portal", 0.1),
+                    new DropPortalOnDeath("Elder Undead Lair Portal", 0.33),
+                    new RealmPortalDrop(),
                     new State(
                         new PlayerWithinTransition(8, "transition1")
                         ),

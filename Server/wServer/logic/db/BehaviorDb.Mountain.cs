@@ -142,7 +142,11 @@ namespace wServer.logic
                     new TimedTransition(4000, "First")
                          )
                     ),
-                            new MostDamagers(3,
+                new MostDamagers(1,
+                    new ItemLoot("Potion of Maxy (SB)", 0.000001),
+                    new ItemLoot("Hammer of Pink Magic", 0.001)
+                    ),
+                new MostDamagers(3,
                     LootTemplates.SorVeryRare()
                     ),
                 new Threshold(.01,
@@ -182,7 +186,11 @@ namespace wServer.logic
                     new Grenade(4, 150, range: 8, coolDown: 3000),
                     new Reproduce(densityMax: 3)
                     ),
-                                new MostDamagers(3,
+                new MostDamagers(1,
+                    new ItemLoot("Potion of Maxy (SB)", 0.000001),
+                    new ItemLoot("Staff of the Medusa's Breath", 0.001)
+                    ),
+               new MostDamagers(3,
                     LootTemplates.SorVeryRare()
                     ),
                 new Threshold(.01,
@@ -269,7 +277,11 @@ namespace wServer.logic
                     new Shoot(10, projectileIndex: 1, predictive: 1),
                     new Reproduce(densityMax: 3)
                     ),
-                                new MostDamagers(3,
+                new MostDamagers(1,
+                    new ItemLoot("Potion of Maxy (SB)", 0.000001),
+                    new ItemLoot("Armor of the Beholder", 0.001)
+                    ),
+                new MostDamagers(3,
                     LootTemplates.SorVeryRare()
                     ),
                 new Threshold(.01,
@@ -298,7 +310,11 @@ namespace wServer.logic
                     new Reproduce(densityMax: 3),
                     new DropPortalOnDeath("Mad Lab Portal", .17)
                     ),
-                                new MostDamagers(3,
+                new MostDamagers(1,
+                    new ItemLoot("Potion of Maxy (SB)", 0.000001),
+                    new ItemLoot("Wand of the Flying Brain", 0.001)
+                    ),
+                new MostDamagers(3,
                     LootTemplates.SorVeryRare()
                     ),
                 new Threshold(.01,
@@ -552,6 +568,10 @@ namespace wServer.logic
                         new Shoot(0, count: 10, shootAngle: 36, fixedAngle: 0),
                         new Suicide()
                         )
+                    ),
+                new MostDamagers(1,
+                    new ItemLoot("Potion of Maxy (SB)", 0.000001),
+                    new ItemLoot("Magic of the Djinn", 0.001)
                     ),
                 new MostDamagers(3,
                     LootTemplates.SorVeryRare()
