@@ -8453,4 +8453,35 @@
         <OccupySquare />
     </Object>
 
+    <Object type="0x0297" id="cUltra Xp gift"> <!--WARNING-->
+        <Group>Evaluators</Group>
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>5</MaxHitPoints>
+        <Size>90</Size>
+        <Defense>0</Defense>
+        <Experience>5000</Experience> <!--capped-->
+    </Object>
+    <Object type="0x0296" id="Ultra Xp gift"> <!--WARNING-->
+        <Group>Evaluators</Group>
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>5</MaxHitPoints>
+        <Size>90</Size>
+        <Defense>0</Defense>
+        <Exp>5000</Exp>
+    </Object>
+
 </Objects>

@@ -788,7 +788,7 @@ namespace wServer.realm.commands
 
     internal class OnlineCommand : Command
     {
-        public OnlineCommand() : base("online") { }
+        public OnlineCommand() : base("online", alias:"swho") { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
