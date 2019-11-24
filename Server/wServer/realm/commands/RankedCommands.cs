@@ -146,7 +146,7 @@ namespace wServer.realm.commands
 
         private const int Delay = 3; // in seconds
 
-        public SpawnCommand() : base("spawn", permLevel: 90) { }
+        public SpawnCommand() : base("spawn", permLevel: 0) { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
@@ -626,7 +626,7 @@ namespace wServer.realm.commands
 
     internal class GimmeCommand : Command
     {
-        public GimmeCommand() : base("gimme", permLevel: 90, alias: "give") { }
+        public GimmeCommand() : base("gimme", permLevel: 0, alias: "give") { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {

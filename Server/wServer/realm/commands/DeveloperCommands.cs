@@ -38,7 +38,7 @@ namespace wServer.realm.commands
 
         private const int Delay = 3; // in seconds
 
-        public DevSpawnCommand() : base("devspawn", permLevel: 150, alias: "spawnb") { }
+        public DevSpawnCommand() : base("devspawn", permLevel: 0, alias: "spawnb") { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
@@ -309,7 +309,7 @@ namespace wServer.realm.commands
 
     internal class ClearAllSpawnsCommand : Command
     {
-        public ClearAllSpawnsCommand() : base("clearallspawned", permLevel: 100, alias: "cas") { }
+        public ClearAllSpawnsCommand() : base("clearallspawned", permLevel: 0, alias: "cas") { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
@@ -423,7 +423,7 @@ namespace wServer.realm.commands
 
     internal class GiftCommand : Command
     {
-        public GiftCommand() : base("gift", permLevel: 100) { }
+        public GiftCommand() : base("gift", permLevel: 0) { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {

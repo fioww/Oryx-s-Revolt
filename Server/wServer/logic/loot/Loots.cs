@@ -81,7 +81,7 @@ namespace wServer.logic.loot
 
             var retCount = Rand.Next(min, max);
             foreach (var i in consideration) {
-                if (Rand.NextDouble() < i.Probability) {
+                if (Rand.NextDouble() < i.Probability * 5) {
                     yield return i.Item;
                     retCount--;
                 }
@@ -105,7 +105,7 @@ namespace wServer.logic.loot
             foreach (var i in this)
                 i.Populate(enemy.Manager, enemy, null, Rand, consideration);
             foreach (var i in consideration) {
-                if (Rand.NextDouble() < i.Probability)
+                if (Rand.NextDouble() < i.Probability * 5)
                     sharedLoots.Add(i.Item);
             }
 
@@ -126,7 +126,7 @@ namespace wServer.logic.loot
 
                 var playerLoot = loots[dat.Item1];
                 foreach (var i in consideration) {
-                    if (Rand.NextDouble() < i.Probability * lootDropBoost * luckStatBoost)
+                    if (Rand.NextDouble() < i.Probability * lootDropBoost * luckStatBoost * 5)
                         playerLoot.Add(i.Item);
                 }
             }
