@@ -52,10 +52,11 @@ namespace wServer.logic
                     new MostDamagers(3,
                         new ItemLoot("Infinity Gauntlet", 0.002)
                         ),
-                    new MostDamagers(10,
+                    new Threshold(0.02,
                         new ItemLoot("Potion of Dexterity", 0.2),
                         new ItemLoot("Potion of Wisdom", 0.2),
-                        new ItemLoot("Admin Crown", 0.05)
+                        new ItemLoot("Admin Crown", 0.05),
+                        new ItemLoot("True Infinity Gauntlet", 0.05)
                     )
             );
     }
