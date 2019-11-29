@@ -141,7 +141,7 @@ namespace wServer.realm.entities
             int divider3 = 7;
             float protHealing = 
                 Math.Max(1 * (time.ElapsedMsDelta / 1000f), (Stats[3] / divider1 + (Stats[3] <= 1 ? 1 : Stats[3] / (divider2 - 2))) + 
-                (Stats[7] / divider1 + (Stats[7] <= 1 ? 1 : Stats[7] / (divider2 - 2))) * (time.ElapsedMsDelta / 1000f));
+                (Stats[7] / divider1 + (Stats[7] <= 1 ? 1 : Stats[7] / (divider2 - 2))) * (time.ElapsedMsDelta / 1200f));
             if (Stats[3] >= 30 || Stats[7] >= 50) //lazy way of scaling
                 protHealing = 
                     Math.Max(1 * (time.ElapsedMsDelta / 1000f), (Stats[3] / divider2 + (Stats[3] <= 1 ? 1 : Stats[3] / divider3)) + 
@@ -162,11 +162,11 @@ namespace wServer.realm.entities
                 protHealing *= 3;
             }*/
 
-            if (ProtectionDamage == ProtectionMax && (Stats[3] >= 30 || Stats[7] >= 50))
+            if (ProtectionDamage >= ProtectionMax && (Stats[3] >= 30 || Stats[7] >= 50))
             {
                 ProtectionDamage = (ProtectionMax * 4) + ((int)Stats[3] + (int)Stats[7]);
             }
-            else if (ProtectionDamage == ProtectionMax)
+            else if (ProtectionDamage >= ProtectionMax)
             {
                 ProtectionDamage = (ProtectionMax * 2) + ((int)Stats[3] / 2) + ((int)Stats[7] / 2);
             }

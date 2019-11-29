@@ -6415,7 +6415,7 @@
         <Droprate>30</Droprate>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\renewed_sewers\rs_solutionofgulpord</Id>
+            <Id>old\separate\renewed_sewers\rs_solutionofgulpord</Id>
         </RemoteTexture>
         <SlotType>10</SlotType>
         <Uncommon/>
@@ -6626,7 +6626,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\ketsunex\Oryx_The_Mad_God_Frame_II</Id>
+            <Id>old\separate\ketsunex\Oryx_The_Mad_God_Frame_II</Id>
         </RemoteTexture>
         <HitSound>monster/oryx_hit</HitSound>
         <DeathSound>monster/oryx_death</DeathSound>
@@ -6834,7 +6834,7 @@
         <Item/>
         <Texture>
             <File>lofiObj6</File>
-            <Index>0x7c</Index>
+            <Index>0x7d</Index>
         </Texture>
         <SlotType>1</SlotType>
         <Description>A "great" hammer of the sprite godess.</Description>
@@ -6862,7 +6862,7 @@
         <Class>Projectile</Class>
         <Texture>
             <File>lofiObj6</File>
-            <Index>0x7c</Index>
+            <Index>0x7d</Index>
         </Texture>
         <Rotation>-180</Rotation>
     </Object>
@@ -6872,7 +6872,7 @@
         <Item/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\omanoit\Magic of the Djinn</Id>
+            <Id>old\separate\omanoit\Magic of the Djinn</Id>
         </RemoteTexture>
         <SlotType>11</SlotType>
         <Description>A spell with fortune upon the great djinn.\n\nSprite Credits: Omanoit</Description>
@@ -7148,7 +7148,7 @@
         <Item/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\omanoit\Reaper's Scythe</Id>
+            <Id>old\separate\omanoit\Reaper's Scythe</Id>
         </RemoteTexture>
         <SlotType>17</SlotType>
         <Description>Legends say the Reaper's Scythe will kill the person equiping the Scythe.\n\nSprite Credits: Omanoit</Description>
@@ -7341,7 +7341,7 @@
         <Item/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\Fiery\shield</Id>
+            <Id>old\separate\Fiery\shield</Id>
         </RemoteTexture>
         <SlotType>5</SlotType>
         <ExtraTooltipData>
@@ -7380,7 +7380,7 @@
         <Description>The armor of the levithian rests within the godlands.</Description>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\Fiery\robe</Id>
+            <Id>old\separate\Fiery\robe</Id>
         </RemoteTexture>
         <SlotType>14</SlotType>
         <ActivateOnEquip stat="3" amount="125">IncrementStat</ActivateOnEquip>
@@ -7403,7 +7403,7 @@
         <StunImmune/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\ketsunex\Elder_Malphas</Id>
+            <Id>old\separate\ketsunex\Elder_Malphas</Id>
         </RemoteTexture>
         <HitSound>monster/demons_hit</HitSound>
         <DeathSound>monster/demons_death</DeathSound>
@@ -7460,7 +7460,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\ketsunex\Elder_Stheno</Id>
+            <Id>old\separate\ketsunex\Elder_Stheno</Id>
         </RemoteTexture>
         <HitSound>monster/snake_queen_hit</HitSound>
         <DeathSound>monster/snake_queen_death</DeathSound>
@@ -7501,7 +7501,7 @@
         <Class>Character</Class>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\ketsunex\Elder_Septavius</Id>
+            <Id>old\separate\ketsunex\Elder_Septavius</Id>
         </RemoteTexture>
         <HitSound>monster/ghost_god_hit</HitSound>
         <DeathSound>monster/ghost_god_death</DeathSound>
@@ -7727,7 +7727,7 @@
         <Item/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\Fiery\Thanos Key</Id>
+            <Id>old\separate\Fiery\Thanos Key</Id>
         </RemoteTexture>
         <SlotType>10</SlotType>
         <Description>I am Inventiable.</Description>
@@ -7769,12 +7769,28 @@
         <DisplayId>{equip.Crown}</DisplayId>
     </Object>
 
+    <Object type="0x10a1" id="True Infinity Gauntlet" unique="true">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0x5e</Index>
+        </Texture>
+        <SlotType>9</SlotType>
+        <Description>Wow! This is Thanos' True infinity gauntlet!</Description>
+        <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
+        <ActivateOnEquip stat="27" amount="2">IncrementStat</ActivateOnEquip>
+        <BagType>6</BagType>
+        <DisplayId>True Infinity Gauntlet</DisplayId>
+    </Object>
+
     <Object type="0x89f" id="Infinity Gauntlet" legendary="true">
         <Class>Equipment</Class>
         <Item/>
         <RemoteTexture>
             <Instance>production</Instance>
-            <Id>separate\ketsunex\Infinity_Gauntlet</Id>
+            <Id>old\separate\ketsunex\Infinity_Gauntlet</Id>
         </RemoteTexture>
         <SlotType>9</SlotType>
         <Description>Huh, so this is Thanos' infinity gauntlet... *SNAPS*\n\nSprite Credits: Ketsunex</Description>
@@ -8482,6 +8498,44 @@
         <Size>90</Size>
         <Defense>0</Defense>
         <Exp>5000</Exp>
+    </Object>
+
+    <Object type="0x10a0" id="XP Spawner testing">
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File>
+            <Index>8</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>0</Size>
+        <NoMiniMap/>
+        <MaxHitPoints>10000</MaxHitPoints>
+        <Defense>0</Defense>
+    </Object>
+    <Object type="0x10a4" id="XP chicken testing">
+        <Enemy/>
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File>
+            <Index>8</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>5</MaxHitPoints>
+        <Defense>0</Defense>
+        <Exp>500</Exp>
+    </Object>
+    <Object type="0x10a5" id="Testing XP Spot">
+        <Class>Portal</Class>
+        <IntergamePortal/>
+        <DisplayId>EXP Spot</DisplayId>
+        <DungeonName>ExpSpot</DungeonName>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>dungeons\restingplace\RestingPlacePortal</Id>
+        </RemoteTexture>
     </Object>
 
 </Objects>

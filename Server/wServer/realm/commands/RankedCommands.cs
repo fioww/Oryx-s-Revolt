@@ -38,7 +38,7 @@ namespace wServer.realm.commands
 
         private class BazaarCommand : Command
         {
-            public BazaarCommand() : base("bazaar", permLevel: 10) { }
+            public BazaarCommand() : base("bazaar", permLevel: 20) { }
 
             protected override bool Process(Player player, RealmTime time, string args) {
                 player.Client.Reconnect(new Reconnect() {
@@ -304,7 +304,6 @@ namespace wServer.realm.commands
                 player.SendInfo("You can not summon negative amounts.");
                 return false;
             }
-
             var id = player.Manager.Resources.GameData.ObjectTypeToId[objType.Value];
             if (player.Client.Account.Rank < 100 &&
                 player.Owner is DeathArena &&
@@ -313,7 +312,18 @@ namespace wServer.realm.commands
                 player.SendError("Insufficient rank.");
                 return false;
             }
-
+            /*
+            if (player.Client.Account.Rank < 100 &&
+            (
+            #region Banned Spawns
+                id.EqualsIgnoreCase("Dark Helm")
+            #endregion
+            ))
+            {
+                player.SendError("Insufficient Rank.");
+                return false;
+            }
+            */
             NotifySpawn(player, id, num);
             QueueSpawnEvent(player, num, objType.Value);
             return true;
@@ -1310,7 +1320,7 @@ namespace wServer.realm.commands
 
     internal class MaxCommand : Command
     {
-        public MaxCommand() : base("max", permLevel: 50) { }
+        public MaxCommand() : base("max", permLevel: 30) { }
 
         protected override bool Process(Player player, RealmTime time, string args)
         {

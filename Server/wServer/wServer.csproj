@@ -615,6 +615,7 @@
     <Compile Include="realm\worlds\logic\Marketplace.cs" />
     <Compile Include="realm\worlds\logic\Castle.cs" />
     <Compile Include="realm\worlds\logic\KrakenLair.cs" />
+    <Compile Include="realm\worlds\logic\ExpSpot.cs" />
     <Compile Include="realm\worlds\logic\NontridusUltra.cs" />
     <Compile Include="realm\worlds\logic\Nontridus.cs" />
     <Compile Include="realm\worlds\logic\PetYard.cs" />

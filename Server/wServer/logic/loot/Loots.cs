@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using wServer.realm;
 using wServer.realm.entities;
+using wServer.realm.worlds.logic;
 
 namespace wServer.logic.loot
 {
@@ -93,8 +94,7 @@ namespace wServer.logic.loot
         public void Handle(Enemy enemy, RealmTime time)
         {
             // enemies that shouldn't drop loot
-            //to-do: add 'solo arena' and 'regular arena' to this
-            if (enemy.Spawned)
+            if (enemy.Spawned || enemy.Owner is Arena || enemy.Owner is ArenaSolo)
             {
                 return;
             }

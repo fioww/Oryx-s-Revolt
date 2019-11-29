@@ -315,6 +315,26 @@ namespace wServer.logic
                     new FamiliarFollow(),
                     new TalismanAttack(800, ConditionEffectIndex.Dazed, 4000)
                 )
-            );
+            )
+
+
+            .Init("XP Spawner testing",
+                new State(
+                new ConditionalEffect(ConditionEffectIndex.Invincible),
+                    new State("Active",
+                        new Reproduce("XP chicken testing", densityMax: 1, coolDown: 1500)
+                    )
+                )
+            )
+            .Init("XP chicken testing",
+                new State(
+                    new State("Active",
+                        new Protect(1.0, "XP Spawner testing", 10, 5, 5),
+                        new Wander(0.2)
+                    )
+                )
+            )
+
+        ;
     }
 }

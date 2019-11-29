@@ -876,6 +876,10 @@ namespace wServer.realm.entities
             }
         }
 
+        public void DisconnectPlayer() {
+            Client.Disconnect();
+        }
+
         public void OnUnequip(Item item) {
             if (Client.Player != null && item != null) {
                 foreach (var pair in item.EffectEquip)

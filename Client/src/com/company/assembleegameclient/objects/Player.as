@@ -358,10 +358,10 @@ public class Player extends Character {
         SoundEffectLibrary.play("level_up");
         if (_arg1) {
             this.levelUpEffect(TextKey.PLAYER_NEWCLASSUNLOCKED, false);
-            this.levelUpEffect(TextKey.PLAYER_LEVELUP);
+            this.levelUpEffect("Level up! Lv. " + level_);
         }
         else {
-            this.levelUpEffect(TextKey.PLAYER_LEVELUP);
+            this.levelUpEffect("Level up! Lv. " + level_);
         }
     }
 
@@ -374,7 +374,7 @@ public class Player extends Character {
             return;
         }
         var _local2:CharacterStatusText = new CharacterStatusText(this, 0xFF00, 1000);
-        _local2.setStringBuilder(new LineBuilder().setParams(TextKey.PLAYER_EXP, {"exp": _arg1}));
+        _local2.setStringBuilder(new LineBuilder().setParams("+{exp} EXP", {"exp": _arg1}));
         map_.mapOverlay_.addStatusText(_local2);
     }
 

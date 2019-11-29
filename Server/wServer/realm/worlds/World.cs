@@ -48,6 +48,7 @@ namespace wServer.realm.worlds
         public const int DeathArena = -14;
         public const int MarketPlace = -15;
         public const int Station = -16;
+        public const int EXPArea = -17;
 
         private RealmManager _manager;
         public RealmManager Manager {

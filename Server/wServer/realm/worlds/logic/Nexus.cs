@@ -15,10 +15,15 @@ namespace wServer.realm.worlds.logic
         {
             base.Init();
 
-            var en = Entity.Resolve(Manager, "Locked Oryx's Arena Portal");
-            en.Move(147.5f, 110.5f);
-            en.Name = "Oryx's Arena";
-            EnterWorld(en);
+            var LockedOA = Entity.Resolve(Manager, "Locked Oryx's Arena Portal");
+            LockedOA.Move(147.5f, 110.5f);
+            LockedOA.Name = "Oryx's Arena";
+            EnterWorld(LockedOA);
+
+            var MarketPlace = Entity.Resolve(Manager, "Locked Oryx's Arena Portal");
+            MarketPlace.Move(130.5f, 111.5f);
+            MarketPlace.Name = "Marketplace (0)";
+            EnterWorld(MarketPlace);
 
             var monitor = Manager.Monitor;
             foreach (var i in Manager.Worlds.Values)
