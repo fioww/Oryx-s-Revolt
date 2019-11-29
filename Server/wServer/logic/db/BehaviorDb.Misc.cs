@@ -320,16 +320,24 @@ namespace wServer.logic
 
             .Init("XP Spawner testing",
                 new State(
-                new ConditionalEffect(ConditionEffectIndex.Invincible),
+                new OnDeathBehavior(new Spawn("XP Spawner testing", 1, 1, 0)),
+                new ConditionalEffect(ConditionEffectIndex.Invincible, true),
                     new State("Active",
-                        new Reproduce("XP chicken testing", densityMax: 1, coolDown: 1500)
+                        new Spawn("XP chicken testing", 1, 1, 0, false),
+                        new EntityExistsTransition("XP chicken testing", 3.5, "PreReset")
+                    ),
+                    new State("PreReset",
+                        new EntityNotExistsTransition("XP chicken testing", 3.5, "Reset")
+                        ),
+                    new State("Reset",
+                        new Suicide()
                     )
                 )
             )
             .Init("XP chicken testing",
                 new State(
                     new State("Active",
-                        new Protect(1.0, "XP Spawner testing", 10, 5, 5),
+                        new StayCloseToSpawn(0.2, 3),
                         new Wander(0.2)
                     )
                 )

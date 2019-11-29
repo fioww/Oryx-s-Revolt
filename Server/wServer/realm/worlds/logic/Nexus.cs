@@ -20,7 +20,7 @@ namespace wServer.realm.worlds.logic
             LockedOA.Name = "Oryx's Arena";
             EnterWorld(LockedOA);
 
-            var MarketPlace = Entity.Resolve(Manager, "Locked Oryx's Arena Portal");
+            var MarketPlace = Entity.Resolve(Manager, "Marketplace Portal");
             MarketPlace.Move(130.5f, 111.5f);
             MarketPlace.Name = "Marketplace (0)";
             EnterWorld(MarketPlace);

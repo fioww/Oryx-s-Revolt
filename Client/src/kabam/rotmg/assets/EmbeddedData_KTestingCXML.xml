@@ -6763,7 +6763,7 @@
         <Class>Equipment</Class>
         <Item/>
         <Texture>
-            <File>lofiObj5</File>
+            <File>lofiObj6</File>
             <Index>0x6d</Index>
         </Texture>
         <SlotType>17</SlotType>

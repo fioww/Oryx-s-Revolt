@@ -800,7 +800,12 @@ namespace wServer.realm.commands
                  select plr.Name)
                 .ToArray();
 
-            var sb = $"There are '{players.Length}' people online.";
+            var sb = "null";
+            switch (players.Length)
+            {
+                case 1: sb = $"There is '{players.Length}' player online."; break;
+                default: sb = $"There are '{players.Length}' players online."; break;
+            }
             player.SendInfo(sb);
             return true;
         }

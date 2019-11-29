@@ -18,11 +18,11 @@ namespace wServer.realm.worlds.logic
         {
             base.Tick(time);
 
-            Timers.Add(new WorldTimer(500, (w, t) => {
-
+            Timers.Add(new WorldTimer(1000, (w, t) => 
+            {
                 foreach (var player in w.Players.Values)
                 {
-                    if (player.Level >= 20 && player.Rank < 150)
+                    if (player.Level >= 20 && player.Rank < 80)
                     {
                         player.DisconnectPlayer();
                     }
