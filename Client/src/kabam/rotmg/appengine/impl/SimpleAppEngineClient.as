@@ -48,10 +48,10 @@ public class SimpleAppEngineClient implements AppEngineClient {
         try {
             if (_arg2 == null) {
                 _arg2 = {};
-                _arg2.gameClientVersion = ((Parameters.BUILD_VERSION + ".") + Parameters.MINOR_VERSION);
+                _arg2.gameClientVersion = ((Parameters.MAJOR_VERSION + ".") + Parameters.MINOR_VERSION);
             }
             else {
-                _arg2.gameClientVersion = ((Parameters.BUILD_VERSION + ".") + Parameters.MINOR_VERSION);
+                _arg2.gameClientVersion = ((Parameters.MAJOR_VERSION + ".") + Parameters.MINOR_VERSION);
             }
         }
         catch (e:Error) {

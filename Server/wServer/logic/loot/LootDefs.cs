@@ -63,8 +63,6 @@ namespace wServer.logic.loot
 
     public class ItemLoot : ILootDef
     {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(ItemLoot));
-
         private readonly string _item;
         private readonly double _probability;
 
@@ -72,23 +70,18 @@ namespace wServer.logic.loot
         {
             _item = item;
             _probability = probability;
+
+            BehaviorDb.ReceiveObjects(item);
         }
 
         public void Populate(RealmManager manager, Enemy enemy, Tuple<Player, int> playerDat,
-                             Random rand, IList<LootDef> lootDefs)
+            Random rand, IList<LootDef> lootDefs)
         {
-            try
-            {
-                if (playerDat != null) return;
-                var dat = manager.Resources.GameData;
-                if (dat.IdToObjectType.ContainsKey(_item)
-                    && dat.Items.ContainsKey(dat.IdToObjectType[_item]))
-                    lootDefs.Add(new LootDef(dat.Items[dat.IdToObjectType[_item]], _probability));
-            }
-            catch
-            {
-                Log.Warn($"Problem adding {_item} to mob loot table.");
-            }
+            if (playerDat != null) return;
+            var dat = manager.Resources.GameData;
+            if (dat.IdToObjectType.ContainsKey(_item)
+                && dat.Items.ContainsKey(dat.IdToObjectType[_item]))
+                lootDefs.Add(new LootDef(dat.Items[dat.IdToObjectType[_item]], _probability));
         }
     }
 

@@ -179,7 +179,7 @@ namespace wServer.logic
                 new TierLoot(1, ItemType.Ability, 0.9),
                 new TierLoot(2, ItemType.Ability, 0.15),
                 new TierLoot(3, ItemType.Ability, 0.02),
-                new ItemLoot("50 Gold", 0.028),
+                new ItemLoot("Golden Apple", 0.028),
                 new ItemLoot("Magic Potion", 0.4),
                 new ItemLoot("Health Potion", 0.4)
                     )

@@ -876,10 +876,6 @@ namespace wServer.realm.entities
             }
         }
 
-        public void DisconnectPlayer() {
-            Client.Disconnect();
-        }
-
         public void OnUnequip(Item item) {
             if (Client.Player != null && item != null) {
                 foreach (var pair in item.EffectEquip)
@@ -1465,76 +1461,51 @@ namespace wServer.realm.entities
             }
             return false;
         }
-        bool isAlertArea()
+
+        bool IsAlertArea()
         {
-            var amount = (int)(Credits * 0.1);
-            if (Owner.Name == "KrakenLair" || Owner.Name == "TheHollows" || Owner.Name == "HiddenTempleBoss" || Owner.Name == "FrozenIsland")
+            var amount = (int) (Credits * 0.1);
+            if (Owner.Name == "KrakenLair" || Owner.Name == "TheHollows" || Owner.Name == "HiddenTempleBoss" ||
+                Owner.Name == "FrozenIsland")
             {
                 Client.Manager.Database.UpdateCredit(Client.Account, -amount);
                 Credits = Client.Account.Credits - amount;
                 ReconnectToNexus();
                 return true;
             }
+
             return false;
         }
-        bool isAdminsArena()
+
+        bool IsAdminsArena()
         {
+            var deathMessage = new[]
+            {
+                $"{Name} was utterly destroyed...", $"{Name} got bopped.", $"Later, {Name}!",
+                $"{Name} couldn't take the fight.", $"{Name} got overwhelmed.",
+                $"Sidon spares his mercy to {Name}.", $"Goodnight, {Name}.", $"{Name} IS OUTTA HERE!",
+                $"{Name} has been E L I M I N A T E D.", $"CY@, {Name}"
+            };
+            
             if (Owner.Name == "Admins Arena")
             {
-                Random rnd = new Random();
-                int num = rnd.Next(1, 11);
-                switch (num)
-                {
-                    case 1:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} was utterly destroyed..");
-                        break;
-                    case 2:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} got bopped.");
-                        break;
-                    case 3:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"Later, {Name}!");
-                        break;
-                    case 4:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} couldn't take the fight.");
-                        break;
-                    case 5:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} got overwhelmed.");
-                        break;
-                    case 6:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"Sidon spares his mercy to {Name}.");
-                        break;
-                    case 7:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"Goodnight, {Name}.");
-                        break;
-                    case 8:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} IS OUTTA HERE!");
-                        break;
-                    case 9:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"{Name} has been E L I M I N A T E D.");
-                        break;
-                    case 10:
-                        foreach (var player in Owner.Players.Values)
-                            player.SendInfo($"CY@, {Name}");
-                        break;
-                }
+                var rnd = new Random();
+                var number = rnd.Next(0, deathMessage.Length);
+
+                foreach (var player in Owner.Players.Values)
+                    player.SendInfo(deathMessage[number]);
 
                 ReconnectToNexus();
                 return true;
             }
+
             return false;
         }
-        private void ReconnectToNexus()
+
+        public void ReconnectToNexus(bool is1Hp = true)
         {
-            HP = 1;
+            if (is1Hp)
+                HP = 1;
             _client.Reconnect(new Reconnect()
             {
                 Host = "",
@@ -1611,9 +1582,9 @@ namespace wServer.realm.entities
                 return;
             if (TestWorld(killer))
                 return;
-            if (isAlertArea())
+            if (IsAlertArea())
                 return;
-            if (isAdminsArena())
+            if (IsAdminsArena())
                 return;
             if (SecondChance())
                 return;
@@ -1697,8 +1668,15 @@ namespace wServer.realm.entities
                 Owner.EnterWorld(en);
             }
         }
+        
         public void Reconnect(World world)
         {
+            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+            {
+                SendError("Exp zone is locked to players with level below 20.");
+                return;
+            }
+
             Client.Reconnect(new Reconnect()
             {
                 Host = "",
@@ -1708,7 +1686,8 @@ namespace wServer.realm.entities
             });
         }
 
-        public void Reconnect(object portal, World world) {
+        public void Reconnect(object portal, World world) 
+        {
             ((Portal)portal).WorldInstanceSet -= Reconnect;
 
             if (((Portal)portal).Locked) {
@@ -1718,6 +1697,12 @@ namespace wServer.realm.entities
 
             if (world == null) {
                 SendError("Portal is not implemented.");
+                return;
+            }
+
+            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+            {
+                SendError("Exp zone is locked to players with level below 20.");
                 return;
             }
 

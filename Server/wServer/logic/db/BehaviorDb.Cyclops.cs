@@ -71,7 +71,7 @@ namespace wServer.logic
                         new Spawn("Cyclops King", 5, coolDown: 10000)
                     ),
             new Threshold(0.1,
-                    new ItemLoot("50 Gold", 0.1)
+                    new ItemLoot("Golden Apple", 0.1)
                 )
             )
             .Init("Cyclops",

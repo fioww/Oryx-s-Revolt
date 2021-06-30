@@ -16,7 +16,7 @@ public class PrivateSetup implements ApplicationSetup {
     }
 
     public function getBuildLabel():String {
-        var _local1:String = ((Parameters.BUILD_VERSION + ".") + Parameters.MINOR_VERSION);
+        var _local1:String = ((Parameters.MAJOR_VERSION + ".") + Parameters.MINOR_VERSION);
         return (this.BUILD_LABEL.replace("{VERSION}", _local1));
     }
 

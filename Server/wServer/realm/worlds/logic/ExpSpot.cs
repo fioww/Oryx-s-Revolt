@@ -1,6 +1,6 @@
-﻿using System.Linq;
-using common.resources;
+﻿using common.resources;
 using wServer.networking;
+using wServer.networking.packets.outgoing;
 using Player = wServer.realm.entities.Player;
 
 namespace wServer.realm.worlds.logic
@@ -10,24 +10,13 @@ namespace wServer.realm.worlds.logic
         public ExpSpot(ProtoWorld proto, Client client = null) : base(proto) {
         }
 
-        protected override void Init() {
-            base.Init();
-        }
-
         public override void Tick(RealmTime time)
         {
             base.Tick(time);
 
-            Timers.Add(new WorldTimer(1000, (w, t) => 
-            {
-                foreach (var player in w.Players.Values)
-                {
-                    if (player.Level >= 20 && player.Rank < 80)
-                    {
-                        player.DisconnectPlayer();
-                    }
-                }
-            }));
+            foreach (var player in this.Players.Values)
+                if (player.Level >= 20 && player.Rank < 80)
+                    player.ReconnectToNexus(false);
         }
 
         public override int EnterWorld(Entity entity)

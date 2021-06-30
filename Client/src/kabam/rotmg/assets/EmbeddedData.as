@@ -8,7 +8,6 @@ public class EmbeddedData {
     private static const EquipmentSetsCXML:Class = EmbeddedData_EquipmentSetsCXML;
     private static const SkinsCXML:Class = EmbeddedData_SkinsCXML;
     private static const DyesCXML:Class = EmbeddedData_DyesCXML;
-    private static const TextilesCXML:Class = EmbeddedData_TextilesCXML;
     private static const PermapetsCXML:Class = EmbeddedData_PermapetsCXML;
     private static const WillemTestingCXML:Class = EmbeddedData_WillemTestingCXML;
     private static const TTestingCXML:Class = EmbeddedData_TTestingCXML;
@@ -63,7 +62,7 @@ public class EmbeddedData {
     //load objects
     public static const objectFiles:Array =
             [
-                new ProjectilesCXML(), new EquipCXML(), new DyesCXML(), new TextilesCXML(), new PermapetsCXML(), new WillemTestingCXML(),
+                new ProjectilesCXML(), new EquipCXML(), new DyesCXML(), new PermapetsCXML(), new WillemTestingCXML(),
                 new TTestingCXML(), new BTestingCXML(), new STestingCXML(), new MTestingCXML(), new KTestingCXML(), new PlayersCXML(),
                 new ObjectsCXML(), new TestingObjectsCXML(), new StaticObjectsCXML(), new TutorialObjectsCXML(), new MonstersCXML(),
                 new PetsCXML(), new TempObjectsCXML(), new ShoreCXML(), new LowCXML(), new MidCXML(), new HighCXML(), new MountainsCXML(),

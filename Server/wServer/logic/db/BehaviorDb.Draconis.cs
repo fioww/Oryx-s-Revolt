@@ -211,7 +211,7 @@ namespace wServer.logic
                 new ItemLoot("Large Blue Dragon Scale Cloth", 0.045),
                 new ItemLoot("Small Blue Dragon Scale Cloth", 0.045),
                 new ItemLoot("The World Tarot Card", 0.05),
-                new ItemLoot("Dragon Pearl", 0.08)
+                new ItemLoot("Golden Apple", 0.08)
                 )
             )
         .Init("lod Green Loot Balloon",
@@ -236,7 +236,7 @@ namespace wServer.logic
                 new ItemLoot("Large Green Dragon Scale Cloth", 0.045),
                 new ItemLoot("Small Green Dragon Scale Cloth", 0.045),
                 new ItemLoot("The World Tarot Card", 0.03),
-                new ItemLoot("Dragon Pearl", 0.08)
+                new ItemLoot("Golden Apple", 0.08)
                 )
             )
         .Init("lod Black Loot Balloon",
@@ -261,7 +261,7 @@ namespace wServer.logic
                 new ItemLoot("Large Midnight Dragon Scale Cloth", 0.045),
                 new ItemLoot("Small Midnight Dragon Scale Cloth", 0.045),
                 new ItemLoot("The World Tarot Card", 0.03),
-                new ItemLoot("Dragon Pearl", 0.08)
+                new ItemLoot("Golden Apple", 0.08)
                 )
             )
 
@@ -287,32 +287,9 @@ namespace wServer.logic
                 new ItemLoot("Large Red Dragon Scale Cloth", 0.045),
                 new ItemLoot("Small Red Dragon Scale Cloth", 0.045),
                 new ItemLoot("The World Tarot Card", 0.03),
-                new ItemLoot("Dragon Pearl", 0.08)
+                new ItemLoot("Golden Apple", 0.08)
                 )
             )
-
-             /*   .Init("lod Ivory Loot",
-                new State(
-                    new State("Idle",
-                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
-                        new TimedTransition(5000, "UnsetEffect")
-                    ),
-                    new State("UnsetEffect")
-                ),
-                new Threshold(0.15,
-                new TierLoot(12, ItemType.Weapon, 0.065),
-                new TierLoot(12, ItemType.Weapon, 0.055),
-                new TierLoot(6, ItemType.Ability, 0.065),
-                new TierLoot(5, ItemType.Ability, 0.0685),
-                new TierLoot(13, ItemType.Armor, 0.0525),
-                new ItemLoot("Midnight Star", 0.04),
-                new ItemLoot("Ivory Ring", 0.055),
-                new ItemLoot("Large Ivory Dragon Scale Cloth", 0.045),
-                new ItemLoot("Small Ivory Dragon Scale Cloth", 0.047),
-                new ItemLoot("The World Tarot Card", 0.05),
-                new ItemLoot("Dragon Pearl", 0.1)
-                )
-            )*/
 
         //Dragon mini0ns & spawners
           .Init("NM Blue Dragon Minion",

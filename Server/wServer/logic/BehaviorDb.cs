@@ -87,6 +87,13 @@ namespace wServer.logic
             }
         }
 
+        internal static void ReceiveObjects(string objType)
+        {
+            var dat = InitDb.Manager.Resources.GameData;
+            if (!dat.IdToObjectType.ContainsKey(objType))
+                Log.Warn($"Object \"{objType}\" not found!");
+        }
+
         private static ctor Behav() {
             return new ctor();
         }

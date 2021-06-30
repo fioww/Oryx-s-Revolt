@@ -16,7 +16,7 @@ public class NillysRealmTestSetup implements ApplicationSetup {
     }
     
     public function getBuildLabel():String {
-        return this.BUILD_LABEL.replace("{VERSION}", Parameters.BUILD_VERSION).replace("{MINOR}", Parameters.MINOR_VERSION);
+        return this.BUILD_LABEL.replace("{VERSION}", Parameters.MAJOR_VERSION).replace("{MINOR}", Parameters.MINOR_VERSION);
     }
     
     public function useLocalTextures():Boolean {

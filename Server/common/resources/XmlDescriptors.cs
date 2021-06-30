@@ -422,7 +422,8 @@ namespace common.resources
         Torii,
         JacketAbility,
         SorActivate,
-        TalismanAbility
+        TalismanAbility,
+        MarkActivate // old
     }
 
     public class ActivateEffect

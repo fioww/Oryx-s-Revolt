@@ -43,7 +43,7 @@ namespace wServer.logic
                 new ItemLoot("Ring of Greater Defense", 0.04),
                 new ItemLoot("Steel Helm", 0.04),
                 new ItemLoot("Potion of Speed", 0.03),
-                new ItemLoot("50 Gold", 0.05),
+                new ItemLoot("Golden Apple", 0.05),
                 new ItemLoot("Bow of Ornias", 0.005)
                  )
             )

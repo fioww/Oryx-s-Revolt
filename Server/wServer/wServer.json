@@ -7,8 +7,8 @@
   },
   "serverInfo": {
     "type": "World",
-    "name": "Sub-terrain",
-    "address": "25.66.86.46", //144.217.80.74 - 127.0.0.1
+    "name": "Subterranean",
+    "address": "127.0.0.1", //144.217.80.74 - 127.0.0.1
     "port": "2050",
     "coordinates": {
       "latitude": "0",
@@ -19,7 +19,7 @@
   "serverSettings": {
     "logFolder": "./logs",
     "resourceFolder": "./resources",
-    "version": "0.3.1-A",
+    "version": "0.3",
     "tps": "10",
     "mode": "Single",
     "key": "BA15DE",

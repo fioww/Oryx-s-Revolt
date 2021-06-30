@@ -5,10 +5,10 @@ import kabam.rotmg.application.api.ApplicationSetup;
 
 public class ProductionSetup implements ApplicationSetup {
 
-    private const SERVER:String = "25.66.86.46:8080";
+    private const SERVER:String = "127.0.0.1:8080";
     private const UNENCRYPTED:String = ("http://" + SERVER);
     private const ENCRYPTED:String = ("http://" + SERVER);
-    private const BUILD_LABEL:String = "<font color='#FF9900'>Alpha</font> <font color='#87CEEB'>{VERSION}-{MINOR}</font>";
+    private const BUILD_LABEL:String = "<font color='#FF9900'>Alpha</font> {VERSION}.{MINOR}";
 
 
     public function getAppEngineUrl(_arg_1:Boolean = false):String {
@@ -16,7 +16,7 @@ public class ProductionSetup implements ApplicationSetup {
     }
 
     public function getBuildLabel():String {
-        return (this.BUILD_LABEL.replace("{VERSION}", Parameters.BUILD_VERSION).replace("{MINOR}", Parameters.MINOR_VERSION));
+        return (this.BUILD_LABEL.replace("{VERSION}", Parameters.MAJOR_VERSION).replace("{MINOR}", Parameters.MINOR_VERSION));
     }
 
     public function useLocalTextures():Boolean {

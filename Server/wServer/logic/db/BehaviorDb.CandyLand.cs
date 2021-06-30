@@ -63,7 +63,7 @@ namespace wServer.logic
                     new ItemLoot("Seal of the Enchanted Forest", 0.01),
                     new ItemLoot("Candy-Coated Armor", 0.01),
                     new ItemLoot("Ring of Pure Wishes", 0.01),
-                    new ItemLoot("Candy Ring", 0.03)
+                    new ItemLoot("Ring Pop", 0.03)
                 )
             )
             .Init("Spoiled Creampuff",
@@ -95,7 +95,7 @@ namespace wServer.logic
                     new ItemLoot("Seal of the Enchanted Forest", 0.01),
                     new ItemLoot("Candy-Coated Armor", 0.01),
                     new ItemLoot("Ring of Pure Wishes", 0.01),
-                    new ItemLoot("Candy Ring", 0.03)
+                    new ItemLoot("Ring Pop", 0.03)
                 )
             )
             .Init("Desire Troll",
@@ -128,7 +128,7 @@ namespace wServer.logic
                     new ItemLoot("Seal of the Enchanted Forest", 0.01),
                     new ItemLoot("Candy-Coated Armor", 0.01),
                     new ItemLoot("Ring of Pure Wishes", 0.01),
-                    new ItemLoot("Candy Ring", 0.03)
+                    new ItemLoot("Ring Pop", 0.03)
                 )
             )
         .Init("Swoll Fairy",
@@ -166,7 +166,7 @@ namespace wServer.logic
                     new ItemLoot("Seal of the Enchanted Forest", 0.01),
                     new ItemLoot("Candy-Coated Armor", 0.01),
                     new ItemLoot("Ring of Pure Wishes", 0.01),
-                    new ItemLoot("Candy Ring", 0.03),
+                    new ItemLoot("Ring Pop", 0.03),
                     new ItemLoot("The Sun Tarot Card", 0.04)
                     )
             )
@@ -203,7 +203,7 @@ namespace wServer.logic
                     new ItemLoot("Seal of the Enchanted Forest", 0.01),
                     new ItemLoot("Candy-Coated Armor", 0.01),
                     new ItemLoot("Ring of Pure Wishes", 0.01),
-                    new ItemLoot("Candy Ring", 0.03),
+                    new ItemLoot("Ring Pop", 0.03),
                     new ItemLoot("The Sun Tarot Card", 0.04)
                 )
             )
@@ -283,7 +283,7 @@ namespace wServer.logic
                 new ItemLoot("Blue Gumball", 0.3),
                 new ItemLoot("Red Gumball", 0.3),
                 new ItemLoot("Purple Gumball", 0.3),
-                new ItemLoot("Candy Ring", 0.01)
+                new ItemLoot("Ring Pop", 0.01)
                 )
             )
         .Init("Cupcake",

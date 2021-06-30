@@ -136,56 +136,18 @@ namespace wServer.realm.entities
 
             }
 
-            int divider1 = 12;
-            int divider2 = 18;
-            int divider3 = 7;
-            float protHealing = 
-                Math.Max(1 * (time.ElapsedMsDelta / 1000f), (Stats[3] / divider1 + (Stats[3] <= 1 ? 1 : Stats[3] / (divider2 - 2))) + 
-                (Stats[7] / divider1 + (Stats[7] <= 1 ? 1 : Stats[7] / (divider2 - 2))) * (time.ElapsedMsDelta / 1200f));
-            if (Stats[3] >= 30 || Stats[7] >= 50) //lazy way of scaling
-                protHealing = 
-                    Math.Max(1 * (time.ElapsedMsDelta / 1000f), (Stats[3] / divider2 + (Stats[3] <= 1 ? 1 : Stats[3] / divider3)) + 
-                    (Stats[7] / divider2 + (Stats[7] <= 1 ? 1 : Stats[7] / divider3)) * (time.ElapsedMsDelta / 2000f));
-            //Really high defense
-            if (Stats[3] >= 60 && Stats[7] >= 25)
-                protHealing = 
-                    Math.Max(1 * (time.ElapsedMsDelta / 1000f), (Stats[3] / (divider2 + 4) + (Stats[3] <= 1 ? 1 : Stats[3] / divider3)) + 
-                    (Stats[7] / divider2 + (Stats[7] <= 1 ? 1 : Stats[7] / divider3)) * (time.ElapsedMsDelta / 2000f));
+            var protHealing = Math.Max(0.5f * (time.ElapsedMsDelta / 1000f), ((ProtectionMax * 0.1f) * (100f / (100 + this.Stats[3]))) * (time.ElapsedMsDelta / 1000f));
 
             if (HasConditionEffect(ConditionEffects.ShieldRecovery))
-            {
-                protHealing *= 2;
-            }
+                protHealing *= 1.5f;
+            /*else if (HasConditionEffect(ConditionEffects.MagicShield))
+                protHealing *= 2.5f;*/
 
-            /*if (HasConditionEffect(ConditionEffects.MagicShield))
-            {
-                protHealing *= 3;
-            }*/
+            if (ProtectionDamage >= ProtectionMax * 1.5)
+                ProtectionDamage = (int)(ProtectionDamage * 1.5);
 
-            if (ProtectionDamage >= ProtectionMax && (Stats[3] >= 30 || Stats[7] >= 50))
-            {
-                ProtectionDamage = (ProtectionMax * 4) + ((int)Stats[3] + (int)Stats[7]);
-            }
-            else if (ProtectionDamage >= ProtectionMax)
-            {
-                ProtectionDamage = (ProtectionMax * 2) + ((int)Stats[3] / 2) + ((int)Stats[7] / 2);
-            }
-
-            if (Protection < ProtectionMax)
-            {
-                if (Protection < ProtectionMax / 5)
-                {
-                    ProtectionDamage -= (int)protHealing / 8;
-                }
-                if (Protection < ProtectionMax / 2)
-                {
-                    ProtectionDamage -= (int)protHealing / 4;
-                }
-                if (Protection < ProtectionMax)
-                {
-                    ProtectionDamage -= (int)protHealing / 2;
-                }
-            }
+            if (Protection < ProtectionMax && ProtectionDamage > 0)
+                ProtectionDamage -= (int)protHealing;
 
             if (Mark == 4 && Surge >= 25)
             {

@@ -360,8 +360,7 @@ namespace wServer.logic
                 new ItemLoot("Potion of Mana", 0.9),
                 new ItemLoot("Ring of the Hidden Temple", 0.05),
                 new ItemLoot("Defender Sword", 0.05),
-                new ItemLoot("Robe of Overgrowth", 0.05),
-                new ItemLoot("Ancient Stiletto", 0.05)
+                new ItemLoot("Robe of Overgrowth", 0.05)
                 )
             )
         ;

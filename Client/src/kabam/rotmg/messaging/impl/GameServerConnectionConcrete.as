@@ -1158,7 +1158,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         this.addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, TextKey.CHAT_CONNECTED));
         this.encryptConnection();
         var _local2:Hello = (this.messages.require(HELLO) as Hello);
-        _local2.buildVersion_ = Parameters.FULL_BUILD;
+        _local2.buildVersion_ = Parameters.MAJOR_VERSION;
         _local2.gameId_ = gameId_;
         _local2.guid_ = this.rsaEncrypt(_local1.getUserId());
         _local2.password_ = this.rsaEncrypt(_local1.getPassword());
@@ -2376,7 +2376,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var dlg:Dialog;
 
         // check for correct client version
-        if (Parameters.FULL_BUILD != errorMsg.build) {
+        if (Parameters.MAJOR_VERSION != errorMsg.build) {
             handleIncorrectVersionFailureBasic(errorMsg.build);
             return;
         }
@@ -2419,7 +2419,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     private function handleIncorrectVersionFailureBasic(description:String):void {
         var _local2:Dialog = new Dialog(TextKey.CLIENT_UPDATE_TITLE, "", TextKey.CLIENT_UPDATE_LEFT_BUTTON, null, "/clientUpdate");
         _local2.setTextParams(TextKey.CLIENT_UPDATE_DESCRIPTION, {
-            "client": Parameters.BUILD_VERSION,
+            "client": Parameters.MAJOR_VERSION,
             "server": description
         });
         _local2.addEventListener(Dialog.LEFT_BUTTON, this.onDoClientUpdate);

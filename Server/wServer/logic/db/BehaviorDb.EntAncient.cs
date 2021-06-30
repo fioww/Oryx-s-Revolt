@@ -203,7 +203,7 @@ namespace wServer.logic
                 new ItemLoot("Ripe Apple", 0.001),
                 new ItemLoot("Clump of Bark", 0.001),
                 new ItemLoot("Magic Potion", 0.7),
-                new ItemLoot("50 Gold", 0.038),
+                new ItemLoot("Golden Apple", 0.038),
                 new ItemLoot("Health Potion", 0.7)
                     )
             )
