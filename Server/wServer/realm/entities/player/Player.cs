@@ -1671,9 +1671,10 @@ namespace wServer.realm.entities
         
         public void Reconnect(World world)
         {
-            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+            var error = GetErrorWhileEnteringWorld(world);
+            if (error != null)
             {
-                SendError("Exp zone is locked to players with level below 20.");
+                SendError(error);
                 return;
             }
 
@@ -1695,14 +1696,10 @@ namespace wServer.realm.entities
                 return;
             }
 
-            if (world == null) {
-                SendError("Portal is not implemented.");
-                return;
-            }
-
-            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+            var error = GetErrorWhileEnteringWorld(world);
+            if (error != null)
             {
-                SendError("Exp zone is locked to players with level below 20.");
+                SendError(error);
                 return;
             }
 
@@ -1712,6 +1709,17 @@ namespace wServer.realm.entities
                 GameId = world.Id,
                 Name = world.Name
             });
+        }
+
+        private string GetErrorWhileEnteringWorld(World world)
+        {
+            if (world == null)
+                return "Portal is not implemented.";
+
+            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+                return "The EXP Zone is locked to players below level 20.";
+
+            return null;
         }
 
         public int GetCurrency(CurrencyType currency)

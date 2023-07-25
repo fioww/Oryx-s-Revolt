@@ -1,6 +1,6 @@
 ﻿using common.resources;
 using wServer.networking;
-using Player = wServer.realm.entities.Player;
+using wServer.realm.entities;
 
 namespace wServer.realm.worlds.logic
 {
@@ -23,7 +23,7 @@ namespace wServer.realm.worlds.logic
             var ret = base.EnterWorld(entity);
 
             if (entity is Player p)
-                p.SendInfo("Welcome to the EXP Zone! Here you can level up to 20, then you will be disconnected!");
+                p.SendInfo("Welcome to the EXP Zone! Here you can level up to 20, then you will be disconnected.");
 
             return ret;
         }

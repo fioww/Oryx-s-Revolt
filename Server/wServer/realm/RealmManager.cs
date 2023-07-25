@@ -97,7 +97,6 @@ namespace wServer.realm
             Commands = new CommandManager(this);
             
             // some necessities that shouldn't be (will work this out later)
-            MerchantLists.Init(this);
             Tinker = new DbTinker(db.Conn);
             if (Config.serverSettings.enableMarket)
                 Market = new Market(this);
