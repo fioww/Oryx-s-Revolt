@@ -1716,7 +1716,7 @@ namespace wServer.realm.entities
             if (world == null)
                 return "Portal is not implemented.";
 
-            if (world.SBName.ToLower().Equals("exp spot") && Level >= 20 && Rank < 80)
+            if (world.Name == "ExpSpot" && Level >= 20 && Rank < 80)
                 return "The EXP Zone is locked to players below level 20.";
 
             return null;
