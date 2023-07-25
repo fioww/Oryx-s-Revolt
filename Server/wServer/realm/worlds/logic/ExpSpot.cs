@@ -1,6 +1,5 @@
 ﻿using common.resources;
 using wServer.networking;
-using wServer.networking.packets.outgoing;
 using Player = wServer.realm.entities.Player;
 
 namespace wServer.realm.worlds.logic
@@ -14,9 +13,9 @@ namespace wServer.realm.worlds.logic
         {
             base.Tick(time);
 
-            foreach (var player in this.Players.Values)
-                if (player.Level >= 20 && player.Rank < 80)
-                    player.ReconnectToNexus(false);
+            foreach (var player in Players)
+                if (player.Value.Level >= 20 && player.Value.Rank < 80)
+                    player.Value.ReconnectToNexus(false);
         }
 
         public override int EnterWorld(Entity entity)

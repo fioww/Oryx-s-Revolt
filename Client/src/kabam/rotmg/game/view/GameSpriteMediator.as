@@ -24,10 +24,6 @@ import kabam.rotmg.game.signals.PlayGameSignal;
 import kabam.rotmg.game.signals.SetWorldInteractionSignal;
 import kabam.rotmg.maploading.signals.HideMapLoadingSignal;
 import kabam.rotmg.maploading.signals.ShowLoadingViewSignal;
-import kabam.rotmg.packages.control.InitPackagesSignal;
-import kabam.rotmg.packages.control.OpenPackageSignal;
-import kabam.rotmg.packages.model.PackageInfo;
-import kabam.rotmg.packages.services.PackageModel;
 import kabam.rotmg.pets.controller.ShowPetTooltip;
 import kabam.rotmg.promotions.model.BeginnersPackageModel;
 import kabam.rotmg.promotions.signals.ShowBeginnersPackageSignal;
@@ -70,13 +66,7 @@ public class GameSpriteMediator extends Mediator {
     [Inject]
     public var hudModelInitialized:HUDModelInitialized;
     [Inject]
-    public var initPackages:InitPackagesSignal;
-    [Inject]
     public var showBeginnersPackage:ShowBeginnersPackageSignal;
-    [Inject]
-    public var packageModel:PackageModel;
-    [Inject]
-    public var openPackageSignal:OpenPackageSignal;
     [Inject]
     public var showPetTooltip:ShowPetTooltip;
     [Inject]
@@ -103,7 +93,6 @@ public class GameSpriteMediator extends Mediator {
 
     override public function initialize():void {
         this.showLoadingViewSignal.dispatch();
-        this.view.packageModel = this.packageModel;
         this.setWorldInteraction.add(this.onSetWorldInteraction);
         addViewListener(ReconnectEvent.RECONNECT, this.onReconnect);
         this.view.modelInitialized.add(this.onGameSpriteModelInitialized);
@@ -121,21 +110,9 @@ public class GameSpriteMediator extends Mediator {
         this.view.connect();
         this.view.showBeginnersPackage = this.showBeginnersPackage;
         this.view.openDailyCalendarPopupSignal = this.showDailyCalendarSignal;
-        this.view.showPackage.add(this.onShowPackage);
-    }
-
-    private function onShowPackage():void {
-        var _local1:PackageInfo = this.packageModel.getPriorityPackage();
-        if (_local1) {
-            this.openPackageSignal.dispatch(_local1.packageID);
-        }
-        else {
-            this.flushQueueSignal.dispatch();
-        }
     }
 
     override public function destroy():void {
-        this.view.showPackage.remove(this.onShowPackage);
         this.setWorldInteraction.remove(this.onSetWorldInteraction);
         removeViewListener(ReconnectEvent.RECONNECT, this.onReconnect);
         this.view.modelInitialized.remove(this.onGameSpriteModelInitialized);
@@ -181,7 +158,6 @@ public class GameSpriteMediator extends Mediator {
 
     private function onGameSpriteModelInitialized():void {
         this.hudSetupStarted.dispatch(this.view);
-        this.initPackages.dispatch();
     }
 
     private function onStatusPanelDraw(_arg1:Player):void {

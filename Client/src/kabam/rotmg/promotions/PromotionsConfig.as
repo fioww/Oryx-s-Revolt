@@ -1,5 +1,4 @@
 ﻿package kabam.rotmg.promotions {
-import kabam.rotmg.packages.control.BeginnersPackageAvailableSignal;
 import kabam.rotmg.promotions.commands.BuyBeginnersPackageCommand;
 import kabam.rotmg.promotions.commands.MakeBeginnersPackagePaymentCommand;
 import kabam.rotmg.promotions.commands.ShowBeginnersPackageCommand;
@@ -32,7 +31,6 @@ public class PromotionsConfig implements IConfig {
 
     public function configure():void {
         this.injector.map(BeginnersPackageModel).asSingleton();
-        this.injector.map(BeginnersPackageAvailableSignal).asSingleton();
         this.mediatorMap.map(BeginnersPackageButton).toMediator(BeginnersPackageButtonMediator);
         this.mediatorMap.map(BeginnersPackageOfferDialog).toMediator(BeginnersPackageOfferDialogMediator);
         this.mediatorMap.map(WebChoosePaymentTypeDialog).toMediator(WebChoosePaymentTypeDialogMediator);

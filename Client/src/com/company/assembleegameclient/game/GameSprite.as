@@ -51,7 +51,6 @@ import kabam.rotmg.maploading.signals.HideMapLoadingSignal;
 import kabam.rotmg.maploading.signals.MapLoadedSignal;
 import kabam.rotmg.messaging.impl.GameServerConnectionConcrete;
 import kabam.rotmg.messaging.impl.incoming.MapInfo;
-import kabam.rotmg.packages.services.PackageModel;
 import kabam.rotmg.promotions.model.BeginnersPackageModel;
 import kabam.rotmg.promotions.signals.ShowBeginnersPackageSignal;
 import kabam.rotmg.servers.api.Server;
@@ -87,7 +86,6 @@ public class GameSprite extends AGameSprite {
     public var openDailyCalendarPopupSignal:ShowDailyCalendarPopupSignal;
     public var openDialog:OpenDialogSignal;
     public var showPackage:Signal;
-    public var packageModel:PackageModel;
     public var addToQueueSignal:AddPopupToStartupQueueSignal;
     public var flushQueueSignal:FlushPopupStartupQueueSignal;
     private var focus:GameObject;

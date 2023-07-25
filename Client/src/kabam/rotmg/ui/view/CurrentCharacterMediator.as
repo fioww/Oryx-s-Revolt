@@ -12,9 +12,6 @@ import kabam.rotmg.core.signals.SetScreenSignal;
 import kabam.rotmg.dialogs.control.OpenDialogSignal;
 import kabam.rotmg.game.model.GameInitData;
 import kabam.rotmg.game.signals.PlayGameSignal;
-import kabam.rotmg.packages.control.BeginnersPackageAvailableSignal;
-import kabam.rotmg.packages.control.InitPackagesSignal;
-import kabam.rotmg.packages.control.PackageAvailableSignal;
 import kabam.rotmg.promotions.model.BeginnersPackageModel;
 import kabam.rotmg.ui.signals.ChooseNameSignal;
 import kabam.rotmg.ui.signals.NameChangedSignal;
@@ -38,12 +35,6 @@ public class CurrentCharacterMediator extends Mediator {
     [Inject]
     public var nameChanged:NameChangedSignal;
     [Inject]
-    public var initPackages:InitPackagesSignal;
-    [Inject]
-    public var beginnersPackageAvailable:BeginnersPackageAvailableSignal;
-    [Inject]
-    public var packageAvailable:PackageAvailableSignal;
-    [Inject]
     public var beginnerModel:BeginnersPackageModel;
     [Inject]
     public var openDialog:OpenDialogSignal;
@@ -59,25 +50,13 @@ public class CurrentCharacterMediator extends Mediator {
         this.view.chooseName.add(this.onChooseName);
         this.view.playGame.add(this.onPlayGame);
         this.nameChanged.add(this.onNameChanged);
-        this.beginnersPackageAvailable.add(this.onBeginner);
-        this.packageAvailable.add(this.onPackage);
-        this.initPackages.dispatch();
         if (this.securityQuestionsModel.showSecurityQuestionsOnStartup) {
             this.openDialog.dispatch(new SecurityQuestionsInfoDialog());
         }
     }
 
-    private function onPackage():void {
-        this.view.showPackageButton();
-    }
-
-    private function onBeginner():void {
-        this.view.showBeginnersOfferButton();
-    }
-
     override public function destroy():void {
         this.nameChanged.remove(this.onNameChanged);
-        this.beginnersPackageAvailable.remove(this.onBeginner);
         this.view.close.remove(this.onClose);
         this.view.newCharacter.remove(this.onNewCharacter);
         this.view.chooseName.remove(this.onChooseName);

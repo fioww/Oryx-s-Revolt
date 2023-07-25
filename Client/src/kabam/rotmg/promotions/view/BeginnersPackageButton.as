@@ -4,7 +4,6 @@ import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.filters.DropShadowFilter;
 
-import kabam.rotmg.packages.view.BasePackageButton;
 import kabam.rotmg.text.view.TextFieldDisplayConcrete;
 import kabam.rotmg.text.view.stringBuilder.StaticStringBuilder;
 import kabam.rotmg.ui.UIUtils;
@@ -12,13 +11,12 @@ import kabam.rotmg.ui.UIUtils;
 import org.osflash.signals.Signal;
 import org.osflash.signals.natives.NativeMappedSignal;
 
-public class BeginnersPackageButton extends BasePackageButton {
+public class BeginnersPackageButton extends Sprite {
 
     private static const FONT_SIZE:int = 16;
 
     public var clicked:Signal;
     private var timeLeftText:TextFieldDisplayConcrete;
-    private var lootIcon:DisplayObject;
     private var daysRemaining:int = -1;
     private var clickArea:Sprite;
 
@@ -43,8 +41,6 @@ public class BeginnersPackageButton extends BasePackageButton {
 
     private function makeUI():void {
         addChild(this.clickArea);
-        this.lootIcon = makeIcon();
-        addChild(this.lootIcon);
         this.makeTimeLeftText();
         this.setDaysRemaining(0);
     }
@@ -62,7 +58,6 @@ public class BeginnersPackageButton extends BasePackageButton {
     }
 
     private function onTextChanged():void {
-        positionText(this.lootIcon, this.timeLeftText);
     }
 
 

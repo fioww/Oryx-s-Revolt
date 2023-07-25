@@ -38,7 +38,6 @@ import kabam.rotmg.Market.ui.MarketMediatorConfig;
 import kabam.rotmg.minimap.MiniMapConfig;
 import kabam.rotmg.mysterybox.MysteryBoxConfig;
 import kabam.rotmg.news.NewsConfig;
-import kabam.rotmg.packages.PackageConfig;
 import kabam.rotmg.pets.PetsConfig;
 import kabam.rotmg.promotions.PromotionsConfig;
 import kabam.rotmg.protip.ProTipConfig;
@@ -156,7 +155,6 @@ public class WebMain extends Sprite {
                 .configure(MapLoadingConfig)
                 .configure(MarketMediatorConfig)
                 .configure(ClassesConfig)
-                .configure(PackageConfig)
                 .configure(PetsConfig)
                 .configure(QuestRewardsConfig)
                 .configure(DailyLoginConfig)
